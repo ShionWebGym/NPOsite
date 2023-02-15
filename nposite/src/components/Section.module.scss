@@ -13,3 +13,26 @@
     margin: 16rem 0 auto;
     max-width: 100%;
 }
+.katudou{
+    text-decoration: none;
+    color: #fff;
+    background: #94233E;
+    font-weight: bold;
+    font-family: Noto Sans JP,sans-serif;
+    border-radius: 48px;
+    padding: 20px 36px 20px 36px;
+    margin: 1.6rem auto;
+    text-align: center;
+    display: block;
+    width: 16rem;
+    box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
+    transition: 0.2s;
+}
+.katudou:hover{
+        transition: 0.2s;
+        transform: translateY(3px);
+        box-shadow: none;
+}
+.container{
+    margin-bottom: 8rem;
+}

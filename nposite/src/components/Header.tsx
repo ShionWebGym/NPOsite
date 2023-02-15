@@ -15,7 +15,11 @@ import {
 
 const Header = () => {
   return (
-    <header className={container}>
+    <header className={container}
+    data-sal="slide-down"
+    data-sal-delay="300"
+    data-sal-easing="ease"
+    >
       <h1 className={topImage}>
         <img src={h1img} alt="ヘッダーのサイン画像" />
       </h1>
