@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import TopImage from "../components/TopImage"
 import Section from "../components/Section"
+import News from "../components/News"
 
 const BlogPage = () => {
     return (
@@ -9,6 +10,7 @@ const BlogPage = () => {
             <Layout>
                 <TopImage/>
                 <Section/>
+                <News/>
             </Layout>
         </div>
     )

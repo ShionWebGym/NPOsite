@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import h1img from "../images/sign.png";
 import "@fontsource/noto-serif-jp";
