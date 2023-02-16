@@ -1,0 +1,42 @@
+footer{
+    width: 100%;
+    background-color: #94233E;
+    position: relative;
+    height: 16vw;
+}
+small{
+    font-family: Noto Sans JP,sans-serif;
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: 0.6rem;
+}
+h3{
+    color: #fff;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+}
+.container{
+    font-family: Noto Serif JP,sans-serif;
+    color: #fff;
+    width: 36%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.flogo{
+    position: absolute;
+    top: 0;
+    left: 32rem;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: 2rem auto;
+    width: 6rem;
+}
+.fcontact{
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: #fff;
+}
