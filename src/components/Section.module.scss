@@ -25,13 +25,17 @@
     text-align: center;
     display: block;
     width: 16rem;
-    box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
+    // box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
     transition: 0.2s;
+    border: 2px solid #fff;
 }
 .katudou:hover{
         transition: 0.2s;
-        transform: translateY(3px);
+        // transform: translateY(3px);
         box-shadow: none;
+        border: 2px solid #94233E;
+        background-color: #fff;
+        color: #94233E;
 }
 .container{
     margin-bottom: 8rem;

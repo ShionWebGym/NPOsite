@@ -1,0 +1,102 @@
+.container{
+    height: 32rem;
+    font-family: Noto SansJP,sans-serif;
+    color: #040404;
+}
+.container h2{
+    font-size: 1.4rem;
+    margin-top: 8rem;
+    text-align: center;
+    font-family: Noto serif JP,sans-serif;
+}
+.container h3{
+    font-size: 12px;
+    font-weight: bold;
+}
+.cardcontainer{
+    width: 100%;
+}
+.card{
+    width: 320px;
+    height: 400px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%);
+    margin: 2.4rem auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card:hover{
+    transition: 0.3s;
+    transform: translateY(2px);
+    box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 10%);
+}
+.doclist{
+    font-size: 12px;
+    margin-block-start: 6px;
+    padding-inline-start: 24px;
+}
+.cardtag{
+    background-color: #E0365E;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 24px;
+    position: absolute;
+    top: 88px;
+    right: 16px;
+}
+.cardtime{
+    font-size: 16px;
+    position: absolute;
+    top: 88px;
+    left: 16px;
+    background-color: #FFF;
+    color: #040404;
+    border-radius: 2rem;
+    padding: 8px 24px;
+    font-weight: bold;
+}
+.cardharf{
+    background-image: url(../images//inu.jpg);
+    height: 138px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(000, 000, 000, 0.2);
+    background-size: cover; 
+    background-position:center ;
+}
+.cardharf2{
+    padding: 24px;
+}
+.cardcontent{
+    margin-block-start: 2px;
+    margin-block-end: 6px;
+    padding-inline-start: 8px;
+    font-size: 12px;
+}
+.aftercard{
+    color: #fff;
+    background-color: #94233E;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 32px;
+    font-family: Noto Sans JP,sans-serif;
+    margin: auto;
+    // box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
+    transition: 0.2s;
+    display: block;
+    width: 272px;
+    border: 2px solid #fff;
+}
+.aftercard:hover{
+    transition: 0.3s;
+    // transform: translateY(3px);
+    box-shadow: none;
+    background-color: #FFF;
+    color: #94233E;
+    border: 2px solid #94233E;
+}
