@@ -1,0 +1,58 @@
+.Contactbutton_container{
+    height: 278px;
+    width: 100%;
+    text-align: center;
+}
+.contactbutton{
+    color: #fff;
+    background-color: #94233E;
+    text-decoration: none;
+    font-family: Noto Sans JP,sans-serif;
+    font-weight: bold;
+    width: 400px;
+    height: 80px;
+    display: block;
+    border-radius: 20px;
+    padding-top: 24px;
+    font-size: 24px;
+}
+.contactbutton:not(:first-child){
+    margin-left: 32px;
+}
+.contactbutton_flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.contact_logo{
+    width: max-content;
+    display:inline-block;
+    vertical-align: text-bottom;
+    padding-left: 8px;
+}
+.contactbutton_p{
+    font-size: 24px;
+    font-family: Noto sans JP,sans-serif;
+    font-weight: bold;
+    color: #040404;
+    padding-top: 80px;
+}
+.contactbutton_top{
+    text-decoration: none;
+    color: #fff;
+    background-color: #94233E;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    border-radius: 64px;    
+    bottom: 120px;
+    right: 72px;
+    padding: 20px 14px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 100;
+}
+.contactbutton_top:hover{
+    background-color: #470A18;
+}
