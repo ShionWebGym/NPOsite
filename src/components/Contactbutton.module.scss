@@ -15,6 +15,11 @@
     border-radius: 20px;
     padding-top: 24px;
     font-size: 24px;
+    transition: 0.3s;
+}
+.contactbutton:hover{
+    background-color: #470A18;
+    transition: 0.2s;
 }
 .contactbutton:not(:first-child){
     margin-left: 32px;
@@ -33,7 +38,6 @@
 .contactbutton_p{
     font-size: 24px;
     font-family: Noto sans JP,sans-serif;
-    font-weight: bold;
     color: #040404;
     padding-top: 80px;
 }
@@ -54,5 +58,5 @@
     z-index: 100;
 }
 .contactbutton_top:hover{
-    background-color: #470A18;
+    background-color: #7A1D33;
 }
