@@ -13,6 +13,8 @@ import {
   contactContainer,
 } from "./Header.module.scss";
 
+
+
 const Header = () => {
   return (
     <header className={container}
@@ -48,6 +50,7 @@ const Header = () => {
           WVCセミナー
         </Link>
       </div>
+      
     </header>
   );
 };
