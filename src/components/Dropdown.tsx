@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import {navbarSubmenuWrapper} from "../components/Dropdown.module.scss";
 
 const Dropdown = () => {
   
@@ -9,7 +8,7 @@ const Dropdown = () => {
       <ul>
         <li data-menu="menu-1">
           <a href="#">小動物疾患研究所について</a>
-          <div id="menu-1" className={navbarSubmenuWrapper}>
+          <div id="menu-1">
             <ul>
               <li>aaaa</li>
               <li>bbbb</li>
