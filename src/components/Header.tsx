@@ -11,32 +11,67 @@ import {
   topImage,
   contactButton,
   contactContainer,
+  dropdown_item,
+  dropdown_itemlist,
 } from "./Header.module.scss";
-
-
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <header className={container}
-    data-sal="slide-down"
-    data-sal-delay="300"
-    data-sal-easing="ease"
+    <header
+      className={container}
+      data-sal="slide-down"
+      data-sal-delay="300"
+      data-sal-easing="ease"
     >
       <h1 className={topImage}>
         <img src={h1img} alt="ヘッダーのサイン画像" />
       </h1>
       <nav className={navLinks}>
-        <Link to="/about" className={button}>
-          小動物疾患研究所とは
-        </Link>
+        <Menu>
+          <MenuButton as={Button} className={button}>
+            小動物疾患研究所とは
+          </MenuButton>
+          <MenuList className={dropdown_itemlist}>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              ご挨拶
+            </MenuItem>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              趣旨
+            </MenuItem>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              定款
+            </MenuItem>
+          </MenuList>
+        </Menu>
 
-        <Link to="/" className={button}>
-          小動物疾患研究所の活動
-        </Link>
+        <Menu>
+          <MenuButton as={Button} className={button}>
+            小動物疾患研究所の活動
+          </MenuButton>
+          <MenuList className={dropdown_itemlist}>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              WVCセミナー
+            </MenuItem>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              研究発表
+            </MenuItem>
+          </MenuList>
+        </Menu>
 
-        <Link to="/" className={button}>
-          ご協力のお願い
-        </Link>
+        <Menu>
+          <MenuButton as={Button} className={button}>
+            ご協力のお願い
+          </MenuButton>
+          <MenuList className={dropdown_itemlist}>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              ご支援とご協力のお願い
+            </MenuItem>
+            <MenuItem as="a" href="/" className={dropdown_item}>
+              お問い合わせフォーム
+            </MenuItem>
+          </MenuList>
+        </Menu>
 
         <Link to="/" className={button}>
           募集
@@ -50,7 +85,6 @@ const Header = () => {
           WVCセミナー
         </Link>
       </div>
-      
     </header>
   );
 };

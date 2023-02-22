@@ -31,6 +31,7 @@
   left: 0;
 }
 .button{
+  display: block; 
   border: none;
   background-color: #fff;
   font-size: 1vw;
@@ -100,5 +101,23 @@
   transition: .2s;
   transform: translateY(3px);
   box-shadow:none;
+}
+.dropdown_itemlist{
+  background-color: #94233E;
+  width: 280px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+.dropdown_item{
+  padding: 20px;
+  font-size: 0.7rem;
+  color: #fff;
+  border-radius: 8px;
+  border: #94233E solid 1px;
+}
+.dropdown_item:hover{
+  background-color: #FFFFED;
+  color: #040404;
+  border: 1px solid #040404;
 }
 

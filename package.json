@@ -14,6 +14,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@chakra-ui/css-reset": "^2.0.12",
+    "@chakra-ui/gatsby-plugin": "^3.1.1",
+    "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "gatsby": "^5.5.0",
@@ -29,8 +32,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "typescript": "^4.9.4"
-  }
-  ,"engines": {
+  },
+  "engines": {
     "node": "18.13.0"
   }
 }

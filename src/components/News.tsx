@@ -23,6 +23,16 @@ const News = () => {
             <p>2023/02/16</p>
             <h3>セミナー開催について</h3>
           </div>
+          <div className={newslistchild}>
+            <h4>お知らせ</h4>
+            <p>2023/02/16</p>
+            <h3>セミナー開催について</h3>
+          </div>
+          <div className={newslistchild}>
+            <h4>お知らせ</h4>
+            <p>2023/02/16</p>
+            <h3>セミナー開催について</h3>
+          </div>
         </div>
       </div>
     </>
