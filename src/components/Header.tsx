@@ -29,45 +29,64 @@ const Header = () => {
       </h1>
       <nav className={navLinks}>
         <Menu>
-          <MenuButton as={Button} className={button}>
+          <MenuButton 
+          as={Button} 
+          className={button}
+          display="block"
+          >
             小動物疾患研究所とは
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem 
+            as="a" href="/" 
+            className={dropdown_item}
+            color="white">
               ご挨拶
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem 
+            as="a" href="/" 
+            className={dropdown_item}
+            color="white">
               趣旨
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem 
+            as="a" href="/" 
+            className={dropdown_item}
+            color="white">
               定款
             </MenuItem>
           </MenuList>
         </Menu>
 
         <Menu>
-          <MenuButton as={Button} className={button}>
+          <MenuButton as={Button} className={button}
+          display="block">
             小動物疾患研究所の活動
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem as="a" href="/" className={dropdown_item}
+            color="white">
               WVCセミナー
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem as="a" href="/" className={dropdown_item}
+            color="white">
               研究発表
             </MenuItem>
           </MenuList>
         </Menu>
 
         <Menu>
-          <MenuButton as={Button} className={button}>
+          <MenuButton as={Button} className={button}
+          display="block">
             ご協力のお願い
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem as="a" href="/" className={dropdown_item}
+            color="white">
               ご支援とご協力のお願い
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}>
+            <MenuItem as="a" href="/" className={dropdown_item}
+            color="white">
               お問い合わせフォーム
             </MenuItem>
           </MenuList>
