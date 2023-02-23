@@ -47,7 +47,7 @@ const AboutCard = () => {
               <p className={Aboutcard_p}>
                 伴侶動物は近年私たちの生活の中に欠かせない存在となりつつあります過去１０年間に何らかの伴侶動物を飼育していた人（現在飼っている人も含む）は、国民の半数を超えるという統計結果も出ています。...
               </p>
-              <Link to="/" className={Aboutcard_link}>
+              <Link to="/Greeting" className={Aboutcard_link}>
                 もっと見る
               </Link>
             </div>

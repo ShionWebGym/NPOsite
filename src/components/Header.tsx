@@ -25,7 +25,9 @@ const Header = () => {
       data-sal-easing="ease"
     >
       <h1 className={topImage}>
+        <a href="/">
         <img src={h1img} alt="ヘッダーのサイン画像" />
+        </a>
       </h1>
       <nav className={navLinks}>
         <Menu>
@@ -38,7 +40,7 @@ const Header = () => {
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
             <MenuItem 
-            as="a" href="/" 
+            as="a" href="/Greeting" 
             className={dropdown_item}
             color="white">
               ご挨拶
