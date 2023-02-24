@@ -28,7 +28,7 @@ const Meaning = () => {
             <h1 className={Gh1}>趣旨</h1>
             <img
               src={syusidog}
-              alt="三鷹獣医科、院長の写真"
+              alt="NPO小動物疾患研究所の趣旨ページ、犬の写真"
               className={syusidog_image}
             />
           </div>

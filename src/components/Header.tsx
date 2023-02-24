@@ -52,7 +52,7 @@ const Header = () => {
               趣旨
             </MenuItem>
             <MenuItem 
-            as="a" href="/" 
+            as="a" href="/Teikan" 
             className={dropdown_item}
             color="white">
               定款
