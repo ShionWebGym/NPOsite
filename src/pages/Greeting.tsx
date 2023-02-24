@@ -8,11 +8,12 @@ import {
   Gh2,
   textContainer,
   pagehead,
+  pankuzu,
 } from "../components/Greeting.module.scss";
 import incho from "../images/norihiro.png";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
-import Scroll from "../components/Scroll"
+import Scroll from "../components/Scroll";
 
 const Greeting = () => {
   return (
@@ -20,6 +21,9 @@ const Greeting = () => {
       <Layout>
         <div className={Gcontainer}>
           <div className={pagehead}>
+            <div className={pankuzu}>
+              <a href="/">ホーム</a>・<a href="/Greeting">ご挨拶</a>
+            </div>
             <h1 className={Gh1}>ご挨拶</h1>
             <img
               src={incho}
@@ -38,7 +42,8 @@ const Greeting = () => {
               －家族の一員としての伴侶動物が増えている一方で、様々な問題を抱えていることもまた事実です－
             </aside>
             <p>
-              　伴侶動物は近年私たちの生活の中に欠かせない存在となりつつあります。過去１０年間に何らかの伴侶動物を飼育していた人（現在飼っている人も含む）は、国民の半数を超えるという統計結果も出ています。<br />
+              　伴侶動物は近年私たちの生活の中に欠かせない存在となりつつあります。過去１０年間に何らかの伴侶動物を飼育していた人（現在飼っている人も含む）は、国民の半数を超えるという統計結果も出ています。
+              <br />
               また飼育している伴侶動物も犬、猫をはじめとして、ウサギやハムスター、カメなどその種類も多様化しています。しかし、家族の一員としての伴侶動物が増えている一方で、様々な問題を抱えていることもまた事実であります。
             </p>
             <p>

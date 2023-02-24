@@ -1,7 +1,7 @@
 .container{
-    height: 32rem;
     font-family: Noto SansJP,sans-serif;
     color: #040404;
+    margin-bottom: 96px;
 }
 .container h2{
     font-size: 1.4rem;
@@ -85,7 +85,7 @@
     font-size: 16px;
     padding: 8px 32px;
     font-family: Noto Sans JP,sans-serif;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
     // box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
     transition: 0.2s;
     display: block;

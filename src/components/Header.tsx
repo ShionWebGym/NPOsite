@@ -46,7 +46,7 @@ const Header = () => {
               ご挨拶
             </MenuItem>
             <MenuItem 
-            as="a" href="/" 
+            as="a" href="/Meaning" 
             className={dropdown_item}
             color="white">
               趣旨
