@@ -17,7 +17,25 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
-        autoGenHomeLabel: `ホーム`
+        autoGenHomeLabel: `ホーム`,
+        crumbLabelUpdates: [
+          {
+            pathname: '/Greeting',
+            crumbLabel: '挨拶'
+          },
+          {
+            pathname: '/Meaning',
+            crumbLabel: '趣旨'
+          },
+          {
+            pathname: '/Teikan',
+            crumbLabel: '定款'
+          },
+          {
+            pathname: '/Wvc',
+            crumbLabel: 'WVCセミナー'
+          },
+       ],
      },
     }
   ]

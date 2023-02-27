@@ -9,15 +9,23 @@ import {
   pagehead,
   wvcsemi_img,
 } from "../components/wvc.module.scss";
-import Pankuzu from "../components/Pankuzu";
-import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css'
+import { pankuzu,breadcrumb } from "../components/Pankuzu.module.scss";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 
 const Wvc = () => {
   return (
     <>
       <Layout>
         <div className={Gcontainer}>
-            <Pankuzu />
+          <div className={pankuzu}>
+            <Breadcrumb
+              location={location}
+              crumbLabel="WVCセミナー"
+              crumbSeparator=" ・ "
+              className={breadcrumb}
+            />
+          </div>
           <div className={pagehead}>
             <img
               src={wvcsemi}

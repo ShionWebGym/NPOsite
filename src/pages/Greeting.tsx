@@ -13,14 +13,23 @@ import incho from "../images/norihiro.png";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import Pankuzu from "../components/Pankuzu";
+import { pankuzu,breadcrumb } from "../components/Pankuzu.module.scss";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 
 const Greeting = () => {
   return (
     <>
       <Layout>
         <div className={Gcontainer}>
-          <Pankuzu />
+        <div className={pankuzu}>
+            <Breadcrumb
+              location={location}
+              crumbLabel="ご挨拶"
+              crumbSeparator=" ・ "
+              className={breadcrumb}
+            />
+          </div>
           <div className={pagehead}>
             <h1 className={Gh1}>ご挨拶</h1>
             <img
