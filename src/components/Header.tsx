@@ -66,7 +66,7 @@ const Header = () => {
             小動物疾患研究所の活動
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/" className={dropdown_item}
+            <MenuItem as="a" href="/Wvc" className={dropdown_item}
             color="white">
               WVCセミナー
             </MenuItem>
@@ -102,7 +102,7 @@ const Header = () => {
         <Link to="/" className={contactButton}>
           お問い合わせ
         </Link>
-        <Link to="/" className={contactButton}>
+        <Link to="/Wvc" className={contactButton}>
           WVCセミナー
         </Link>
       </div>

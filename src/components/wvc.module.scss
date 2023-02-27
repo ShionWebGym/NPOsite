@@ -1,0 +1,19 @@
+.Gcontainer{
+    height: 464px;
+    width: 100%;
+    background-color: #C8E9FD;
+    position: relative;
+}
+.pagehead{
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    top: 176px;
+    right: 0;
+    left: 0;
+    margin: 88px auto;
+    justify-content: space-around;
+}
+.wvcsemi_img{
+    width: 100%;
+}

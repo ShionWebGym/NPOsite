@@ -1,30 +1,27 @@
 import React from "react";
-import Layout from "../components/Layout";
 import {
   Gcontainer,
   syusidog_image,
   Gh1,
   greetingText,
   Gh2,
-  Gh22,
   textContainer,
   pagehead,
-  pankuzu,
-} from "../components/Greeting.module.scss";
+} from "../components/Teikan.module.scss";
 import syusidog from "../images/定款-猫.png";
+import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
+import Pankuzu from "../components/Pankuzu";
 
 const Teikan = () => {
   return (
     <>
       <Layout>
         <div className={Gcontainer}>
+          <Pankuzu />
           <div className={pagehead}>
-            <div className={pankuzu}>
-              <a href="/">ホーム</a>・<a href="/Meaning">定款</a>
-            </div>
             <h1 className={Gh1}>定款</h1>
             <img
               src={syusidog}

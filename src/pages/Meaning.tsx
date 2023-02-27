@@ -9,22 +9,20 @@ import {
   Gh22,
   textContainer,
   pagehead,
-  pankuzu,
-} from "../components/Greeting.module.scss";
+} from "../components/Meaning.module.scss";
 import syusidog from "../images/趣旨-犬.png";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
+import Pankuzu from "../components/Pankuzu";
 
 const Meaning = () => {
   return (
     <>
       <Layout>
         <div className={Gcontainer}>
+        <Pankuzu />
           <div className={pagehead}>
-            <div className={pankuzu}>
-              <a href="/">ホーム</a>・<a href="/Meaning">趣旨</a>
-            </div>
             <h1 className={Gh1}>趣旨</h1>
             <img
               src={syusidog}
@@ -54,10 +52,16 @@ const Meaning = () => {
               設立総会を開き、発起人より設立の趣旨、定款、会費及び財産、平成２５年度及び平成２６年度の事業計画、活動予算、役員の案を提案し、審議の上決定した。
             </p>
             <p>
-              特定非営利活動法人 小動物疾患研究所（理事長小宮山典寛<br />
-              内閣府認定NPO；法人番号2012405003038<br />
-              <a href="https://www.npo-homepage.go.jp/npoportal/detail/013010784">https://www.npo-homepage.go.jp/npoportal/detail/013010784</a><br />
-              設立認証年月日2013年11月12日東京都武蔵野市中町2-6-4（三鷹獣医科グループ内）<br />
+              特定非営利活動法人 小動物疾患研究所（理事長小宮山典寛
+              <br />
+              内閣府認定NPO；法人番号2012405003038
+              <br />
+              <a href="https://www.npo-homepage.go.jp/npoportal/detail/013010784">
+                https://www.npo-homepage.go.jp/npoportal/detail/013010784
+              </a>
+              <br />
+              設立認証年月日2013年11月12日東京都武蔵野市中町2-6-4（三鷹獣医科グループ内）
+              <br />
               電話：0422-54-5181 メール：<a href="/">お問い合わせ</a>
             </p>
           </div>

@@ -8,22 +8,20 @@ import {
   Gh2,
   textContainer,
   pagehead,
-  pankuzu,
 } from "../components/Greeting.module.scss";
 import incho from "../images/norihiro.png";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
+import Pankuzu from "../components/Pankuzu";
 
 const Greeting = () => {
   return (
     <>
       <Layout>
         <div className={Gcontainer}>
+          <Pankuzu />
           <div className={pagehead}>
-            <div className={pankuzu}>
-              <a href="/">ホーム</a>・<a href="/Greeting">ご挨拶</a>
-            </div>
             <h1 className={Gh1}>ご挨拶</h1>
             <img
               src={incho}

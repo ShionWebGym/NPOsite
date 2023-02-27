@@ -19,7 +19,7 @@ const Contactbutton =()=>{
         <div className={Contactbutton_container}>
             <div className={contactbutton_flex}>
             <Link to="/" className={contactbutton}>お問い合わせボタン<span><img src={mail} alt="メールのアイコン" className={contact_logo} /></span></Link>
-            <Link to="/" className={contactbutton}>WVCセミナー<span><img src={seminer} alt="セミナーのアイコン" className={contact_logo} /></span></Link>
+            <Link to="/Wvc" className={contactbutton}>WVCセミナー<span><img src={seminer} alt="セミナーのアイコン" className={contact_logo} /></span></Link>
             </div>
             <p className={contactbutton_p}>入会方法や寄付の仕方について等、お気軽にお問い合わせください。</p>
             {/* <button className={contactbutton_top}></button> */}
