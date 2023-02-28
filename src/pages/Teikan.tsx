@@ -15,7 +15,8 @@ import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
 import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
-import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
+import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
+import { useState, useEffect } from "react";
 
 const Teikan = () => {
   return (
@@ -27,7 +28,7 @@ const Teikan = () => {
               location={location}
               crumbLabel="定款"
               crumbSeparator="・"
-              style={{ fontSize: `16px`, padding: `8px`}}
+              style={{ fontSize: `16px`, padding: `8px` }}
             />
           </div>
           <div className={pagehead}>

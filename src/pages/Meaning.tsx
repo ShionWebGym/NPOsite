@@ -17,6 +17,7 @@ import Scroll from "../components/Scroll";
 import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
+import { useState, useEffect } from "react";
 
 
 const Meaning = () => {
