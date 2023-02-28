@@ -13,10 +13,11 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-emotion",
     "gatsby-plugin-sass",
+    "gatsby-plugin-breadcrumb",
     {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
-        useAutoGen: true,
+        useAutoGen: false,
         autoGenHomeLabel: `ホーム`,
         crumbLabelUpdates: [
           {

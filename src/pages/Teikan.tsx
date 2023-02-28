@@ -13,7 +13,7 @@ import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import { pankuzu,breadcrumb } from "../components/Pankuzu.module.scss";
+import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 
@@ -26,8 +26,8 @@ const Teikan = () => {
             <Breadcrumb
               location={location}
               crumbLabel="定款"
-              crumbSeparator=" ・ "
-              className={breadcrumb}
+              crumbSeparator="・"
+              style={{ fontSize: `16px`, padding: `8px`}}
             />
           </div>
           <div className={pagehead}>
