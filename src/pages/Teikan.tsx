@@ -24,12 +24,12 @@ const Teikan = () => {
       <Layout>
         <div className={Gcontainer}>
           <div className={pankuzu}>
-            <Breadcrumb
+            {/* <Breadcrumb
               location={location}
               crumbLabel="定款"
               crumbSeparator="・"
               style={{ fontSize: `16px`, padding: `8px` }}
-            />
+            /> */}
           </div>
           <div className={pagehead}>
             <h1 className={Gh1}>定款</h1>

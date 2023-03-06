@@ -1,0 +1,32 @@
+.Gcontainer{
+    height: 464px;
+    width: 100%;
+    background-color: #FFFFED;
+    position: relative;
+}
+.inchoImage{
+    display: block;
+    width: 160px;
+    height: auto;
+    margin-left: 80px;
+}
+.Gh1{
+    font-family: Noto Serif JP,sans-serif;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.pagehead{
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    top: 176px;
+    right: 0;
+    left: 0;
+    margin: 34px auto 0 32%;
+    justify-content: space-around;
+}
+.studyImgStyle{
+    display: block;
+    margin-top: 40px;
+    margin-left: 64px;
+}

@@ -70,7 +70,7 @@ const Header = () => {
             color="white">
               WVCセミナー
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}
+            <MenuItem as="a" href="/Study" className={dropdown_item}
             color="white">
               研究発表
             </MenuItem>
@@ -83,23 +83,23 @@ const Header = () => {
             ご協力のお願い
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/" className={dropdown_item}
+            <MenuItem as="a" href="/Support" className={dropdown_item}
             color="white">
               ご支援とご協力のお願い
             </MenuItem>
-            <MenuItem as="a" href="/" className={dropdown_item}
+            <MenuItem as="a" href="/Contact" className={dropdown_item}
             color="white">
               お問い合わせフォーム
             </MenuItem>
           </MenuList>
         </Menu>
 
-        <Link to="/" className={button}>
+        <Link to="/Volunteer" className={button}>
           募集
         </Link>
       </nav>
       <div className={contactContainer}>
-        <Link to="/" className={contactButton}>
+        <Link to="/Contact" className={contactButton}>
           お問い合わせ
         </Link>
         <Link to="/Wvc" className={contactButton}>

@@ -1,5 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
+
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `NPO小動物疾患研究所`,

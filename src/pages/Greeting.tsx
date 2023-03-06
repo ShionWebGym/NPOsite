@@ -24,12 +24,12 @@ const Greeting = () => {
       <Layout>
         <div className={Gcontainer}>
         <div className={pankuzu}>
-            <Breadcrumb
+            {/* <Breadcrumb
               location={location}
               crumbLabel="ご挨拶"
               crumbSeparator="・"
               style={{ fontSize: `16px`, padding: `8px` }}
-            />
+            /> */}
           </div>
           <div className={pagehead}>
             <h1 className={Gh1}>ご挨拶</h1>

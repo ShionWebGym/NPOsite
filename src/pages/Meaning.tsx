@@ -26,12 +26,12 @@ const Meaning = () => {
       <Layout>
         <div className={Gcontainer}>
           <div className={pankuzu}>
-            <Breadcrumb
+            {/* <Breadcrumb
               location={location}
               crumbLabel="趣旨"
               crumbSeparator="・"
               style={{ fontSize: `16px`, padding: `8px`}}
-            />
+            /> */}
           </div>
           <div className={pagehead}>
             <h1 className={Gh1}>趣旨</h1>
@@ -48,8 +48,7 @@ const Meaning = () => {
             <aside>
               －家族の一員としての伴侶動物が増えている一方で、様々な問題を抱えていることもまた事実です－
             </aside>
-            <p>
-              　伴侶動物は近年私たちの生活の中に欠かせない存在となりつつあります。過去１０年間に何らかの伴侶動物を飼育していた人（現在飼っている人も含む）は、国民の半数を超えるという統計結果も出ています。
+            <p>伴侶動物は近年私たちの生活の中に欠かせない存在となりつつあります。過去１０年間に何らかの伴侶動物を飼育していた人（現在飼っている人も含む）は、国民の半数を超えるという統計結果も出ています。
               <br />
               また飼育している伴侶動物も犬、猫をはじめとして、ウサギやハムスター、カメなどその種類も多様化しています。しかし、家族の一員としての伴侶動物が増えている一方で、様々な問題を抱えていることもまた事実であります。
             </p>
