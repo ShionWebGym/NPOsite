@@ -151,3 +151,94 @@
     opacity: 0.5;
     transition: 0.2s;
 }
+.semiContainer{
+    width: 600px;
+    height: auto;
+    margin: 160px auto;
+    text-align: left;
+    border-top: 1px solid #040404;
+    padding-top: 16px;
+}
+.semiNews{
+    color: #E0365E;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.semiContainer p{
+    font-size: 16px;
+    font-family: Noto Sans JP,sans-serif;
+    line-height: 28px;
+}
+.semiContainer h3{
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #040404;
+}
+.semiContainer aside{
+    font-size: 16px;
+    font-family: Noto Sans JP,sans-serif;
+    text-align: left;
+    margin-bottom: 16px;
+}
+.semiContainer a{
+    text-align: left;
+    font-size: 16px;
+    color: #EEC0C0;
+    display: block;
+    margin-bottom: 16px;
+}
+.semiContainer a:hover{
+    color:#94233E;
+}
+.semiContainer img{
+    margin: 80px auto 40px;
+    border-radius: 20px;
+}
+.span a{
+    display: inline-block;
+    margin: 0;
+}
+.semiSmall{
+    color:#0080C0;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.wvc2021 p{
+    margin-bottom: 16px;
+    color: #040404;
+    text-align: left;
+}
+.wvc2021{
+    font-weight: bold;
+}
+.wvc2021img{
+    margin: 40px 0;
+}
+.kome{
+    font-weight: normal;
+}
+.semiHead{
+    text-align: center;
+}
+.semiContainer2 p{
+    margin-bottom: 40px;
+}
+.semiContainer2 p:first-child{
+    margin-top: 40px;
+}
+.semiSmallContainer{
+    margin-bottom: 24px;
+}
+.specialContainer{
+    margin-bottom: 24px;
+    height: 420px;
+    padding: 80px 40px;
+    background-color: #FFFFED;
+    border-radius: 20px;
+}
+.specialContainer span{
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
