@@ -20,9 +20,6 @@ const Header = () => {
   return (
     <header
       className={container}
-      data-sal="slide-down"
-      data-sal-delay="300"
-      data-sal-easing="ease"
     >
       <h1 className={topImage}>
         <Link to="/">

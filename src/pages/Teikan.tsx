@@ -8,7 +8,7 @@ import {
   textContainer,
   pagehead,
 } from "../components/Teikan.module.scss";
-import syusidog from "../images/定款-猫.png";
+import syusidog from "../images/定款-猫.webp";
 import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";

@@ -10,7 +10,7 @@ import {
   textContainer,
   pagehead,
 } from "../components/Meaning.module.scss";
-import syusidog from "../images/趣旨-犬.png";
+import syusidog from "../images/趣旨-犬.webp";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
