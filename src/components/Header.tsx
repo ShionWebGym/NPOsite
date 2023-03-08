@@ -25,9 +25,9 @@ const Header = () => {
       data-sal-easing="ease"
     >
       <h1 className={topImage}>
-        <a href="/">
+        <Link to="/">
         <img src={h1img} alt="ヘッダーのサイン画像" />
-        </a>
+        </Link>
       </h1>
       <nav className={navLinks}>
         <Menu>
@@ -40,19 +40,19 @@ const Header = () => {
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
             <MenuItem 
-            as="a" href="/Greeting" 
+            as={Link} to="/Greeting" 
             className={dropdown_item}
             color="white">
-              ご挨拶
+            ご挨拶
             </MenuItem>
             <MenuItem 
-            as="a" href="/Meaning" 
+            as={Link} to="/Meaning" 
             className={dropdown_item}
             color="white">
               趣旨
             </MenuItem>
             <MenuItem 
-            as="a" href="/Teikan" 
+            as={Link} to="/Teikan" 
             className={dropdown_item}
             color="white">
               定款
@@ -66,11 +66,11 @@ const Header = () => {
             小動物疾患研究所の活動
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/Wvc" className={dropdown_item}
+            <MenuItem as={Link} to="/Wvc" className={dropdown_item}
             color="white">
               WVCセミナー
             </MenuItem>
-            <MenuItem as="a" href="/Study" className={dropdown_item}
+            <MenuItem as={Link} to="/Study" className={dropdown_item}
             color="white">
               研究発表
             </MenuItem>
@@ -83,11 +83,11 @@ const Header = () => {
             ご協力のお願い
           </MenuButton>
           <MenuList className={dropdown_itemlist}>
-            <MenuItem as="a" href="/Support" className={dropdown_item}
+            <MenuItem as={Link} to="/Support" className={dropdown_item}
             color="white">
               ご支援とご協力のお願い
             </MenuItem>
-            <MenuItem as="a" href="/Contact" className={dropdown_item}
+            <MenuItem as={Link} to="/Contact" className={dropdown_item}
             color="white">
               お問い合わせフォーム
             </MenuItem>

@@ -47,7 +47,7 @@ const AboutCard = () => {
                 5.猫の最適な食事とは？ -Coming soon- <br></br>
                 6. 猫の最適な飲水とは？ ...<br></br>
               </p>
-              <Link to="/" className={Aboutcard_link}>
+              <Link to="/Study" className={Aboutcard_link}>
                 もっと見る
               </Link>
             </div>
@@ -62,7 +62,7 @@ const AboutCard = () => {
               <p className={Aboutcard_p}>
                 小動物疾患研究所では、皆様からのご寄付を随時募集しています。ご都合や希望にあった形でご支援をお願いいたします。
               </p>
-              <Link to="/" className={Aboutcard_link}>
+              <Link to="/Support" className={Aboutcard_link}>
                 もっと見る
               </Link>
             </div>
