@@ -14,7 +14,7 @@ const News = () => {
       <div className={container}>
         <div className={h2Container}>
           <h2 className={h2}>
-            お知らせ・セミナー開催<span>🐼🐼</span>
+            お知らせ・セミナー開催<span>🐶😸</span>
           </h2>
         </div>
         <div>

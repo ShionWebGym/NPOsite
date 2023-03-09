@@ -92,7 +92,7 @@ const Header = () => {
         </Menu>
 
         <Link to="/Volunteer" className={button}>
-          募集
+          ボランティア
         </Link>
       </nav>
       <div className={contactContainer}>

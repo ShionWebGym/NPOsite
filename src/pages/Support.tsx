@@ -7,8 +7,9 @@ import {
   Gcontainer,
   pagehead,
   Gh1,
-  studyImgStyle,
-} from "../components/Study.module.scss";
+  supportContainer,
+  supportImgCat,
+} from "../components/Support.module.scss";
 import React from "react";
 import supportImg from "../images/support.webp";
 
@@ -31,11 +32,11 @@ const Support = () => {
               <img
                 src={supportImg}
                 alt="ご協力のお願い、猫の写真"
-                className={studyImgStyle}
+                className={supportImgCat}
               />
             </div>
           </div>
-          <div>
+          <div className={supportContainer}>
             <h2>小型動物の疾患解明のためのご協力とご支援のお願い</h2>
             <p>
               小動物疾患研究所では、当法人の目的に賛同し、「正会員」として法人運営活動に参加していただける方、及び「賛助会員」として当活動をご支援していただける方を随時募集しております。また、皆様からのご寄付を募る計画をしております。準備が整い次第、告知させていただきます。

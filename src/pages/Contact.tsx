@@ -10,6 +10,7 @@ import {
 } from "../components/Study.module.scss";
 import React from "react";
 import contactImg from "../images/contact.webp";
+import { useState, useEffect, useRef } from "react";
 
 const Contact = () => {
   return (
@@ -34,10 +35,39 @@ const Contact = () => {
               />
             </div>
           </div>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                お名前: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                メールアドレス: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                お問い合わせ内容を選択してください。:{" "}
+                <select name="role[]" multiple>
+                  <option value="leader">入会について</option>
+                  <option value="follower">WVCセミナーについて</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                お問い合わせ内容: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">送信する</button>
+            </p>
+          </form>
         </Layout>
       </div>
     </>
   );
 };
 
-export default Contact
+export default Contact;
