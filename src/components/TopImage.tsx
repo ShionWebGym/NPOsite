@@ -2,6 +2,7 @@ import React from "react";
 import topinu from "../images/inu.jpg";
 import "./total.module.scss";
 import { topimage, topdog } from "./TopImage.module.scss";
+import {motion} from "framer-motion";
 
 const TopImage = () => {
   return (
@@ -15,7 +16,13 @@ const TopImage = () => {
         <br />
       </h1>
       <section>
-        <img className={topdog} src={topinu} alt="トップイメージ" />
+        <motion.img 
+            initial={{
+              opacity: 0,y:-100
+            }}
+            animate={{ opacity: 1,y:-20}}
+            transition={{duration:1.5}}
+        className={topdog} src={topinu} alt="トップイメージ" />
       </section>
     </div>
   );

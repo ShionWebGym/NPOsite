@@ -16,6 +16,9 @@ const config: GatsbyConfig = {
     "gatsby-plugin-emotion",
     "gatsby-plugin-sass",
     "gatsby-plugin-breadcrumb",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {

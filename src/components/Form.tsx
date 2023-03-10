@@ -60,7 +60,7 @@ const Form = () => {
           <input name="bot-field" onChange={handleChange} />
         </label>
       </p>
-      <h2 className={formHead}>お問い合わせ内容を選択してください。※必須</h2>
+      <h2 className={formHead}>お問い合わせ内容を選択してください。<span className={formSpan}>※必須</span></h2>
       <div className={formContainer}>
         <label className={formCheck}>
           入会について
