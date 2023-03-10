@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby-link";
+import "@fontsource/noto-sans-jp";
+import {
+  formCheck,
+  checkbox,
+  formHead,
+  inputLabel,
+  submitButton,
+} from "../components/Form.module.scss";
 
 const encode = (data: {
   [x: string]: string | number | boolean;
@@ -48,62 +56,107 @@ const Form = () => {
           <input name="bot-field" onChange={handleChange} />
         </label>
       </p>
-      <fieldset>
-        <legend>お問い合わせ内容を選択してください。※必須</legend>
-        <div>
+      <h2 className={formHead}>お問い合わせ内容を選択してください。※必須</h2>
+      <div>
+        <label className={formCheck}>
+          入会について
           <input
             type="radio"
             name="content"
             value="入会について"
             onChange={handleChange}
+            className={checkbox}
           />
-          <label>入会について</label>
+        </label>
+        <label className={formCheck}>
+          WVCセミナーについて
           <input
             type="radio"
             name="content"
             value="WVCセミナーについて"
             onChange={handleChange}
+            className={checkbox}
           />
-          <label>WVCセミナーについて</label>
+        </label>
+        <label className={formCheck}>
+          ボランティアについて
           <input
             type="radio"
             name="content"
             value="ボランティアについて"
             onChange={handleChange}
+            className={checkbox}
           />
-          <label>ボランティアについて</label>
+        </label>
+        <label className={formCheck}>
+          その他
           <input
             type="radio"
             name="content"
             value="その他"
             onChange={handleChange}
+            className={checkbox}
           />
-          <label>その他</label>
-        </div>
-      </fieldset>
+        </label>
+      </div>
       <p>
-        <label>
-          お名前
+        <label className={inputLabel}>
+          お名前※
           <br />
+        </label>
+        <fieldset>
+          <legend>Name</legend>
           <input type="text" name="name" onChange={handleChange} required />
-        </label>
+        </fieldset>
       </p>
       <p>
-        <label>
-          メールアドレス:
+        <label className={inputLabel}>
+          フリガナ
           <br />
+        </label>
+        <fieldset>
+          <legend>Kana</legend>
+          <input type="text" name="kana" onChange={handleChange} />
+        </fieldset>
+      </p>
+      <p>
+        <label className={inputLabel}>
+          メールアドレス※
+          <br />
+        </label>
+        <fieldset>
+          <legend>Email</legend>
           <input type="email" name="email" onChange={handleChange} required />
-        </label>
+        </fieldset>
       </p>
       <p>
-        <label>
-          お問い合わせ内容:
+        <label className={inputLabel}>
+          電話番号
           <br />
-          <textarea name="message" onChange={handleChange} required />
+        </label>
+        <fieldset>
+          <legend>Phone</legend>
+          <input type="tel" name="phone" onChange={handleChange} />
+        </fieldset>
+      </p>
+      <p>
+        <label className={inputLabel}>
+          お問い合わせ内容※
+          <br />
+          <fieldset>
+            <legend>Message</legend>
+            <textarea
+              name="message"
+              onChange={handleChange}
+              cols={31}
+              rows={10}
+              required
+            />
+          </fieldset>
         </label>
       </p>
       <p>
-        <button type="submit">送信する</button>
+        <button type="submit" className={submitButton}>送信する</button>
       </p>
     </form>
   );
