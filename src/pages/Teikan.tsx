@@ -17,6 +17,7 @@ import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 import { useState, useEffect } from "react";
+import type { HeadProps } from "gatsby"
 
 const Teikan = () => {
   return (
@@ -622,3 +623,9 @@ const Teikan = () => {
 };
 
 export default Teikan;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>定款</title>
+  )
+}

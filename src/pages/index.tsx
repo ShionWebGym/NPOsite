@@ -8,6 +8,8 @@ import AboutCard from "../components/AboutCard"
 import Contactbutton from "../components/Contactbutton"
 import Scroll from "../components/Scroll"
 import { graphql } from "gatsby"
+import type { HeadProps } from "gatsby"
+
 
 const BlogPage = () => {
     return (
@@ -35,3 +37,8 @@ query MyQuery {
   }
 `
 export default BlogPage
+export function Head(props: HeadProps) {
+  return (
+    <title>小動物疾患研究所</title>
+  )
+}

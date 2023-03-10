@@ -12,6 +12,7 @@ import {
 } from "../components/Support.module.scss";
 import React from "react";
 import supportImg from "../images/support.webp";
+import type { HeadProps } from "gatsby"
 
 const Support = () => {
   return (
@@ -76,3 +77,9 @@ const Support = () => {
 };
 
 export default Support;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>ご支援とご協力のお願い</title>
+  )
+}

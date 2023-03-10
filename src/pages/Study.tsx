@@ -21,6 +21,7 @@ import nyoukankesseki from "../images/nyoukankesseki.webp";
 import nyoukankesseki2 from "../images/nyoukankesseki2.webp";
 import nyoukankesseki3 from "../images/nyoukankesseki3.webp";
 import jinzou from "../images/jinzou.webp";
+import type { HeadProps } from "gatsby"
 
 const Study = () => {
   return (
@@ -207,3 +208,9 @@ const Study = () => {
 };
 
 export default Study;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>研究発表</title>
+  )
+}

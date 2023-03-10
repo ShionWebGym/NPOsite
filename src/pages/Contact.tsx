@@ -11,6 +11,7 @@ import {
 import React from "react";
 import contactImg from "../images/contact.webp";
 import Form from "../components/Form";
+import type { HeadProps } from "gatsby"
 
 const Contact = () => {
   return (
@@ -43,3 +44,9 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>お問い合わせページ</title>
+  )
+}

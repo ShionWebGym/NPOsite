@@ -6,6 +6,7 @@ import React from "react";
 import {
     Container,
 } from "../components/success.module.scss";
+import type { HeadProps } from "gatsby"
 
 const Success = () => {
   return (
@@ -26,3 +27,9 @@ const Success = () => {
 };
 
 export default Success;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>送信完了</title>
+  )
+}

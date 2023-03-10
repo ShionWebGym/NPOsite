@@ -13,6 +13,7 @@ import {
 } from "../components/Volunteer.module.scss";
 import React from "react";
 import contactImg from "../images/contact.webp";
+import type { HeadProps } from "gatsby"
 
 const Volunteer = () => {
   return (
@@ -52,3 +53,9 @@ const Volunteer = () => {
 };
 
 export default Volunteer;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>ボランティアについて</title>
+  )
+}

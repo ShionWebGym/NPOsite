@@ -42,6 +42,7 @@ import donesemi from "../images/donesemi.webp";
 import volunteer from "../images/volunteer.webp";
 import wvcsemia from "../images/wvcsemia.webp";
 import oquend from "../images/oquend.webp";
+import type { HeadProps } from "gatsby"
 
 const Wvc = () => {
   return (
@@ -249,3 +250,9 @@ const Wvc = () => {
   );
 };
 export default Wvc;
+
+export function Head(props: HeadProps) {
+  return (
+    <title>WVCセミナーについて</title>
+  )
+}
