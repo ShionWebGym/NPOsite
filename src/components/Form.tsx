@@ -7,6 +7,10 @@ import {
   formHead,
   inputLabel,
   submitButton,
+  formInput,
+  formP,
+  formSpan,
+  formContainer,
 } from "../components/Form.module.scss";
 
 const encode = (data: {
@@ -57,7 +61,7 @@ const Form = () => {
         </label>
       </p>
       <h2 className={formHead}>お問い合わせ内容を選択してください。※必須</h2>
-      <div>
+      <div className={formContainer}>
         <label className={formCheck}>
           入会について
           <input
@@ -99,57 +103,58 @@ const Form = () => {
           />
         </label>
       </div>
-      <p>
+      <p className={formP}>
         <label className={inputLabel}>
-          お名前※
+          お名前<span className={formSpan}>※</span>
           <br />
         </label>
         <fieldset>
           <legend>Name</legend>
-          <input type="text" name="name" onChange={handleChange} required />
+          <input type="text" name="name" className={formInput} onChange={handleChange} required />
         </fieldset>
       </p>
-      <p>
+      <p className={formP}>
         <label className={inputLabel}>
           フリガナ
           <br />
         </label>
         <fieldset>
           <legend>Kana</legend>
-          <input type="text" name="kana" onChange={handleChange} />
+          <input type="text" name="kana" className={formInput} onChange={handleChange} />
         </fieldset>
       </p>
-      <p>
+      <p className={formP}>
         <label className={inputLabel}>
-          メールアドレス※
+          メールアドレス<span className={formSpan}>※</span>
           <br />
         </label>
         <fieldset>
           <legend>Email</legend>
-          <input type="email" name="email" onChange={handleChange} required />
+          <input type="email" name="email" className={formInput} onChange={handleChange} required />
         </fieldset>
       </p>
-      <p>
+      <p className={formP}>
         <label className={inputLabel}>
           電話番号
           <br />
         </label>
         <fieldset>
           <legend>Phone</legend>
-          <input type="tel" name="phone" onChange={handleChange} />
+          <input type="tel" name="phone" className={formInput} onChange={handleChange} />
         </fieldset>
       </p>
-      <p>
+      <p className={formP}>
         <label className={inputLabel}>
-          お問い合わせ内容※
+          お問い合わせ内容<span className={formSpan}>※</span>
           <br />
           <fieldset>
             <legend>Message</legend>
             <textarea
               name="message"
               onChange={handleChange}
-              cols={31}
+              cols={32}
               rows={10}
+              className={formInput}
               required
             />
           </fieldset>
