@@ -626,6 +626,9 @@ export default Teikan;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>定款</title>
+    <meta name="description" content="当NPO法人 小動物疾患研究所の定款です。" />
+    </>
   )
 }

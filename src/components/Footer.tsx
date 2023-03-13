@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../images/logo.png";
+import logo from "../images/logo.webp";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import "./total.module.scss";

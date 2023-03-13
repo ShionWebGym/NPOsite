@@ -211,6 +211,9 @@ export default Study;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>研究発表</title>
+    <meta name="description" content="本研究発表では犬や猫をはじめとする、様々な飼い主の悩みごとが解決されれば幸いです。" />
+    </>
   )
 }

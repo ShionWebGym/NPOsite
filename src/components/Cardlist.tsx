@@ -1,5 +1,5 @@
 import React from "react";
-import topinu from "../images/inu.jpg";
+import topinu from "../images/inu.webp";
 import { Link } from "gatsby";
 import "./total.module.scss";
 import {

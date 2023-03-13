@@ -87,6 +87,9 @@ export default Meaning;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>趣旨</title>
+    <meta name="description" content="NPO法人 小動物疾患研究所設立の趣旨をご紹介しています。" />
+    </>
   )
 }

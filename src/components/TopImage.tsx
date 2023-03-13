@@ -1,5 +1,5 @@
 import React from "react";
-import topinu from "../images/inu.jpg";
+import topinu from "../images/inu.webp";
 import "./total.module.scss";
 import { topimage, topdog } from "./TopImage.module.scss";
 import {motion} from "framer-motion";
@@ -15,7 +15,6 @@ const TopImage = () => {
         獣医師に。
         <br />
       </h1>
-      <section>
         <motion.img 
             initial={{
               opacity: 0,y:-100
@@ -23,7 +22,6 @@ const TopImage = () => {
             animate={{ opacity: 1,y:-20}}
             transition={{duration:1.5}}
         className={topdog} src={topinu} alt="トップイメージ" />
-      </section>
     </div>
   );
 };

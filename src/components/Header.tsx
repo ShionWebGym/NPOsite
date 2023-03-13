@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import h1img from "../images/sign.png";
+import h1img from "../images/sign.webp";
 import "@fontsource/noto-serif-jp";
 import "modern-css-reset";
 import "./total.module.scss";

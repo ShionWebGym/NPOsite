@@ -37,8 +37,12 @@ query MyQuery {
   }
 `
 export default BlogPage
+
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>小動物疾患研究所</title>
+    <meta name="description" content="小動物疾患研究所のWEBサイトです。私たちが飼育している伴侶動物も犬、猫をはじめとして、ウサギやハムスター、カメなどその種類も多様化しています。しかし、家族の一員としての伴侶動物が増えている一方で、様々な問題を抱えていることもまた事実であります。" />
+    </>
   )
 }

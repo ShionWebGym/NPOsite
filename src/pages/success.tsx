@@ -30,6 +30,9 @@ export default Success;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>送信完了</title>
+    <meta name="description" content="お問い合わせの送信が完了しました。" />
+    </>
   )
 }

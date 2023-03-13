@@ -56,6 +56,9 @@ export default Volunteer;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>ボランティアについて</title>
+    <meta name="description" content="小動物疾患研究所の「ボランティア」とは、小動物疾患研究所で行われている動物の病気の成り立ちの研究、その活動に賛同し、研究に参加してくださる方で、自由な時間にボランティアとしての活動をしていただく方のことです" />
+    </>
   )
 }

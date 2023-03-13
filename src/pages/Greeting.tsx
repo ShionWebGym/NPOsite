@@ -9,7 +9,7 @@ import {
   textContainer,
   pagehead,
 } from "../components/Greeting.module.scss";
-import incho from "../images/norihiro.png";
+import incho from "../images/norihiro.webp";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
@@ -88,6 +88,10 @@ export default Greeting;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>ご挨拶</title>
+    <meta name="description" content="人と伴侶動物との健やかな暮らしのために、
+小動物疾患研究所ができること、しなければならないこととは" />
+    </>
   )
 }

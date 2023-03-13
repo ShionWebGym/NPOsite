@@ -47,6 +47,9 @@ export default Contact;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>お問い合わせページ</title>
+    <meta name="description" content="小動物疾患研究所へのお問い合わせページです。フォームに必要な情報を入力し送信してください。お問い合わせへのご連絡はしばらくお待ちください。" />
+    </>
   )
 }

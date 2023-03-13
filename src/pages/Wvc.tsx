@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import wvcsemi from "../images/wvcsemi.png";
+import wvcsemi from "../images/wvcsemi.webp";
 import {
   Gcontainer,
   pagehead,
@@ -253,6 +253,10 @@ export default Wvc;
 
 export function Head(props: HeadProps) {
   return (
+    <>
     <title>WVCセミナーについて</title>
+    <meta name="description" content="米国のラスベガスで行われるWVC（西部獣医会議）は現在米国で最大規模の獣医師の団体であり、毎年3月に年次大会が行われております。 また「WVC獣医師外科セミナー」はWVCの継続教育の一環として、日本人獣医師のために、英語での講演の場合は、日本語の通訳付きで行われるものです。" />
+    </>
+    
   )
 }
