@@ -7,14 +7,18 @@ import {motion} from "framer-motion";
 const TopImage = () => {
   return (
     <div className={topimage}>
-      <h1>
+      <motion.h1
+      initial={{opacity:0,y:-100}}
+      animate={{opacity:1,y:0}}
+      transition={{duration:1.5}}
+      >
         動物たちの
         <br />
         未来を担う
         <br />
         獣医師に。
         <br />
-      </h1>
+      </motion.h1>
         <motion.img 
             initial={{
               opacity: 0,y:-100
