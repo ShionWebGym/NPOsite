@@ -126,7 +126,72 @@
 .accordion{
   display: none;
 }
+.menuButtonContainer {
+  display: none;
+  height: 0;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 48px;
+  right: 40px;
+}
+.menuToggle {
+  display: none;
+}
+.menuButton,
+.menuButton::before,
+.menuButton::after {
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menuButton::before {
+  content: '';
+  margin-top: -10px;
+}
+
+.menuButton::after {
+  content: '';
+  margin-top: 10px;
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton {
+  background: rgba(255, 255, 255, 0);
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+.accordion{
+  background-color: #fff;
+  font-size: 16px;
+  padding: 80px 20px 16px 20px;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  transform: translate(-300%);
+}
 @media(max-width:1199px) {
+  .hidden{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
   .nav-links{
     display: none;
     width: 80%;
@@ -134,13 +199,7 @@
     padding-bottom: 88px;
     height: fit-content;
   }
-  .accordion{
-    display: block;
-    font-size: 16px;
-    margin: 80px auto;
-    padding-bottom: 16px;
-    width: 80%;
-  }
+
   .accordion h2{
     padding-bottom: 16px;
   }
@@ -151,13 +210,14 @@
   .container{
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 96px;
     padding: 0;
     overscroll-behavior-y: auto;
+    position: fixed;
     background-color: rgba(255, 255, 255, 1);
   }
   .contactContainer{
-    display: block;
+    display: none;
     margin: 0 auto;
     padding: 0;
   }
@@ -167,7 +227,8 @@
   }
   .topImage{
     margin-left: 24px;
-    margin-top: 24px;
+    margin-top: 32px;
+    width: 180px;
   }
   .contactButton{
     width: 200px;
@@ -176,63 +237,22 @@
     padding-top: 8px;
     font-size: 16px;
     border-radius: 20px;
-    margin: 32px auto;
+    text-align: center;
+    // margin: 32px auto;
   }
   .button{
     font-size: 24px;
     margin-top: 40px;
   }
-}
-
-.humButton{
-  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
-  background:#57a2c7;
-  cursor: pointer;
-    width: 50px;
-    height:50px;
-  border-radius: 5px;
-}
-
-/*ボタン内側*/
-.humButton span{
-    display: inline-block;
-    transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-  background: #fff;
-    width: 45%;
+  .menuButtonContainer {
+    display: flex;
   }
-
-.humButton span:nth-of-type(1) {
-  top:15px; 
-}
-
-.humButton span:nth-of-type(2) {
-  top:23px;
-}
-
-.humButton span:nth-of-type(3) {
-  top:31px;
-}
-
-/*activeクラスが付与されると線が回転して×に*/
-
-.humButton.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-}
-
-.humButton.active span:nth-of-type(2) {
-  opacity: 0;/*真ん中の線は透過*/
-}
-
-.humButton.active span:nth-of-type(3){
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+  .menuToggle ~ .accordion{
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .menuToggle:checked ~ .accordion{
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
 }

@@ -1,6 +1,4 @@
-import React, { FC, useState } from "react";
-import { ToggleButton } from "./ToggleButton";
-import { Navigation } from "./Navigation";
+import React from "react";
 import { Link } from "gatsby";
 import h1img from "../images/sign.webp";
 import "@fontsource/noto-serif-jp";
@@ -15,7 +13,12 @@ import {
   contactContainer,
   dropdown_item,
   dropdown_itemlist,
-
+  menuButtonContainer,
+  menuButton,
+  menuToggle,
+  accordion,
+  accordionButton,
+  hidden,
 } from "./Header.module.scss";
 import {
   Menu,
@@ -23,13 +26,22 @@ import {
   MenuList,
   MenuItem,
   Button,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
 } from "@chakra-ui/react";
 
-const Header: FC = () => {
-  const [open, setOpen] = useState(false);
-  const toggleFunction = () => {
-    setOpen((prevState) => !prevState);
-  };
+const Header = () => {
+
+  const toggle =()=>{
+    let body = document.getElementsByTagName("body")[0];
+    const classList = body.classList;
+    classList.toggle(`${hidden}`);
+}
+
 
   return (
     <header className={container}>
@@ -38,12 +50,12 @@ const Header: FC = () => {
           <img src={h1img} alt="ヘッダーのサイン画像" />
         </Link>
       </h1>
-      <ToggleButton
-          open={open}
-          controls="navigation"
-          label="メニューを開きます"
-          onClick={toggleFunction}
-        />
+      <input id="menuToggle" type="checkbox" className={menuToggle}
+             onClick={toggle}/>
+      <label className={menuButtonContainer} htmlFor="menuToggle">
+        <div className={menuButton}></div>
+      </label>
+
       <nav className={navLinks}>
         <Menu>
           <MenuButton as={Button} className={button} display="block">
@@ -129,7 +141,76 @@ const Header: FC = () => {
           ボランティア
         </Link>
       </nav>
-      <Navigation id="navigation" open={open} />
+      <nav className={accordion}>
+        <Accordion defaultIndex={[0]} allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton className={accordionButton}>
+                <Box as="span" flex="1" textAlign="left">
+                  小動物疾患研究所とは
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel as={Link} to="/Greeting" pb={20}>
+              ご挨拶
+            </AccordionPanel>
+            <AccordionPanel as={Link} to="/Meaning" pb={4}>
+              趣旨
+            </AccordionPanel>
+            <AccordionPanel as={Link} to="/Teikan" pb={4}>
+              定款
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <h2>
+              <AccordionButton className={accordionButton}>
+                <Box as="span" flex="1" textAlign="left">
+                  小動物疾患研究所の活動
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel as={Link} to="/Wvc" pb={4}>
+              WVCセミナー
+            </AccordionPanel>
+            <AccordionPanel as={Link} to="/Study" pb={4}>
+              研究発表
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <h2>
+              <AccordionButton className={accordionButton}>
+                <Box as="span" flex="1" textAlign="left">
+                  ご協力のお願い
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel as={Link} to="/Support" pb={4}>
+              ご支援とご協力のお願い
+            </AccordionPanel>
+            <AccordionPanel as={Link} to="/Contact" pb={4}>
+              お問い合わせフォーム
+            </AccordionPanel>
+          </AccordionItem>
+          <h2>
+            <Link to="/Volunteer">ボランティア</Link>
+          </h2>
+          <h2>
+            <Link to="/Contact" className={contactButton}>
+              お問い合わせ
+            </Link>
+          </h2>
+          <h2>
+            <Link to="/Wvc" className={contactButton}>
+              WVCセミナー
+            </Link>
+          </h2>
+        </Accordion>
+      </nav>
       <div className={contactContainer}>
         <Link to="/Contact" className={contactButton}>
           お問い合わせ

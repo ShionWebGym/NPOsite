@@ -100,3 +100,12 @@
     color: #94233E;
     border: 2px solid #94233E;
 }
+@media (max-width:1199px) {
+    .container h2{
+        margin-top: 160px;
+        font-size: 24px;
+    }
+    .card{
+        margin: 40px auto;
+    }
+}

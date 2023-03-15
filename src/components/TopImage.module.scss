@@ -3,8 +3,9 @@
     font-family: Noto sans JP,sans-serif;
     z-index: 10;
     position: sticky;
-    text-align: center;
-    margin-right: 28rem;
+    text-align: left;
+    margin-left: 13rem;
+    margin-right: 40rem;
     letter-spacing: 0.1rem;
     padding-top: 12rem;
   }
@@ -19,4 +20,23 @@
     width: 32rem;
     height: 16rem;
     border-radius: 20px;
+  }
+
+  @media(max-width:1199px){
+    .topimage{
+      padding-top: 96px;
+      width: 100vw;
+    }
+    .topimage h1{
+      margin: 0 auto;
+      padding: 40px 56px;
+      display: block;
+      width: fit-content;
+      font-size: 24px;
+    }
+    .topdog{
+      position:unset;
+      width: 328px;
+      height: 100%;
+    }
   }

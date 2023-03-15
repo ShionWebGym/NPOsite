@@ -40,3 +40,17 @@
 .container{
     margin-bottom: 8rem;
 }
+@media(max-width:1199px){
+    .wrapper{
+        margin: 40px auto;
+    }
+    .h2{
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .katudou{
+        padding: 8px;
+        margin: 24px auto;
+        width: 160px;
+    }
+}

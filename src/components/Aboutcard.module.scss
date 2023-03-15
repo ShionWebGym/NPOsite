@@ -70,3 +70,18 @@
     transform: translateY(3px);
     box-shadow:none;
 }
+@media(max-width:1199px){
+    .Aboutcard_container{
+        display: block;
+        height: fit-content;
+    }
+    .Aboutcard_container2:not(:first-child){
+        margin-left: 0px;
+    }
+    .Aboutcard_container2{
+        padding: 24px 0 40px 0;
+    }
+    .Aboutcard{
+        margin: 40px auto;
+    }
+}

@@ -41,3 +41,11 @@ small{
     text-decoration: none;
     color: #fff;
 }
+@media (max-width:1199px){
+    footer{
+        height: 50vh;
+    }
+    .container{
+        padding-top:80px;
+    }
+}

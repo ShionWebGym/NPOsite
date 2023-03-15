@@ -42,3 +42,15 @@
     padding: 0.4rem 1.6rem;
     font-size: 0.8rem;
 }
+@media(max-width:1199px){
+    .newslistchild{
+        display: grid;
+        grid-template-areas:
+                            "a . ."
+                            "b c c"
+                            "b c c";
+    }
+    .container{
+        height: 210px;
+    }
+}

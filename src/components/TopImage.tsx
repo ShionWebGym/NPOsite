@@ -14,9 +14,7 @@ const TopImage = () => {
       >
         動物たちの
         <br />
-        未来を担う
-        <br />
-        獣医師に。
+        未来を担う獣医師に。
         <br />
       </motion.h1>
         <motion.img 
