@@ -19,6 +19,8 @@ import {
   accordion,
   accordionButton,
   hidden,
+  humburgerItem,
+  humburgerItemVol,
 } from "./Header.module.scss";
 import {
   Menu,
@@ -35,23 +37,36 @@ import {
 } from "@chakra-ui/react";
 
 const Header = () => {
+  let body = document.getElementsByTagName("body")[0];
+  const checkbox = document.getElementById("menuToggle") as HTMLInputElement;
 
-  const toggle =()=>{
-    let body = document.getElementsByTagName("body")[0];
-    const classList = body.classList;
-    classList.toggle(`${hidden}`);
-}
+  const classList = body.classList;
+  const hid = `${hidden}`;
 
+  const toggle = () => {
+    classList.toggle(hid);
+  };
+  const rem = () => {
+    classList.remove(hid);
+    if (checkbox !== null) {
+      checkbox.checked = false; // checkboxをチェック状態にする
+    }
+    console.log(checkbox.checked);
+  };
 
   return (
     <header className={container}>
       <h1 className={topImage}>
-        <Link to="/">
+        <Link to="/" onClick={rem}>
           <img src={h1img} alt="ヘッダーのサイン画像" />
         </Link>
       </h1>
-      <input id="menuToggle" type="checkbox" className={menuToggle}
-             onClick={toggle}/>
+      <input
+        id="menuToggle"
+        type="checkbox"
+        className={menuToggle}
+        onClick={toggle}
+      />
       <label className={menuButtonContainer} htmlFor="menuToggle">
         <div className={menuButton}></div>
       </label>
@@ -152,14 +167,32 @@ const Header = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel as={Link} to="/Greeting" pb={20}>
-              ご挨拶
+            <AccordionPanel
+              as={Link}
+              to="/Greeting"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・ご挨拶
             </AccordionPanel>
-            <AccordionPanel as={Link} to="/Meaning" pb={4}>
-              趣旨
+            <AccordionPanel
+              as={Link}
+              to="/Meaning"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・趣旨
             </AccordionPanel>
-            <AccordionPanel as={Link} to="/Teikan" pb={4}>
-              定款
+            <AccordionPanel
+              as={Link}
+              to="/Teikan"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・定款
             </AccordionPanel>
           </AccordionItem>
 
@@ -172,11 +205,23 @@ const Header = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel as={Link} to="/Wvc" pb={4}>
-              WVCセミナー
+            <AccordionPanel
+              as={Link}
+              to="/Wvc"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・WVCセミナー
             </AccordionPanel>
-            <AccordionPanel as={Link} to="/Study" pb={4}>
-              研究発表
+            <AccordionPanel
+              as={Link}
+              to="/Study"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・研究発表
             </AccordionPanel>
           </AccordionItem>
 
@@ -189,26 +234,42 @@ const Header = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel as={Link} to="/Support" pb={4}>
-              ご支援とご協力のお願い
+            <AccordionPanel
+              as={Link}
+              to="/Support"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・ご支援とご協力のお願い
             </AccordionPanel>
-            <AccordionPanel as={Link} to="/Contact" pb={4}>
-              お問い合わせフォーム
+            <AccordionPanel
+              as={Link}
+              to="/Contact"
+              pb={4}
+              className={humburgerItem}
+              onClick={rem}
+            >
+              ・お問い合わせフォーム
             </AccordionPanel>
           </AccordionItem>
           <h2>
-            <Link to="/Volunteer">ボランティア</Link>
-          </h2>
-          <h2>
-            <Link to="/Contact" className={contactButton}>
-              お問い合わせ
+            <Link to="/Volunteer" className={humburgerItemVol} onClick={rem}>
+              ボランティア
             </Link>
           </h2>
-          <h2>
-            <Link to="/Wvc" className={contactButton}>
-              WVCセミナー
-            </Link>
-          </h2>
+          <div>
+            <h2>
+              <Link to="/Contact" className={contactButton} onClick={rem}>
+                お問い合わせ
+              </Link>
+            </h2>
+            <h2>
+              <Link to="/Wvc" className={contactButton} onClick={rem}>
+                WVCセミナー
+              </Link>
+            </h2>
+          </div>
         </Accordion>
       </nav>
       <div className={contactContainer}>

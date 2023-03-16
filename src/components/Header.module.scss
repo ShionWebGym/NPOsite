@@ -201,7 +201,8 @@
   }
 
   .accordion h2{
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-top: 16px;
   }
   .accordionButton{
     background-color: #fff;
@@ -221,6 +222,9 @@
     margin: 0 auto;
     padding: 0;
   }
+  .contactButton{
+    margin: 16px auto;
+  }
   .topImage img{
     width: 180px;
     height: auto;
@@ -239,6 +243,19 @@
     border-radius: 20px;
     text-align: center;
     // margin: 32px auto;
+  }
+  .humburgerItem{
+    padding-bottom: 8px;
+    display: block;
+    margin-left: 24px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .humburgerItemVol{
+    text-decoration: none;
+    font-size: 24px;
+    color: #040404;
+    padding: 0 6px;
   }
   .button{
     font-size: 24px;
