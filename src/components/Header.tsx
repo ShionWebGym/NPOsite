@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactNode } from 'react';
 import { Link } from "gatsby";
 import h1img from "../images/sign.webp";
 import "@fontsource/noto-serif-jp";
@@ -173,7 +172,7 @@ const Header:React.FC<typeof MyLinks>= (props) => {
         </Link>
       </nav>
       <nav className={accordion}>
-        <Accordion defaultIndex={[0]} allowMultiple>
+        <Accordion allowMultiple>
           <AccordionItem>
             <h2>
               <AccordionButton className={accordionButton}>
