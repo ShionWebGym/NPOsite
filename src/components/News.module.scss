@@ -44,19 +44,21 @@
 }
 @media(max-width:1199px){
     .newslistchild{
-        display: grid;
-        grid-template-areas:
-                            "a . ."
-                            "b c c"
-                            "b c c";
+        display: flex;
+        flex-direction: column;
     }
     .container{
-        height: 300px;
+        height: 362px;
     }
     .newslistchild{
-        margin: 6rem auto;
+        margin: 24px auto;
+    }
+    .newslistchild h4{
+        width: 64px;
+        text-align: center;
     }
     .h2{
         font-size: 16px;
+        padding: 24px 0 24px;
     }
 }

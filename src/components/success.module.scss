@@ -20,3 +20,16 @@
         color: #94233e;
     }
 }
+@media(max-width:1199px){
+    .Container{
+        height: 45vh;
+        padding-top: 220px;
+    }
+    .Container p{
+        padding-top: 0;
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
