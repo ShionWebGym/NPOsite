@@ -13,10 +13,7 @@ import incho from "../images/norihiro.webp";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import { pankuzu } from "../components/Pankuzu.module.scss";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
-import { useState, useEffect } from "react";
 import type { HeadProps } from "gatsby"
 
 const Greeting = () => {
@@ -24,14 +21,6 @@ const Greeting = () => {
     <>
       <Layout>
         <div className={Gcontainer}>
-        <div className={pankuzu}>
-            {/* <Breadcrumb
-              location={location}
-              crumbLabel="ご挨拶"
-              crumbSeparator="・"
-              style={{ fontSize: `16px`, padding: `8px` }}
-            /> */}
-          </div>
           <div className={pagehead}>
             <h1 className={Gh1}>ご挨拶</h1>
             <img

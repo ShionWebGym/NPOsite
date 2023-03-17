@@ -32,7 +32,6 @@ import {
   specialContainer,
   bold,
 } from "../components/wvc.module.scss";
-import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Link } from "gatsby";
 import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 import semiimg from "../images/semiimg.webp";
@@ -49,8 +48,6 @@ const Wvc = () => {
     <>
       <Layout>
         <div className={Gcontainer}>
-          <div className={pankuzu}></div>
-
           <div className={pagehead}>
             <img
               src={wvcsemi}

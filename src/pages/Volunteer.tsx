@@ -3,7 +3,6 @@ import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
 import { Link } from "gatsby";
-import { pankuzu } from "../components/Pankuzu.module.scss";
 import {
   Gcontainer,
   pagehead,
@@ -21,14 +20,6 @@ const Volunteer = () => {
       <div>
         <Layout>
           <div className={Gcontainer}>
-            <div className={pankuzu}>
-              {/* <Breadcrumb
-  location={location}
-  crumbLabel="ご挨拶"
-  crumbSeparator="・"
-  style={{ fontSize: `16px`, padding: `8px` }}
-/> */}
-            </div>
             <div className={pagehead}>
               <h1 className={Gh1}>ボランティア</h1>
               <img

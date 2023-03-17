@@ -4,12 +4,6 @@
     background-color: #FFFFED;
     position: relative;
 }
-.inchoImage{
-    display: block;
-    width: 160px;
-    height: auto;
-    margin-left: 80px;
-}
 .Gh1{
     font-family: Noto Serif JP,sans-serif;
     font-size: 40px;
@@ -125,4 +119,56 @@ ul{
     max-width: 1200px;
     margin: 56px auto;
     padding: 0 40px;
+}
+
+@media (max-width:1199px){
+    .syusidog_image{
+        width: 246px;
+        height: auto;
+        margin: 0;
+    }
+    .pagehead{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        top: 136px;
+    }
+    .Gcontainer{
+        height: 336px;
+    }
+    .Gh1{
+        font-size: 24px;
+        padding-top: 24px;
+        text-align: center;
+    }
+    .Gh2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .Gh22{
+        font-size: 16px;
+        text-align: center;
+    }
+    .greetingText{
+        width: 390px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 24px;
+    }
+    .studyImgStyle{
+        margin: 0;
+        width: 246px;
+        height: auto;
+    }
+    .studySection{
+        width: 390px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .studyWrapper{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .studyNav{
+        margin: 80px auto;
+    }
 }

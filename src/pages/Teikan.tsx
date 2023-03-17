@@ -13,10 +13,7 @@ import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import { pankuzu } from "../components/Pankuzu.module.scss";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
-import { useState, useEffect } from "react";
 import type { HeadProps } from "gatsby"
 
 const Teikan = () => {
@@ -24,14 +21,6 @@ const Teikan = () => {
     <>
       <Layout>
         <div className={Gcontainer}>
-          <div className={pankuzu}>
-            {/* <Breadcrumb
-              location={location}
-              crumbLabel="定款"
-              crumbSeparator="・"
-              style={{ fontSize: `16px`, padding: `8px` }}
-            /> */}
-          </div>
           <div className={pagehead}>
             <h1 className={Gh1}>定款</h1>
             <img

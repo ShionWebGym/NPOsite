@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import { pankuzu } from "../components/Pankuzu.module.scss";
 import { Link } from "gatsby";
 import {
   Gcontainer,
@@ -28,14 +27,6 @@ const Study = () => {
     <>
       <Layout>
         <div className={Gcontainer}>
-          <div className={pankuzu}>
-            {/* <Breadcrumb
-              location={location}
-              crumbLabel="ご挨拶"
-              crumbSeparator="・"
-              style={{ fontSize: `16px`, padding: `8px` }}
-            /> */}
-          </div>
           <div className={pagehead}>
             <h1 className={Gh1}>研究発表</h1>
             <img

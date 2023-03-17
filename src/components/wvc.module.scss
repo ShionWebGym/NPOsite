@@ -242,3 +242,53 @@
 .bold{
     font-weight: bold;
 }
+@media (max-width:1199px){
+    .Gcontainer{
+        height: 336px;
+    }
+    .pagehead{
+        top: 174px;
+        margin: 0;
+        padding: 20px;
+    }
+    .semiMenuContainer_up{
+        display: block;
+        margin: 80px auto 0;
+    }
+    .semiMenu_semi{
+        width: 330px;
+        margin: 0 auto;
+    }
+    .semiMenu_form{
+        width: 330px;
+        margin: 40px auto;
+    }
+    .semiMenuContainer_down{
+        display: block;
+        margin-top: 0;
+    }
+    .semiMenu_vol{
+        margin: 40px auto;
+    }
+    .semiMenu_donesemi{
+        margin: 40px auto;
+    }
+    .semiMenu_other{
+        margin: 40px auto;
+    }
+    .semiContainer{
+        width: 390px;
+        margin: 80px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .semiContainer p{
+        font-size: 12px;
+    }
+    .semiContainer h3{
+        font-size: 16px;
+    }
+    .semiContainer aside{
+        font-size: 12px;
+    }
+}

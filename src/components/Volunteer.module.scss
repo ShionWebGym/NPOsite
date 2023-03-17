@@ -51,3 +51,43 @@
         color: #94233E;
     }
 }
+
+@media (max-width:1199px){
+    .syusidog_image{
+        width: 246px;
+        height: auto;
+        margin: 0;
+    }
+    .pagehead{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        top: 136px;
+    }
+    .Gcontainer{
+        height: 336px;
+    }
+    .Gh1{
+        font-size: 24px;
+        padding-top: 24px;
+        text-align: center;
+    }
+    .Gh2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .Gh22{
+        font-size: 16px;
+        text-align: center;
+    }
+    .greetingText{
+        width: 390px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 24px;
+    }
+    .volunteerContainer{
+        width: 390px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

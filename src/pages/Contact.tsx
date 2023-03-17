@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
-import { pankuzu } from "../components/Pankuzu.module.scss";
 import {
   Gcontainer,
   pagehead,
@@ -19,14 +18,6 @@ const Contact = () => {
       <div>
         <Layout>
           <div className={Gcontainer}>
-            <div className={pankuzu}>
-              {/* <Breadcrumb
-  location={location}
-  crumbLabel="ご挨拶"
-  crumbSeparator="・"
-  style={{ fontSize: `16px`, padding: `8px` }}
-/> */}
-            </div>
             <div className={pagehead}>
               <h1 className={Gh1}>お問い合わせ</h1>
               <img

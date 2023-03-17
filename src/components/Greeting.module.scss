@@ -61,3 +61,30 @@
     margin-top: 80px;
     margin-bottom: 32px;
 }
+@media (max-width:1199px){
+    .inchoImage{
+        margin-left: 24px;
+        width: 124px;
+    }
+    .pagehead{
+        width: 100vw;
+        margin: 0;
+        justify-content:center;
+        top: 129px;
+    }
+    .Gcontainer{
+        height: 336px;
+    }
+    .Gh1{
+        font-size: 24px;
+    }
+    .Gh2{
+        font-size: 16px;
+    }
+    .greetingText{
+        width: 390px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 24px;
+    }
+}
