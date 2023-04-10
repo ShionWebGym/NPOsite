@@ -235,9 +235,9 @@ const Wvc = () => {
             <br />
             メール：
             <span className={span}>
-              <a href="http://samri.intellectual-japan.com/contact.html">
+              <Link to="/Contact">
                 お問い合わせ
-              </a>
+              </Link>
             </span>
           </p>
         </div>

@@ -12,6 +12,7 @@ import {
 import React from "react";
 import supportImg from "../images/support.webp";
 import type { HeadProps } from "gatsby"
+import { Link } from "gatsby";
 
 const Support = () => {
   return (
@@ -48,15 +49,15 @@ const Support = () => {
               賛助会員 個人一口あたり2,000円／団体一口あたり10,000円
             </aside>
             <h4>お申込み方法</h4>
-            <a href="http://samri.intellectual-japan.com/member_form.html">
+            <Link to="/Contact">
               会員登録フォームよりご登録ください
-            </a>
+            </Link>
             <p>
               下記の入会申込書によるFAX、郵送による申し込みも可能です。
               <br />
               お申込みの確認が取れ次第、事務局より会費振込に関する資料を送付いたします。
             </p>
-            <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://samri.intellectual-japan.com/_userdata/enrollment_form.pdf">
+            <a href="http://samri.intellectual-japan.com/_userdata/enrollment_form.pdf">
               入会申込書PDFファイルはこちら
             </a>
           </div>

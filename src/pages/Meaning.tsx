@@ -16,6 +16,7 @@ import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
 import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 import type { HeadProps } from "gatsby"
+import {Link} from "gatsby"
 
 
 const Meaning = () => {
@@ -62,7 +63,7 @@ const Meaning = () => {
               <br />
               設立認証年月日：2013年11月12日<br/>東京都武蔵野市中町2-6-4（三鷹獣医科グループ内）
               <br />
-              電話：0422-54-5181 メール：<a href="/">お問い合わせ</a>
+              電話：0422-54-5181 メール：<Link to="/Contact">お問い合わせ</Link>
             </p>
           </div>
         </div>
