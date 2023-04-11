@@ -31,7 +31,7 @@
     font-size: 0.8rem;
 }
 .newslistchild h3{
-    padding: 0.4rem 0 0 2.4rem;
+    padding: 0.4rem 0 0 1rem;
     color: #040404;
     font-size: 0.8rem;
 }
@@ -44,19 +44,35 @@
 }
 @media(max-width:1199px){
     .newslistchild{
-        display: flex;
-        flex-direction: column;
+        margin: 24px auto; 
+        display: grid;
+        grid-template-columns:1fr 1fr; 
+        grid-template-rows:0.5fr 1.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "a b b"
+          "c c c"
+          "c c c"; 
     }
     .container{
-        height: 362px;
+        height: auto;
+        padding-bottom: 40px;
     }
-    .newslistchild{
-        margin: 24px auto;
-    }
+
     .newslistchild h4{
         width: 64px;
+        height: 19px;
+        grid-area: a;
         text-align: center;
     }
+    .newslistchild p{
+        grid-area: b;
+        padding: 0.4rem 0 1rem 1rem;
+    }
+    .newslistchild h3{
+        grid-area: c;
+    }
+
     .h2{
         font-size: 16px;
         padding: 24px 0 24px;
