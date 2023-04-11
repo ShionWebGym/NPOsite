@@ -10,7 +10,6 @@ import Scroll from "../components/Scroll"
 import { graphql } from "gatsby"
 import type { HeadProps } from "gatsby"
 
-
 const BlogPage = () => {
     return (
         <div>

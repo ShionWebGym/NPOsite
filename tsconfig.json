@@ -102,5 +102,11 @@
     "skipLibCheck": true,
     /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src/**/*","types/**/*", "./gatsby-node.ts", "./gatsby-env.d.ts","./gatsby-config.ts", "./plugins/**/*"]
+  "include": ["./src/**/*","types/**/*", "./gatsby-node.ts", "./gatsby-env.d.ts","./gatsby-config.ts", "./plugins/**/*"],
+  "paths": {
+      "graphql-types": [
+        "types/graphql-types",
+        "types/graphql-types-stub"
+      ]
+    }
 }

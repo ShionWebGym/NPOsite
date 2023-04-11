@@ -9,6 +9,7 @@ import {
 } from "./News.module.scss";
 
 const News = () => {
+  //マークダウン記法を教えてください
   return (
     <>
       <div className={container}>

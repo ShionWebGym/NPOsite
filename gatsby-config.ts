@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+import { resolve } from "path";
 
 
 
@@ -15,32 +16,6 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-emotion",
     "gatsby-plugin-sass",
-    "gatsby-plugin-breadcrumb", // Needed for dynamic images
-    {
-      resolve: `gatsby-plugin-breadcrumb`,
-      options: {
-        useAutoGen: false,
-        autoGenHomeLabel: `ホーム`,
-        crumbLabelUpdates: [
-          {
-            pathname: '/Greeting',
-            crumbLabel: '挨拶'
-          },
-          {
-            pathname: '/Meaning',
-            crumbLabel: '趣旨'
-          },
-          {
-            pathname: '/Teikan',
-            crumbLabel: '定款'
-          },
-          {
-            pathname: '/Wvc',
-            crumbLabel: 'WVCセミナー'
-          },
-       ],
-     },
-    },
     {
     resolve: 'gatsby-plugin-google-gtag',
     options: {
@@ -49,6 +24,23 @@ const config: GatsbyConfig = {
     head: true,
       },
     },
+    },
+   {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'articles',
+        path: resolve(__dirname, 'articles')
+      }
+    },
+    {
+    resolve:'gatsby-transformer-remark'
+    },
+    {
+    resolve: 'gatsby-plugin-graphql-codegen',
+    options: {
+      fileName: 'types/graphql-types.d.ts',
+      documentPaths: ['src/**/*.{ts,tsx}', 'gatsby-*.ts']
+      }
     }
   ]
 };
