@@ -46,7 +46,7 @@
     .newslistchild{
         margin: 24px auto; 
         display: grid;
-        grid-template-columns:1fr 1fr; 
+        grid-template-columns:0.5fr 1.5fr; 
         grid-template-rows:0.5fr 1.5fr; 
         gap: 0px 0px; 
         grid-template-areas: 
@@ -67,7 +67,7 @@
     }
     .newslistchild p{
         grid-area: b;
-        padding: 0.4rem 0 1rem 1rem;
+        padding: 0.3rem 0 1rem 1rem;
     }
     .newslistchild h3{
         grid-area: c;
@@ -75,6 +75,6 @@
 
     .h2{
         font-size: 16px;
-        padding: 24px 0 24px;
+        padding: 32px 0 32px;
     }
 }
