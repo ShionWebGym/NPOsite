@@ -47,7 +47,7 @@
         margin: 24px auto; 
         display: grid;
         grid-template-columns:0.5fr 1.5fr; 
-        grid-template-rows:0.5fr 1.5fr; 
+        grid-template-rows:0.4fr 1.6fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "a b b"
@@ -71,6 +71,7 @@
     }
     .newslistchild h3{
         grid-area: c;
+        padding: 0.2rem 0 0 1rem;
     }
 
     .h2{
