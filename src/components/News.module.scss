@@ -64,14 +64,18 @@
         height: 19px;
         grid-area: a;
         text-align: center;
+        font-size: 12px;
+        padding: 0;
     }
     .newslistchild p{
         grid-area: b;
-        padding: 0.3rem 0 1rem 1rem;
+        padding:0 1rem 1rem;
+        font-size: 12px;
     }
     .newslistchild h3{
         grid-area: c;
         padding: 0.2rem 0 0 1rem;
+        font-size: 16px;
     }
 
     .h2{

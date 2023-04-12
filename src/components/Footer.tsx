@@ -28,8 +28,7 @@ const Footer = () => {
         <img src={logo} className={flogo} alt="ロゴ画像" />
         <p className={copyright}>
           <small>
-            Copyright © {new Date().getFullYear()} 特定非営利活動法人
-            小動物疾患研究所 All rights Reserved.
+            © {new Date().getFullYear()} 小動物疾患研究所
           </small>
         </p>
       </div>
