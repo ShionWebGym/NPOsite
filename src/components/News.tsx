@@ -8,7 +8,7 @@ import {
   newslistchild,
   newscontainer,
 } from "./News.module.scss";
-import { Link } from "gatsby";
+import {Link } from "gatsby";
 
 const News = () => {
   return (
@@ -21,16 +21,16 @@ const News = () => {
         </div>
         <div className={newscontainer}>
           <Link to="/i-want-to-ate" className={newslistchild}>
-            <h4 >お知らせ</h4>
-            <p >2023/02/16</p>
-            <h3 >セミナー開催について</h3>
-          </Link>
-          <Link to="/i-want-to-eat-jiro" className={newslistchild}>
             <h4>お知らせ</h4>
             <p>2023/02/16</p>
             <h3>セミナー開催について</h3>
           </Link>
           <Link to="/my-first-post" className={newslistchild}>
+            <h4>お知らせ</h4>
+            <p>2023/02/16</p>
+            <h3>セミナー開催について</h3>
+          </Link>
+          <Link to="/i-want-to-eat-jiro" className={newslistchild}>
             <h4>お知らせ</h4>
             <p>2023/02/16</p>
             <h3>セミナー開催について</h3>

@@ -1,14 +1,17 @@
 .article_container{
-    padding: 200px 272px;
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 640px;
     }
 
 @media (max-width:1199px){
 .article_container{
     padding: 96px 40px;
+    width: fit-content;
     }
 }
 section h1{
-    margin-top: 56px;
+    margin-top: 96px;
 }
 section h2{
     margin-top: 40px;
