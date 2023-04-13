@@ -1,12 +1,27 @@
 .article_container{
+    padding: 200px 272px;
+    }
+
+@media (max-width:1199px){
+.article_container{
     padding: 96px 40px;
+    }
 }
-// .article_title{
-
-// }
-// .article_date{
-
-// }
-// .article_body{
-
-// }
+section h1{
+    margin-top: 56px;
+}
+section h2{
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.article_title{
+    font-size: 24px;
+    margin-top: 56px;
+}
+.article_date{
+    font-size: 12px;
+}
+.article_body{
+    font-size: 16px;
+    line-height: 28px;
+}

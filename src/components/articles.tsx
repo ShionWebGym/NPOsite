@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import type { ArticlePageContext } from "../../gatsby-node";
 import type { ArticleTemplateQuery } from "../../types/graphql-types";
 import Layout from "./Layout";
+import {Link} from "gatsby";
 import {
   article_container,
   article_title,
@@ -35,6 +36,7 @@ const Page: FC<PageProps> = ({ data }) => (
           dangerouslySetInnerHTML={{ __html: data.markdownRemark?.html ?? "" }}
         />
       </section>
+      <Link to="/">トップへ戻る</Link>
     </Layout>
   </>
 );

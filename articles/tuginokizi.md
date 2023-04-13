@@ -1,6 +1,6 @@
 ---
 title: "おなかいっぱいaaa"
-slug: /i-want-to-atejiro
+slug: /i-want-to-ate
 date: 2020-12-30T12:00:00
 ---
 
