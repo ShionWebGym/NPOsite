@@ -21,6 +21,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/noto-sans-jp": "^4.5.12",
     "@fontsource/noto-serif-jp": "^4.5.12",
+    "framer-motion": "^10.11.6",
     "gatsby": "^5.5.0",
     "gatsby-plugin-breadcrumb": "^12.3.2",
     "gatsby-plugin-emotion": "^8.5.0",
@@ -29,6 +30,7 @@
     "gatsby-plugin-sass": "^6.8.0",
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-remark": "^6.8.0",
+    "modern-css-reset": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
