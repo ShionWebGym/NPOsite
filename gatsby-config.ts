@@ -15,7 +15,12 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-emotion",
-    "gatsby-plugin-sass",
+    {
+      resolve:"gatsby-plugin-sass",
+      options: {
+        plugins: []
+      }
+    },
     {
     resolve: 'gatsby-plugin-google-gtag',
     options: {
@@ -25,7 +30,7 @@ const config: GatsbyConfig = {
       },
     },
     },
-   {
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'articles',
