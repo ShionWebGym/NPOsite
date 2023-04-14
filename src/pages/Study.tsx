@@ -13,6 +13,7 @@ import {
   studyLinkButton,
   studySection,
   studyWrapper,
+  studyList,
 } from "../components/Study.module.scss";
 import React from "react";
 import studyImg from "../images/study.webp";
@@ -150,7 +151,7 @@ const Study = () => {
           </section>
           <nav className={studyNav}>
             <h2>記事一覧</h2>
-            <ul>
+            <ul className={studyList}>
               <li>
                 <Link to="/" className={studyLink}>
                   犬の椎間板ヘルニアについて

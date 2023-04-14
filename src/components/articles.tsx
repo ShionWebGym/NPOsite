@@ -3,6 +3,7 @@ import type { FC } from "react";
 import { graphql } from "gatsby";
 import type { ArticlePageContext } from "../../gatsby-node";
 import type { ArticleTemplateQuery } from "../../types/graphql-types";
+import "@fontsource/noto-sans-jp";
 import Layout from "./Layout";
 import {Link} from "gatsby";
 import {
@@ -10,6 +11,7 @@ import {
   article_title,
   article_date,
   article_body,
+  backtotop,
 } from "./articles.module.scss";
 
 interface PageProps {
@@ -36,7 +38,7 @@ const Page: FC<PageProps> = ({ data }) => (
           dangerouslySetInnerHTML={{ __html: data.markdownRemark?.html ?? "" }}
         />
       </section>
-      <Link to="/">トップへ戻る</Link>
+      <Link to="/" className={backtotop}>トップへ戻る</Link>
     </Layout>
   </>
 );

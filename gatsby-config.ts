@@ -32,9 +32,12 @@ const config: GatsbyConfig = {
         path: resolve(__dirname, 'articles')
       }
     },
-    {
-    resolve:'gatsby-transformer-remark'
-    },
+  {
+    resolve:'gatsby-transformer-remark',
+    options: {
+      plugins: []
+    }
+  },
     {
     resolve: 'gatsby-plugin-graphql-codegen',
     options: {

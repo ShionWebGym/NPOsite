@@ -1,10 +1,11 @@
 import { resolve } from 'path';
 import type { GatsbyNode } from 'gatsby';
-import type { CreatePagesQuery } from 'gatsby-types';
+import type { CreatePagesQuery } from './types/graphql-types';
 
 export interface ArticlePageContext {
   slug: string;
 }
+
 
 export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
@@ -22,6 +23,8 @@ export const createPages: GatsbyNode['createPages'] = async ({
     }
   `);
 
+
+
   data.data?.allMarkdownRemark.nodes.forEach(
     (node: CreatePagesQuery['allMarkdownRemark']['nodes'][0]) => {
       const slug = node.frontmatter?.slug;
@@ -34,4 +37,5 @@ export const createPages: GatsbyNode['createPages'] = async ({
       }
     }
   );
+
 };

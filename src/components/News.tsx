@@ -1,5 +1,4 @@
 import React from "react";
-import "@fontsource/noto-sans-jp";
 import "./total.module.scss";
 import {
   container,
@@ -7,10 +6,29 @@ import {
   h2Container,
   newslistchild,
   newscontainer,
+  newsList,
 } from "./News.module.scss";
-import {Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import type { NewspostQuery } from '../../types/graphql-types';
 
 const News = () => {
+  const data = useStaticQuery<NewspostQuery>(graphql`
+  query Newspost{
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
+            date(formatString: "YYYY/MM/DD", locale: "ja-JP")
+          }
+        }
+      }
+    }
+  }
+  `);
+
+  const posts = data.allMarkdownRemark.edges;
   return (
     <>
       <div className={container}>
@@ -20,24 +38,26 @@ const News = () => {
           </h2>
         </div>
         <div className={newscontainer}>
-          <Link to="/i-want-to-ate" className={newslistchild}>
-            <h4>お知らせ</h4>
-            <p>2023/02/16</p>
-            <h3>セミナー開催について</h3>
-          </Link>
-          <Link to="/my-first-post" className={newslistchild}>
-            <h4>お知らせ</h4>
-            <p>2023/02/16</p>
-            <h3>セミナー開催について</h3>
-          </Link>
-          <Link to="/i-want-to-eat-jiro" className={newslistchild}>
-            <h4>お知らせ</h4>
-            <p>2023/02/16</p>
-            <h3>セミナー開催について</h3>
-          </Link>
+          <ul className={newsList}>
+            {posts.slice(0, 3).map(({ node }: { node: any }) => {
+              const title = node.frontmatter.title;
+              const slug = node.frontmatter.slug;
+              const date = node.frontmatter.date;
+              return (
+                <li key={slug}>
+                  <Link to={slug} className={newslistchild}>
+                    <h4>お知らせ</h4>
+                    <p>{date}</p>
+                    <h3>{title}</h3>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </>
   );
 };
+
 export default News;
