@@ -19,6 +19,7 @@
     "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/noto-sans-jp": "^4.5.12",
     "@fontsource/noto-serif-jp": "^4.5.12",
     "gatsby": "^5.5.0",
     "gatsby-plugin-breadcrumb": "^12.3.2",
