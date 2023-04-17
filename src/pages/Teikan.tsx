@@ -1,4 +1,7 @@
 import React from "react";
+import Layout from "../components/Layout";
+import "@fontsource/noto-serif-jp";
+import "@fontsource/noto-sans-jp";
 import {
   Gcontainer,
   syusidog_image,
@@ -9,11 +12,7 @@ import {
   pagehead,
 } from "../components/Teikan.module.scss";
 import syusidog from "../images/定款-猫.webp";
-import Layout from "../components/Layout";
-import "@fontsource/noto-serif-jp";
-import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 import type { HeadProps } from "gatsby"
 
 const Teikan = () => {

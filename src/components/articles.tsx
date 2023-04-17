@@ -5,7 +5,6 @@ import type { ArticlePageContext } from "../../gatsby-node";
 import type { ArticleTemplateQuery } from "../../types/graphql-types";
 import "@fontsource/noto-sans-jp";
 import Layout from "./Layout";
-import {Link} from "gatsby";
 import {
   article_container,
   article_title,
@@ -13,6 +12,7 @@ import {
   article_body,
   backtotop,
 } from "./articles.module.scss";
+import {Link} from "gatsby";
 
 interface PageProps {
   data: ArticleTemplateQuery;

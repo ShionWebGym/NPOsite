@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
@@ -10,7 +11,6 @@ import {
   studyImgStyle,
   volunteerContainer,
 } from "../components/Volunteer.module.scss";
-import React from "react";
 import contactImg from "../images/contact.webp";
 import type { HeadProps } from "gatsby"
 

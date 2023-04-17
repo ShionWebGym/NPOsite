@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import type { NewspostQuery } from '../../types/graphql-types';
 import "./total.module.scss";
 import {
   container,
@@ -8,8 +10,6 @@ import {
   newscontainer,
   newsList,
 } from "./News.module.scss";
-import { Link, graphql, useStaticQuery } from "gatsby";
-import type { NewspostQuery } from '../../types/graphql-types';
 
 const News = () => {
   const data = useStaticQuery<NewspostQuery>(graphql`

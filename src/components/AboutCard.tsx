@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
-
 import {
   Aboutcard_h2,
   Aboutcard_container,

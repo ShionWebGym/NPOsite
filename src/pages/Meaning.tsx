@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
+import "@fontsource/noto-serif-jp";
+import "@fontsource/noto-sans-jp";
 import {
   Gcontainer,
   syusidog_image,
@@ -11,10 +13,7 @@ import {
   pagehead,
 } from "../components/Meaning.module.scss";
 import syusidog from "../images/趣旨-犬.webp";
-import "@fontsource/noto-serif-jp";
-import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 import type { HeadProps } from "gatsby"
 import {Link} from "gatsby"
 

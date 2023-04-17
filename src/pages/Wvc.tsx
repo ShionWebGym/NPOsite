@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { Link } from "gatsby";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
@@ -32,8 +33,6 @@ import {
   specialContainer,
   bold,
 } from "../components/wvc.module.scss";
-import { Link } from "gatsby";
-import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 import semiimg from "../images/semiimg.webp";
 import toform from "../images/toform.webp";
 import other from "../images/other.webp";

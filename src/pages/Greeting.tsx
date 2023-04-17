@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
+import "@fontsource/noto-serif-jp";
+import "@fontsource/noto-sans-jp";
 import {
   Gcontainer,
   inchoImage,
@@ -10,10 +12,7 @@ import {
   pagehead,
 } from "../components/Greeting.module.scss";
 import incho from "../images/norihiro.webp";
-import "@fontsource/noto-serif-jp";
-import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css';
 import type { HeadProps } from "gatsby"
 
 const Greeting = () => {

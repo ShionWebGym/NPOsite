@@ -19,7 +19,7 @@ const Cardlist = () => {
   return (
     <>
       <div className={container}>
-        <h2>これからのセミナー</h2>
+        <h2>これから開催予定のセミナー</h2>
         <div className={cardcontainer}>
           <div className={card}>
             <div className={cardharf}>

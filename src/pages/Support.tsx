@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
-import Scroll from "../components/Scroll";
 import {
   Gcontainer,
   pagehead,
@@ -11,6 +10,7 @@ import {
 } from "../components/Support.module.scss";
 import React from "react";
 import supportImg from "../images/support.webp";
+import Scroll from "../components/Scroll";
 import type { HeadProps } from "gatsby"
 import { Link } from "gatsby";
 
