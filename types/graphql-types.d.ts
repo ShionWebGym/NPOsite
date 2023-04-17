@@ -244,8 +244,6 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
-  port?: Maybe<Scalars['Int']>;
-  host?: Maybe<Scalars['String']>;
   graphqlTypegen?: Maybe<SiteGraphqlTypegen>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
@@ -542,8 +540,6 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
-  port?: InputMaybe<IntQueryOperatorInput>;
-  host?: InputMaybe<StringQueryOperatorInput>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFilterInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
@@ -1405,8 +1401,6 @@ export type SiteEdge = {
 export type SiteFieldSelector = {
   buildTime?: InputMaybe<FieldSelectorEnum>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFieldSelector>;
-  port?: InputMaybe<FieldSelectorEnum>;
-  host?: InputMaybe<FieldSelectorEnum>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFieldSelector>;
   polyfill?: InputMaybe<FieldSelectorEnum>;
   pathPrefix?: InputMaybe<FieldSelectorEnum>;
@@ -1474,8 +1468,6 @@ export type SiteGroupConnectionGroupArgs = {
 export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
-  port?: InputMaybe<IntQueryOperatorInput>;
-  host?: InputMaybe<StringQueryOperatorInput>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFilterInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
@@ -1490,8 +1482,6 @@ export type SiteFilterInput = {
 export type SiteSortInput = {
   buildTime?: InputMaybe<SortOrderEnum>;
   siteMetadata?: InputMaybe<SiteSiteMetadataSortInput>;
-  port?: InputMaybe<SortOrderEnum>;
-  host?: InputMaybe<SortOrderEnum>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenSortInput>;
   polyfill?: InputMaybe<SortOrderEnum>;
   pathPrefix?: InputMaybe<SortOrderEnum>;
