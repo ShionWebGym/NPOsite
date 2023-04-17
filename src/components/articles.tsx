@@ -13,6 +13,7 @@ import {
   backtotop,
 } from "./articles.module.scss";
 import {Link} from "gatsby";
+import Scroll from "../components/Scroll";
 
 interface PageProps {
   data: ArticleTemplateQuery;
@@ -39,6 +40,7 @@ const Page: FC<PageProps> = ({ data }) => (
         />
       </section>
       <Link to="/" className={backtotop}>トップへ戻る</Link>
+      <Scroll showBelow={1000} />
     </Layout>
   </>
 );

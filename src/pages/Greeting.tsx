@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
+import Layout from "../components/Layout";
 import {
   Gcontainer,
   inchoImage,

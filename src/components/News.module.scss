@@ -29,7 +29,7 @@ li{
 .newslistchild{
     border-bottom: #c2c2c2 solid 1px;
     display: flex;
-    padding: 3rem 0 1.6rem;
+    padding: 1.6rem 0 1.6rem;
     max-width: 1000px;
     text-decoration: none;
     position: relative;
@@ -75,7 +75,7 @@ li{
 }
 @media(max-width:899px){
     .newslistchild{
-        margin: 24px auto; 
+        margin: 16px auto; 
         display: grid;
         grid-template-columns:0.5fr 1.5fr; 
         grid-template-rows:0.4fr 1.6fr; 

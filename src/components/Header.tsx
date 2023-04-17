@@ -66,7 +66,6 @@ const Header:React.FC<typeof MyLinks>= (props) => {
     classList.toggle(`${hidden}`);
   };
 
-
   return (
     <header className={container}>
       <h1 className={topImage}>
