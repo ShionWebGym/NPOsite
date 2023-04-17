@@ -20,7 +20,7 @@ const Cardlist = () => {
       <div className={container}>
         <h2>これから開催予定のセミナー</h2>
         <div className={cardcontainer}>
-          <div className={card}>
+          <Link to="/" className={card}>
             <div className={cardharf}>
               {/* <img src={topinu} alt="犬のしゃしん" /> */}
               <p className={cardtime}>2021年9月3日</p>
@@ -39,8 +39,8 @@ const Cardlist = () => {
                 <li>久保田朋子先生（通訳）</li>
               </ul>
             </div>
-          </div>
-          <div className={card}>
+          </Link>
+          <Link to="/" className={card}>
             <div className={cardharf}>
               {/* <img src={topinu} alt="犬のしゃしん" /> */}
               <p className={cardtime}>2021年9月3日</p>
@@ -59,8 +59,8 @@ const Cardlist = () => {
                 <li>久保田朋子先生（通訳）</li>
               </ul>
             </div>
-          </div>
-          <div className={card}>
+          </Link>
+          <Link to="/" className={card}>
             <div className={cardharf}>
               {/* <img src={topinu} alt="犬のしゃしん" /> */}
               <p className={cardtime}>2021年9月3日</p>
@@ -79,7 +79,7 @@ const Cardlist = () => {
                 <li>久保田朋子先生（通訳）</li>
               </ul>
             </div>
-          </div>
+          </Link>
         </div>
         <Link to="/" className={aftercard}>終了したセミナーはこちら</Link>
       </div>
