@@ -9,9 +9,13 @@ import {
   Aboutcard_p,
   Aboutcard,
   Aboutcard_harf,
+  Aboutcard_harf2,
+  Aboutcard_harf3,
   Aboutcard_container2,
   Aboutcard_link,
 } from "./Aboutcard.module.scss";
+
+
 
 const AboutCard = () => {
   return (
@@ -35,7 +39,7 @@ const AboutCard = () => {
         <div className={Aboutcard_container2}>
           <h2 className={Aboutcard_h2}>研究発表</h2>
           <div className={Aboutcard}>
-            <div className={Aboutcard_harf}></div>
+            <div className={Aboutcard_harf2}></div>
             <div>
               <h3 className={Aboutcard_h3}>小動物の疾患について</h3>
               <p className={Aboutcard_p}>
@@ -55,7 +59,7 @@ const AboutCard = () => {
         <div className={Aboutcard_container2}>
           <h2 className={Aboutcard_h2}>支援のお願い</h2>
           <div className={Aboutcard}>
-            <div className={Aboutcard_harf}></div>
+            <div className={Aboutcard_harf3}></div>
             <div>
               <h3 className={Aboutcard_h3}>疾患解明のため役立てられます</h3>
               <p className={Aboutcard_p}>

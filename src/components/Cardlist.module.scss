@@ -1,3 +1,14 @@
+#cardImage1{
+    background-image: url(../images/inu.webp);
+}
+#cardImage2{
+    background-image: url(../images/semiimg.webp);
+}
+#cardImage3{
+    background-image: url(../images//study.webp);
+}
+
+
 .container{
     font-family: Noto SansJP,sans-serif;
     color: #040404;
@@ -64,7 +75,7 @@
     font-weight: bold;
 }
 .cardharf{
-    background-image: url(../images//inu.webp);
+    // background-image: url(../images/inu.webp);
     height: 138px;
     position: relative;
     border-radius: 20px 20px 0 0;
@@ -74,6 +85,7 @@
 }
 .cardharf2{
     padding: 24px;
+    display: grid;
 }
 .cardcontent{
     margin-block-start: 2px;
@@ -90,7 +102,7 @@
     font-size: 16px;
     padding: 8px 32px;
     font-family: Noto Sans JP,sans-serif;
-    margin: 0 auto;
+    margin: 16px auto;
     // box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
     transition: 0.2s;
     display: block;
@@ -115,9 +127,10 @@
         overflow-x: auto;
         white-space: nowrap;
         display: block;
+        padding: 0px 16px 0px 16px;
     }
     .card{
-        margin: 32px 0px 32px 16px;
+        margin: 32px 8px 32px 8px;
         display: inline-block;
     }
 }

@@ -12,6 +12,9 @@ import {
   cardharf2,
   cardcontent,
   aftercard,
+  cardImage1,
+  cardImage2,
+  cardImage3,
 } from "../components/Cardlist.module.scss";
 
 const Cardlist = () => {
@@ -20,66 +23,82 @@ const Cardlist = () => {
       <div className={container}>
         <h2>これから開催予定のセミナー</h2>
         <div className={cardcontainer}>
+
+          {/* 最新のセミナー情報カード↓↓↓ */}
           <Link to="/" className={card}>
-            <div className={cardharf}>
-              {/* <img src={topinu} alt="犬のしゃしん" /> */}
+            <div className={cardharf} id={cardImage1}>
               <p className={cardtime}>2021年9月3日</p>
               <p className={cardtag}>受付終了</p>
             </div>
             <div className={cardharf2}>
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>費用</h3>
               <p className={cardcontent}>286,000円（26名様限定）</p>
+                                          {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
                 <li>Dr.William Culp, VMD, DACVS</li>
                 <li>Dr. Jim Perry, DVM. phD ,ACVIM ,ACVS</li>
                 <li>Dr. Ameet Singh . BSc, DVM, DVSc, ACVS</li>
                 <li>久保田朋子先生（通訳）</li>
+                {/* ↑↑↑講師を書く（講師の数に応じてliを増やしたり減らす） */}
               </ul>
             </div>
           </Link>
+          {/* 最新のセミナー情報カード↑↑↑ */}
+
+          {/* 二番目に新しいセミナー情報カード↓↓↓ */}
           <Link to="/" className={card}>
-            <div className={cardharf}>
-              {/* <img src={topinu} alt="犬のしゃしん" /> */}
+            <div className={cardharf} id={cardImage2}>
               <p className={cardtime}>2021年9月3日</p>
               <p className={cardtag}>受付終了</p>
             </div>
             <div className={cardharf2}>
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>費用</h3>
               <p className={cardcontent}>286,000円（26名様限定）</p>
+                                         {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
                 <li>Dr.William Culp, VMD, DACVS</li>
                 <li>Dr. Jim Perry, DVM. phD ,ACVIM ,ACVS</li>
                 <li>Dr. Ameet Singh . BSc, DVM, DVSc, ACVS</li>
                 <li>久保田朋子先生（通訳）</li>
+                {/* ↑↑↑講師を書く（講師の数に応じてliを増やしたり減らす）※７名まで */}
               </ul>
             </div>
           </Link>
+          {/* 二番目に新しいセミナー情報カード↑↑↑ */}
+
+          {/* 三番目に新しいセミナー情報カード↓↓↓ */}
           <Link to="/" className={card}>
-            <div className={cardharf}>
-              {/* <img src={topinu} alt="犬のしゃしん" /> */}
+            <div className={cardharf} id={cardImage3}>
               <p className={cardtime}>2021年9月3日</p>
               <p className={cardtag}>受付終了</p>
             </div>
             <div className={cardharf2}>
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>費用</h3>
               <p className={cardcontent}>286,000円（26名様限定）</p>
+                                         {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
                 <li>Dr.William Culp, VMD, DACVS</li>
                 <li>Dr. Jim Perry, DVM. phD ,ACVIM ,ACVS</li>
                 <li>Dr. Ameet Singh . BSc, DVM, DVSc, ACVS</li>
                 <li>久保田朋子先生（通訳）</li>
+               {/* ↑↑↑講師を書く（講師の数に応じてliを増やしたり減らす） */}
               </ul>
             </div>
           </Link>
+          {/* 三番目に新しいセミナー情報カード↑↑↑ */}
+
         </div>
         <Link to="/" className={aftercard}>終了したセミナーはこちら</Link>
       </div>

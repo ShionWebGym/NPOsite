@@ -59,7 +59,7 @@ const Wvc = () => {
           <div className={semiMenuContainer_up}>
             <div className={semiMenu_semi}>
               <Link
-                to="http://samri.intellectual-japan.com/wvc_plans.html"
+                to="/"
                 className={semiMenu_Link}
               >
                 <div>
@@ -75,7 +75,7 @@ const Wvc = () => {
             </div>
             <div className={semiMenu_form}>
               <Link
-                to="http://samri.intellectual-japan.com/2020_form.html"
+                to="/Contact"
                 className={semiMenu_Link}
               >
                 <div>
@@ -94,7 +94,7 @@ const Wvc = () => {
           <div className={semiMenuContainer_down}>
             <div className={semiMenu_vol}>
               <Link
-                to="http://samri.intellectual-japan.com/volunteer.html"
+                to="/Support"
                 className={semiMenu_Link}
               >
                 <div>
@@ -112,7 +112,7 @@ const Wvc = () => {
             </div>
             <div className={semiMenu_donesemi}>
               <Link
-                to="http://samri.intellectual-japan.com/201806info.html"
+                to="/"
                 className={semiMenu_Link}
               >
                 <div>

@@ -1,10 +1,10 @@
 ---
-title: "おなかいっぱいaaa"
+title: "三つ目の投稿"
 slug: /i-want-to-ate
 date: 2020-12-30T12:00:00
 ---
 
-![猫の画像](../src/images/inu.webp)
+![猫の画像](./images/inu.webp)
 
 # 猫の尿管結石について（尿管閉塞）
 日本動物病院福祉協会（JAHA)の獣医内科認定医 小宮山典寛 2015.10.11

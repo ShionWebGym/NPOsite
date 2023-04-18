@@ -14,7 +14,7 @@
     display: flex;
     color: #040404;
     background-color: #FFFFED;
-    height: 536px;
+    height: 560px;
     justify-content: center;
     margin-top: 56px;
 }
@@ -34,7 +34,25 @@
     background-color: #fff;
 }
 .Aboutcard_harf{
-    background-image: url(../images//inu.webp);
+    background-image: url(../images/研究red.webp);
+    height: 138px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(000, 000, 000, 0.2);
+    background-size: cover; 
+    background-position:center ;
+}
+.Aboutcard_harf2{
+    background-image: url(../images/挨拶green.webp);
+    height: 138px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(000, 000, 000, 0.2);
+    background-size: cover; 
+    background-position:center ;
+}
+.Aboutcard_harf3{
+    background-image: url(../images/支援pur.webp);
     height: 138px;
     position: relative;
     border-radius: 20px 20px 0 0;
