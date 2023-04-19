@@ -39,7 +39,7 @@ const Page: FC<PageProps> = ({ data }) => (
           dangerouslySetInnerHTML={{ __html: data.markdownRemark?.html ?? "" }}
         />
       </section>
-      <Link to="/" className={backtotop}>トップへ戻る</Link>
+      <Link to="/Allnews" className={backtotop}>記事一覧へ戻る</Link>
       <Scroll showBelow={1000} />
     </Layout>
   </>

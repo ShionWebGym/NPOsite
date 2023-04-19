@@ -100,7 +100,7 @@ const Cardlist = () => {
           {/* 三番目に新しいセミナー情報カード↑↑↑ */}
 
         </div>
-        <Link to="/DoneSeminer" className={aftercard}>終了したセミナーはこちら</Link>
+        {/* <Link to="/DoneSeminer" className={aftercard}>終了したセミナーはこちら</Link> */}
       </div>
     </>
   );
