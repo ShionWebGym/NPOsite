@@ -2,11 +2,17 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
 
-export default function AboutPage() {
+ const DoneSeminer = () =>{
   return (
-    <div>
+    <>
       <Layout>
+        <h1>a</h1>
+        <p>a</p>
+        <Link to="/"></Link>
       </Layout>
-    </div>
+    </>
   );
 }
+
+
+export default DoneSeminer

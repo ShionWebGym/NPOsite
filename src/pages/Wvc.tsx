@@ -59,11 +59,11 @@ const Wvc = () => {
           <div className={semiMenuContainer_up}>
             <div className={semiMenu_semi}>
               <Link
-                to="/"
+                to="/Future"
                 className={semiMenu_Link}
               >
                 <div>
-                  <img src={semiimg} alt="セミナー写真" />
+                  <img src={semiimg} alt="セミナー写真、最新のセミナー情報" />
                   <aside>最新のセミナーの概要など</aside>
                   <p>What's New about seminar</p>
                 </div>
@@ -112,7 +112,7 @@ const Wvc = () => {
             </div>
             <div className={semiMenu_donesemi}>
               <Link
-                to="/"
+                to="/DoneSeminer"
                 className={semiMenu_Link}
               >
                 <div>

@@ -14,9 +14,9 @@
     display: flex;
     color: #040404;
     background-color: #FFFFED;
-    height: 560px;
+    height: auto;
     justify-content: center;
-    margin-top: 56px;
+    padding: 40px 0 80px;
 }
 .Aboutcard_p{
     font-family: Noto Serif JP,sans-serif;
@@ -34,7 +34,7 @@
     background-color: #fff;
 }
 .Aboutcard_harf{
-    background-image: url(../images/研究red.webp);
+    background-image: url(../images/挨拶green.webp);
     height: 138px;
     position: relative;
     border-radius: 20px 20px 0 0;
@@ -43,7 +43,7 @@
     background-position:center ;
 }
 .Aboutcard_harf2{
-    background-image: url(../images/挨拶green.webp);
+    background-image: url(../images/研究red.webp);
     height: 138px;
     position: relative;
     border-radius: 20px 20px 0 0;
@@ -100,6 +100,6 @@
         padding: 24px 0 40px 0;
     }
     .Aboutcard{
-        margin: 40px auto;
+        margin: 32px auto;
     }
 }

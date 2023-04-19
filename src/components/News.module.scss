@@ -8,7 +8,7 @@
 }
 .h2{
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     font-size: 1.4rem;
     padding: 3rem 0 3rem;
     border-bottom: #c2c2c2 solid 1px;
@@ -73,6 +73,28 @@ li{
     margin: 0;
     padding: 0;
 }
+.morebtn{
+    color: #fff;
+    background-color: #94233E;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 8px 32px;
+    font-family: Noto Sans JP, sans-serif;
+    margin: 80px auto 0px;
+    transition: 0.2s;
+    display: block;
+    width: fit-content;
+    border: 2px solid #fff;
+}
+.morebtn:hover{
+    transition: 0.3s;
+    box-shadow: none;
+    background-color: #FFF;
+    color: #94233E;
+    border: 2px solid #94233E;
+}
 @media(max-width:899px){
     .newslistchild{
         margin: 16px auto; 
@@ -120,5 +142,9 @@ li{
     }
     .newscontainer{
         width: 64%;
+    }
+    .morebtn{
+        margin: 40px auto 0px;
+        font-size: 16px;
     }
 }

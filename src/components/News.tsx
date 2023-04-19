@@ -9,6 +9,7 @@ import {
   newslistchild,
   newscontainer,
   newsList,
+  morebtn,
 } from "./News.module.scss";
 
 const News = () => {
@@ -55,6 +56,7 @@ const News = () => {
             })}
           </ul>
         </div>
+        <Link to="/Allnews" className={morebtn}>もっと見る</Link>
       </div>
     </>
   );

@@ -96,17 +96,16 @@
 .aftercard{
     color: #fff;
     background-color: #94233E;
-    border-radius: 20px;
+    border-radius: 24px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.8rem;
     padding: 8px 32px;
     font-family: Noto Sans JP,sans-serif;
-    margin: 16px auto;
-    // box-shadow: 2px 3px 2px 0 rgb(0 0 0 / 50%);
+    margin: 24px auto;
     transition: 0.2s;
     display: block;
-    width: 272px;
+    width: fit-content;
     border: 2px solid #fff;
 }
 .aftercard:hover{
@@ -132,5 +131,8 @@
     .card{
         margin: 32px 8px 32px 8px;
         display: inline-block;
+    }
+    .aftercard{
+        font-size: 16px;
     }
 }
