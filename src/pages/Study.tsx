@@ -154,41 +154,41 @@ const Study = () => {
             <ul className={studyList}>
               <li>
                 <Link to="/" className={studyLink}>
-                  犬の椎間板ヘルニアについて
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  犬の前十字靭帯断裂について
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  犬の膝蓋骨内側の脱臼について
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  猫の尿管閉塞について
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  猫の最適な食事とは？
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  猫の最適な飲水とは？
+                Coming soon...
                 </Link>
               </li>
               <li>
                 <Link to="/" className={studyLink}>
-                  犬の最適な飲水とは？
+                  Coming soon...
                 </Link>
               </li>
             </ul>
-            <Link to="/" className={studyLinkButton}>
+            <Link to="/Allnews" className={studyLinkButton}>
               すべての記事
             </Link>
           </nav>

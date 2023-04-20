@@ -75,6 +75,10 @@
     padding-bottom: 12px;
     font-size: 10px;
 }
+.semiMenuContainer_down img{
+    width: 464px;
+}
+
 .semiMenuContainer h2{
     font-size: 24px;
     color:#040404;
@@ -105,19 +109,18 @@
 }
 .semiMenu_vol{
     transition: 0.1s;
-    width: 300px;
-    margin: 0 26px 0 auto;
-
+    width: 464px;
+    margin: 0 13px 0 auto;
 }
 .semiMenu_donesemi{
     transition: 0.1s;
-    width: 300px;
+    width: 464px;
 
 }
 .semiMenu_other{
     transition: 0.1s;
-    width: 300px;
-    margin: 0 auto 0 26px;
+    width: 464px;
+    margin: 0 auto 0 13px;
 
 }
 .semiMenu_Link{
@@ -267,14 +270,20 @@
         display: block;
         margin-top: 0;
     }
+    .semiMenuContainer_down img{
+        width: 330px;
+    }
     .semiMenu_vol{
         margin: 40px auto;
+        width: 330px;
     }
     .semiMenu_donesemi{
         margin: 40px auto;
+        width: 330px;
     }
     .semiMenu_other{
         margin: 40px auto;
+        width: 330px;
     }
     .semiContainer{
         width: 390px;

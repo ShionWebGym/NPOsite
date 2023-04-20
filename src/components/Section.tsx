@@ -14,7 +14,7 @@ const Section = () => {
           豊かな地域社会の形成を目指します。
         </h2>
       </div>
-      <Link to="/Study" className={katudou}>活動内容について知る</Link>
+      <Link to="/Wvc" className={katudou}>活動内容について知る</Link>
     </div>
   );
 };

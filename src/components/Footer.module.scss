@@ -2,7 +2,7 @@ footer{
     width: 100%;
     background-color: #94233E;
     position: relative;
-    height: 16vw;
+    height: auto;
     margin-top: 160px;
 }
 small{
@@ -12,6 +12,7 @@ small{
 .copyright{
     text-align: center;
     margin-top: 1.6rem;
+    padding-bottom: 1.6rem;
     font-size: 0.6rem;
 }
 .container h3{
