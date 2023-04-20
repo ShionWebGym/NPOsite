@@ -2,6 +2,8 @@
 title: "三つ目の投稿"
 slug: /i-want-to-ate
 date: 2020-12-30T12:00:00
+first_image: './images/inu.webp'
+description: "猫のニョウカン結石について"
 ---
 
 ![猫の画像](./images/inu.webp)

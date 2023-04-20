@@ -2,6 +2,8 @@
 title: "お知らせ及び記事投稿"
 slug: /post0
 date: 2023-04-18T17:00:00
+first_image: './images/shinsyakaijin_woman2.png'
+description: "blog post"
 ---
 
 ![イメージ](./images/shinsyakaijin_woman2.png)

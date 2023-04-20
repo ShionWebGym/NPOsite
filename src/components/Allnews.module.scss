@@ -86,6 +86,13 @@
 img{
     display: block;
 }
+.allnews_img{
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    box-sizing:border-box;
+    border-radius: 20px 20px 0 0;
+}
 .arrow{
     position: relative;
     display: inline-block;

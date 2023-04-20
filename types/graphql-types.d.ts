@@ -19,6 +19,7 @@ export type Scalars = {
   Date: any;
   /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSON: any;
+  GatsbyImageData: any;
 };
 
 export type File = Node & {
@@ -59,6 +60,10 @@ export type File = Node & {
   blocks?: Maybe<Scalars['Int']>;
   /** Copy file to static directory and return public url to it */
   publicURL?: Maybe<Scalars['String']>;
+  /** Returns all children nodes filtered by type ImageSharp */
+  childrenImageSharp?: Maybe<Array<Maybe<ImageSharp>>>;
+  /** Returns the first child node of type ImageSharp or null if there are no children of given type on this node */
+  childImageSharp?: Maybe<ImageSharp>;
   /** Returns all children nodes filtered by type MarkdownRemark */
   childrenMarkdownRemark?: Maybe<Array<Maybe<MarkdownRemark>>>;
   /** Returns the first child node of type MarkdownRemark or null if there are no children of given type on this node */
@@ -335,6 +340,274 @@ export type SiteBuildMetadataBuildTimeArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
+export type GatsbyImageFormat =
+  | 'NO_CHANGE'
+  | 'AUTO'
+  | 'JPG'
+  | 'PNG'
+  | 'WEBP'
+  | 'AVIF';
+
+export type GatsbyImageLayout =
+  | 'FIXED'
+  | 'FULL_WIDTH'
+  | 'CONSTRAINED';
+
+export type GatsbyImagePlaceholder =
+  | 'DOMINANT_COLOR'
+  | 'TRACED_SVG'
+  | 'BLURRED'
+  | 'NONE';
+
+export type ImageFormat =
+  | 'NO_CHANGE'
+  | 'AUTO'
+  | 'JPG'
+  | 'PNG'
+  | 'WEBP'
+  | 'AVIF';
+
+export type ImageFit =
+  | 'COVER'
+  | 'CONTAIN'
+  | 'FILL'
+  | 'INSIDE'
+  | 'OUTSIDE';
+
+export type ImageLayout =
+  | 'FIXED'
+  | 'FULL_WIDTH'
+  | 'CONSTRAINED';
+
+export type ImageCropFocus =
+  | 'CENTER'
+  | 'NORTH'
+  | 'NORTHEAST'
+  | 'EAST'
+  | 'SOUTHEAST'
+  | 'SOUTH'
+  | 'SOUTHWEST'
+  | 'WEST'
+  | 'NORTHWEST'
+  | 'ENTROPY'
+  | 'ATTENTION';
+
+export type DuotoneGradient = {
+  highlight: Scalars['String'];
+  shadow: Scalars['String'];
+  opacity?: InputMaybe<Scalars['Int']>;
+};
+
+export type PotraceTurnPolicy =
+  | 'TURNPOLICY_BLACK'
+  | 'TURNPOLICY_WHITE'
+  | 'TURNPOLICY_LEFT'
+  | 'TURNPOLICY_RIGHT'
+  | 'TURNPOLICY_MINORITY'
+  | 'TURNPOLICY_MAJORITY';
+
+export type Potrace = {
+  turnPolicy?: InputMaybe<PotraceTurnPolicy>;
+  turdSize?: InputMaybe<Scalars['Float']>;
+  alphaMax?: InputMaybe<Scalars['Float']>;
+  optCurve?: InputMaybe<Scalars['Boolean']>;
+  optTolerance?: InputMaybe<Scalars['Float']>;
+  threshold?: InputMaybe<Scalars['Int']>;
+  blackOnWhite?: InputMaybe<Scalars['Boolean']>;
+  color?: InputMaybe<Scalars['String']>;
+  background?: InputMaybe<Scalars['String']>;
+};
+
+export type ImageSharp = Node & {
+  fixed?: Maybe<ImageSharpFixed>;
+  fluid?: Maybe<ImageSharpFluid>;
+  gatsbyImageData: Scalars['GatsbyImageData'];
+  original?: Maybe<ImageSharpOriginal>;
+  resize?: Maybe<ImageSharpResize>;
+  id: Scalars['ID'];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
+};
+
+
+export type ImageSharpFixedArgs = {
+  width?: InputMaybe<Scalars['Int']>;
+  height?: InputMaybe<Scalars['Int']>;
+  base64Width?: InputMaybe<Scalars['Int']>;
+  jpegProgressive?: InputMaybe<Scalars['Boolean']>;
+  pngCompressionSpeed?: InputMaybe<Scalars['Int']>;
+  grayscale?: InputMaybe<Scalars['Boolean']>;
+  duotone?: InputMaybe<DuotoneGradient>;
+  traceSVG?: InputMaybe<Potrace>;
+  quality?: InputMaybe<Scalars['Int']>;
+  jpegQuality?: InputMaybe<Scalars['Int']>;
+  pngQuality?: InputMaybe<Scalars['Int']>;
+  webpQuality?: InputMaybe<Scalars['Int']>;
+  toFormat?: InputMaybe<ImageFormat>;
+  toFormatBase64?: InputMaybe<ImageFormat>;
+  cropFocus?: InputMaybe<ImageCropFocus>;
+  fit?: InputMaybe<ImageFit>;
+  background?: InputMaybe<Scalars['String']>;
+  rotate?: InputMaybe<Scalars['Int']>;
+  trim?: InputMaybe<Scalars['Float']>;
+};
+
+
+export type ImageSharpFluidArgs = {
+  maxWidth?: InputMaybe<Scalars['Int']>;
+  maxHeight?: InputMaybe<Scalars['Int']>;
+  base64Width?: InputMaybe<Scalars['Int']>;
+  grayscale?: InputMaybe<Scalars['Boolean']>;
+  jpegProgressive?: InputMaybe<Scalars['Boolean']>;
+  pngCompressionSpeed?: InputMaybe<Scalars['Int']>;
+  duotone?: InputMaybe<DuotoneGradient>;
+  traceSVG?: InputMaybe<Potrace>;
+  quality?: InputMaybe<Scalars['Int']>;
+  jpegQuality?: InputMaybe<Scalars['Int']>;
+  pngQuality?: InputMaybe<Scalars['Int']>;
+  webpQuality?: InputMaybe<Scalars['Int']>;
+  toFormat?: InputMaybe<ImageFormat>;
+  toFormatBase64?: InputMaybe<ImageFormat>;
+  cropFocus?: InputMaybe<ImageCropFocus>;
+  fit?: InputMaybe<ImageFit>;
+  background?: InputMaybe<Scalars['String']>;
+  rotate?: InputMaybe<Scalars['Int']>;
+  trim?: InputMaybe<Scalars['Float']>;
+  sizes?: InputMaybe<Scalars['String']>;
+  srcSetBreakpoints?: InputMaybe<Array<InputMaybe<Scalars['Int']>>>;
+};
+
+
+export type ImageSharpGatsbyImageDataArgs = {
+  layout?: InputMaybe<ImageLayout>;
+  width?: InputMaybe<Scalars['Int']>;
+  height?: InputMaybe<Scalars['Int']>;
+  aspectRatio?: InputMaybe<Scalars['Float']>;
+  placeholder?: InputMaybe<ImagePlaceholder>;
+  blurredOptions?: InputMaybe<BlurredOptions>;
+  tracedSVGOptions?: InputMaybe<Potrace>;
+  formats?: InputMaybe<Array<InputMaybe<ImageFormat>>>;
+  outputPixelDensities?: InputMaybe<Array<InputMaybe<Scalars['Float']>>>;
+  breakpoints?: InputMaybe<Array<InputMaybe<Scalars['Int']>>>;
+  sizes?: InputMaybe<Scalars['String']>;
+  quality?: InputMaybe<Scalars['Int']>;
+  jpgOptions?: InputMaybe<JpgOptions>;
+  pngOptions?: InputMaybe<PngOptions>;
+  webpOptions?: InputMaybe<WebPOptions>;
+  avifOptions?: InputMaybe<AvifOptions>;
+  transformOptions?: InputMaybe<TransformOptions>;
+  backgroundColor?: InputMaybe<Scalars['String']>;
+};
+
+
+export type ImageSharpResizeArgs = {
+  width?: InputMaybe<Scalars['Int']>;
+  height?: InputMaybe<Scalars['Int']>;
+  quality?: InputMaybe<Scalars['Int']>;
+  jpegQuality?: InputMaybe<Scalars['Int']>;
+  pngQuality?: InputMaybe<Scalars['Int']>;
+  webpQuality?: InputMaybe<Scalars['Int']>;
+  jpegProgressive?: InputMaybe<Scalars['Boolean']>;
+  pngCompressionLevel?: InputMaybe<Scalars['Int']>;
+  pngCompressionSpeed?: InputMaybe<Scalars['Int']>;
+  grayscale?: InputMaybe<Scalars['Boolean']>;
+  duotone?: InputMaybe<DuotoneGradient>;
+  base64?: InputMaybe<Scalars['Boolean']>;
+  traceSVG?: InputMaybe<Potrace>;
+  toFormat?: InputMaybe<ImageFormat>;
+  cropFocus?: InputMaybe<ImageCropFocus>;
+  fit?: InputMaybe<ImageFit>;
+  background?: InputMaybe<Scalars['String']>;
+  rotate?: InputMaybe<Scalars['Int']>;
+  trim?: InputMaybe<Scalars['Float']>;
+};
+
+export type ImageSharpFixed = {
+  base64?: Maybe<Scalars['String']>;
+  tracedSVG?: Maybe<Scalars['String']>;
+  aspectRatio?: Maybe<Scalars['Float']>;
+  width: Scalars['Float'];
+  height: Scalars['Float'];
+  src: Scalars['String'];
+  srcSet: Scalars['String'];
+  srcWebp?: Maybe<Scalars['String']>;
+  srcSetWebp?: Maybe<Scalars['String']>;
+  originalName?: Maybe<Scalars['String']>;
+};
+
+export type ImageSharpFluid = {
+  base64?: Maybe<Scalars['String']>;
+  tracedSVG?: Maybe<Scalars['String']>;
+  aspectRatio: Scalars['Float'];
+  src: Scalars['String'];
+  srcSet: Scalars['String'];
+  srcWebp?: Maybe<Scalars['String']>;
+  srcSetWebp?: Maybe<Scalars['String']>;
+  sizes: Scalars['String'];
+  originalImg?: Maybe<Scalars['String']>;
+  originalName?: Maybe<Scalars['String']>;
+  presentationWidth: Scalars['Int'];
+  presentationHeight: Scalars['Int'];
+};
+
+export type ImagePlaceholder =
+  | 'DOMINANT_COLOR'
+  | 'TRACED_SVG'
+  | 'BLURRED'
+  | 'NONE';
+
+export type BlurredOptions = {
+  /** Width of the generated low-res preview. Default is 20px */
+  width?: InputMaybe<Scalars['Int']>;
+  /** Force the output format for the low-res preview. Default is to use the same format as the input. You should rarely need to change this */
+  toFormat?: InputMaybe<ImageFormat>;
+};
+
+export type JpgOptions = {
+  quality?: InputMaybe<Scalars['Int']>;
+  progressive?: InputMaybe<Scalars['Boolean']>;
+};
+
+export type PngOptions = {
+  quality?: InputMaybe<Scalars['Int']>;
+  compressionSpeed?: InputMaybe<Scalars['Int']>;
+};
+
+export type WebPOptions = {
+  quality?: InputMaybe<Scalars['Int']>;
+};
+
+export type AvifOptions = {
+  quality?: InputMaybe<Scalars['Int']>;
+  lossless?: InputMaybe<Scalars['Boolean']>;
+  speed?: InputMaybe<Scalars['Int']>;
+};
+
+export type TransformOptions = {
+  grayscale?: InputMaybe<Scalars['Boolean']>;
+  duotone?: InputMaybe<DuotoneGradient>;
+  rotate?: InputMaybe<Scalars['Int']>;
+  trim?: InputMaybe<Scalars['Float']>;
+  cropFocus?: InputMaybe<ImageCropFocus>;
+  fit?: InputMaybe<ImageFit>;
+};
+
+export type ImageSharpOriginal = {
+  width?: Maybe<Scalars['Float']>;
+  height?: Maybe<Scalars['Float']>;
+  src?: Maybe<Scalars['String']>;
+};
+
+export type ImageSharpResize = {
+  src?: Maybe<Scalars['String']>;
+  tracedSVG?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['Int']>;
+  height?: Maybe<Scalars['Int']>;
+  aspectRatio?: Maybe<Scalars['Float']>;
+  originalName?: Maybe<Scalars['String']>;
+};
+
 export type MarkdownHeading = {
   id?: Maybe<Scalars['String']>;
   value?: Maybe<Scalars['String']>;
@@ -408,6 +681,8 @@ export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   slug?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
+  first_image?: Maybe<File>;
+  description?: Maybe<Scalars['String']>;
 };
 
 
@@ -433,6 +708,8 @@ export type Query = {
   allSitePlugin: SitePluginConnection;
   siteBuildMetadata?: Maybe<SiteBuildMetadata>;
   allSiteBuildMetadata: SiteBuildMetadataConnection;
+  imageSharp?: Maybe<ImageSharp>;
+  allImageSharp: ImageSharpConnection;
   markdownRemark?: Maybe<MarkdownRemark>;
   allMarkdownRemark: MarkdownRemarkConnection;
 };
@@ -473,6 +750,8 @@ export type QueryFileArgs = {
   blksize?: InputMaybe<IntQueryOperatorInput>;
   blocks?: InputMaybe<IntQueryOperatorInput>;
   publicURL?: InputMaybe<StringQueryOperatorInput>;
+  childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
+  childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
@@ -648,6 +927,27 @@ export type QueryAllSiteBuildMetadataArgs = {
 };
 
 
+export type QueryImageSharpArgs = {
+  fixed?: InputMaybe<ImageSharpFixedFilterInput>;
+  fluid?: InputMaybe<ImageSharpFluidFilterInput>;
+  gatsbyImageData?: InputMaybe<GatsbyImageDataQueryOperatorInput>;
+  original?: InputMaybe<ImageSharpOriginalFilterInput>;
+  resize?: InputMaybe<ImageSharpResizeFilterInput>;
+  id?: InputMaybe<StringQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+};
+
+
+export type QueryAllImageSharpArgs = {
+  filter?: InputMaybe<ImageSharpFilterInput>;
+  sort?: InputMaybe<Array<InputMaybe<ImageSharpSortInput>>>;
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+};
+
+
 export type QueryMarkdownRemarkArgs = {
   id?: InputMaybe<StringQueryOperatorInput>;
   frontmatter?: InputMaybe<MarkdownRemarkFrontmatterFilterInput>;
@@ -716,57 +1016,70 @@ export type FloatQueryOperatorInput = {
   nin?: InputMaybe<Array<InputMaybe<Scalars['Float']>>>;
 };
 
-export type MarkdownRemarkFilterListInput = {
-  elemMatch?: InputMaybe<MarkdownRemarkFilterInput>;
+export type ImageSharpFilterListInput = {
+  elemMatch?: InputMaybe<ImageSharpFilterInput>;
 };
 
-export type MarkdownRemarkFilterInput = {
+export type ImageSharpFilterInput = {
+  fixed?: InputMaybe<ImageSharpFixedFilterInput>;
+  fluid?: InputMaybe<ImageSharpFluidFilterInput>;
+  gatsbyImageData?: InputMaybe<GatsbyImageDataQueryOperatorInput>;
+  original?: InputMaybe<ImageSharpOriginalFilterInput>;
+  resize?: InputMaybe<ImageSharpResizeFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
-  frontmatter?: InputMaybe<MarkdownRemarkFrontmatterFilterInput>;
-  excerpt?: InputMaybe<StringQueryOperatorInput>;
-  rawMarkdownBody?: InputMaybe<StringQueryOperatorInput>;
-  fileAbsolutePath?: InputMaybe<StringQueryOperatorInput>;
-  html?: InputMaybe<StringQueryOperatorInput>;
-  htmlAst?: InputMaybe<JsonQueryOperatorInput>;
-  excerptAst?: InputMaybe<JsonQueryOperatorInput>;
-  headings?: InputMaybe<MarkdownHeadingFilterListInput>;
-  timeToRead?: InputMaybe<IntQueryOperatorInput>;
-  tableOfContents?: InputMaybe<StringQueryOperatorInput>;
-  wordCount?: InputMaybe<MarkdownWordCountFilterInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
 };
 
-export type MarkdownRemarkFrontmatterFilterInput = {
-  title?: InputMaybe<StringQueryOperatorInput>;
-  slug?: InputMaybe<StringQueryOperatorInput>;
-  date?: InputMaybe<DateQueryOperatorInput>;
+export type ImageSharpFixedFilterInput = {
+  base64?: InputMaybe<StringQueryOperatorInput>;
+  tracedSVG?: InputMaybe<StringQueryOperatorInput>;
+  aspectRatio?: InputMaybe<FloatQueryOperatorInput>;
+  width?: InputMaybe<FloatQueryOperatorInput>;
+  height?: InputMaybe<FloatQueryOperatorInput>;
+  src?: InputMaybe<StringQueryOperatorInput>;
+  srcSet?: InputMaybe<StringQueryOperatorInput>;
+  srcWebp?: InputMaybe<StringQueryOperatorInput>;
+  srcSetWebp?: InputMaybe<StringQueryOperatorInput>;
+  originalName?: InputMaybe<StringQueryOperatorInput>;
 };
 
-export type JsonQueryOperatorInput = {
-  eq?: InputMaybe<Scalars['JSON']>;
-  ne?: InputMaybe<Scalars['JSON']>;
-  in?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
-  nin?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
-  regex?: InputMaybe<Scalars['JSON']>;
-  glob?: InputMaybe<Scalars['JSON']>;
+export type ImageSharpFluidFilterInput = {
+  base64?: InputMaybe<StringQueryOperatorInput>;
+  tracedSVG?: InputMaybe<StringQueryOperatorInput>;
+  aspectRatio?: InputMaybe<FloatQueryOperatorInput>;
+  src?: InputMaybe<StringQueryOperatorInput>;
+  srcSet?: InputMaybe<StringQueryOperatorInput>;
+  srcWebp?: InputMaybe<StringQueryOperatorInput>;
+  srcSetWebp?: InputMaybe<StringQueryOperatorInput>;
+  sizes?: InputMaybe<StringQueryOperatorInput>;
+  originalImg?: InputMaybe<StringQueryOperatorInput>;
+  originalName?: InputMaybe<StringQueryOperatorInput>;
+  presentationWidth?: InputMaybe<IntQueryOperatorInput>;
+  presentationHeight?: InputMaybe<IntQueryOperatorInput>;
 };
 
-export type MarkdownHeadingFilterListInput = {
-  elemMatch?: InputMaybe<MarkdownHeadingFilterInput>;
+export type GatsbyImageDataQueryOperatorInput = {
+  eq?: InputMaybe<Scalars['GatsbyImageData']>;
+  ne?: InputMaybe<Scalars['GatsbyImageData']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['GatsbyImageData']>>>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars['GatsbyImageData']>>>;
 };
 
-export type MarkdownHeadingFilterInput = {
-  id?: InputMaybe<StringQueryOperatorInput>;
-  value?: InputMaybe<StringQueryOperatorInput>;
-  depth?: InputMaybe<IntQueryOperatorInput>;
+export type ImageSharpOriginalFilterInput = {
+  width?: InputMaybe<FloatQueryOperatorInput>;
+  height?: InputMaybe<FloatQueryOperatorInput>;
+  src?: InputMaybe<StringQueryOperatorInput>;
 };
 
-export type MarkdownWordCountFilterInput = {
-  paragraphs?: InputMaybe<IntQueryOperatorInput>;
-  sentences?: InputMaybe<IntQueryOperatorInput>;
-  words?: InputMaybe<IntQueryOperatorInput>;
+export type ImageSharpResizeFilterInput = {
+  src?: InputMaybe<StringQueryOperatorInput>;
+  tracedSVG?: InputMaybe<StringQueryOperatorInput>;
+  width?: InputMaybe<IntQueryOperatorInput>;
+  height?: InputMaybe<IntQueryOperatorInput>;
+  aspectRatio?: InputMaybe<FloatQueryOperatorInput>;
+  originalName?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type NodeFilterInput = {
@@ -797,6 +1110,106 @@ export type BooleanQueryOperatorInput = {
   ne?: InputMaybe<Scalars['Boolean']>;
   in?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
   nin?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
+};
+
+export type MarkdownRemarkFilterListInput = {
+  elemMatch?: InputMaybe<MarkdownRemarkFilterInput>;
+};
+
+export type MarkdownRemarkFilterInput = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  frontmatter?: InputMaybe<MarkdownRemarkFrontmatterFilterInput>;
+  excerpt?: InputMaybe<StringQueryOperatorInput>;
+  rawMarkdownBody?: InputMaybe<StringQueryOperatorInput>;
+  fileAbsolutePath?: InputMaybe<StringQueryOperatorInput>;
+  html?: InputMaybe<StringQueryOperatorInput>;
+  htmlAst?: InputMaybe<JsonQueryOperatorInput>;
+  excerptAst?: InputMaybe<JsonQueryOperatorInput>;
+  headings?: InputMaybe<MarkdownHeadingFilterListInput>;
+  timeToRead?: InputMaybe<IntQueryOperatorInput>;
+  tableOfContents?: InputMaybe<StringQueryOperatorInput>;
+  wordCount?: InputMaybe<MarkdownWordCountFilterInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+};
+
+export type MarkdownRemarkFrontmatterFilterInput = {
+  title?: InputMaybe<StringQueryOperatorInput>;
+  slug?: InputMaybe<StringQueryOperatorInput>;
+  date?: InputMaybe<DateQueryOperatorInput>;
+  first_image?: InputMaybe<FileFilterInput>;
+  description?: InputMaybe<StringQueryOperatorInput>;
+};
+
+export type FileFilterInput = {
+  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
+  absolutePath?: InputMaybe<StringQueryOperatorInput>;
+  relativePath?: InputMaybe<StringQueryOperatorInput>;
+  extension?: InputMaybe<StringQueryOperatorInput>;
+  size?: InputMaybe<IntQueryOperatorInput>;
+  prettySize?: InputMaybe<StringQueryOperatorInput>;
+  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
+  accessTime?: InputMaybe<DateQueryOperatorInput>;
+  changeTime?: InputMaybe<DateQueryOperatorInput>;
+  birthTime?: InputMaybe<DateQueryOperatorInput>;
+  root?: InputMaybe<StringQueryOperatorInput>;
+  dir?: InputMaybe<StringQueryOperatorInput>;
+  base?: InputMaybe<StringQueryOperatorInput>;
+  ext?: InputMaybe<StringQueryOperatorInput>;
+  name?: InputMaybe<StringQueryOperatorInput>;
+  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
+  dev?: InputMaybe<IntQueryOperatorInput>;
+  mode?: InputMaybe<IntQueryOperatorInput>;
+  nlink?: InputMaybe<IntQueryOperatorInput>;
+  uid?: InputMaybe<IntQueryOperatorInput>;
+  gid?: InputMaybe<IntQueryOperatorInput>;
+  rdev?: InputMaybe<IntQueryOperatorInput>;
+  ino?: InputMaybe<FloatQueryOperatorInput>;
+  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  atime?: InputMaybe<DateQueryOperatorInput>;
+  mtime?: InputMaybe<DateQueryOperatorInput>;
+  ctime?: InputMaybe<DateQueryOperatorInput>;
+  birthtime?: InputMaybe<DateQueryOperatorInput>;
+  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  blksize?: InputMaybe<IntQueryOperatorInput>;
+  blocks?: InputMaybe<IntQueryOperatorInput>;
+  publicURL?: InputMaybe<StringQueryOperatorInput>;
+  childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
+  childImageSharp?: InputMaybe<ImageSharpFilterInput>;
+  childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
+  childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
+  id?: InputMaybe<StringQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+};
+
+export type JsonQueryOperatorInput = {
+  eq?: InputMaybe<Scalars['JSON']>;
+  ne?: InputMaybe<Scalars['JSON']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
+  regex?: InputMaybe<Scalars['JSON']>;
+  glob?: InputMaybe<Scalars['JSON']>;
+};
+
+export type MarkdownHeadingFilterListInput = {
+  elemMatch?: InputMaybe<MarkdownHeadingFilterInput>;
+};
+
+export type MarkdownHeadingFilterInput = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  value?: InputMaybe<StringQueryOperatorInput>;
+  depth?: InputMaybe<IntQueryOperatorInput>;
+};
+
+export type MarkdownWordCountFilterInput = {
+  paragraphs?: InputMaybe<IntQueryOperatorInput>;
+  sentences?: InputMaybe<IntQueryOperatorInput>;
+  words?: InputMaybe<IntQueryOperatorInput>;
 };
 
 export type FileConnection = {
@@ -889,6 +1302,8 @@ export type FileFieldSelector = {
   blksize?: InputMaybe<FieldSelectorEnum>;
   blocks?: InputMaybe<FieldSelectorEnum>;
   publicURL?: InputMaybe<FieldSelectorEnum>;
+  childrenImageSharp?: InputMaybe<ImageSharpFieldSelector>;
+  childImageSharp?: InputMaybe<ImageSharpFieldSelector>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFieldSelector>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFieldSelector>;
   id?: InputMaybe<FieldSelectorEnum>;
@@ -899,6 +1314,80 @@ export type FileFieldSelector = {
 
 export type FieldSelectorEnum =
   | 'SELECT';
+
+export type ImageSharpFieldSelector = {
+  fixed?: InputMaybe<ImageSharpFixedFieldSelector>;
+  fluid?: InputMaybe<ImageSharpFluidFieldSelector>;
+  gatsbyImageData?: InputMaybe<FieldSelectorEnum>;
+  original?: InputMaybe<ImageSharpOriginalFieldSelector>;
+  resize?: InputMaybe<ImageSharpResizeFieldSelector>;
+  id?: InputMaybe<FieldSelectorEnum>;
+  parent?: InputMaybe<NodeFieldSelector>;
+  children?: InputMaybe<NodeFieldSelector>;
+  internal?: InputMaybe<InternalFieldSelector>;
+};
+
+export type ImageSharpFixedFieldSelector = {
+  base64?: InputMaybe<FieldSelectorEnum>;
+  tracedSVG?: InputMaybe<FieldSelectorEnum>;
+  aspectRatio?: InputMaybe<FieldSelectorEnum>;
+  width?: InputMaybe<FieldSelectorEnum>;
+  height?: InputMaybe<FieldSelectorEnum>;
+  src?: InputMaybe<FieldSelectorEnum>;
+  srcSet?: InputMaybe<FieldSelectorEnum>;
+  srcWebp?: InputMaybe<FieldSelectorEnum>;
+  srcSetWebp?: InputMaybe<FieldSelectorEnum>;
+  originalName?: InputMaybe<FieldSelectorEnum>;
+};
+
+export type ImageSharpFluidFieldSelector = {
+  base64?: InputMaybe<FieldSelectorEnum>;
+  tracedSVG?: InputMaybe<FieldSelectorEnum>;
+  aspectRatio?: InputMaybe<FieldSelectorEnum>;
+  src?: InputMaybe<FieldSelectorEnum>;
+  srcSet?: InputMaybe<FieldSelectorEnum>;
+  srcWebp?: InputMaybe<FieldSelectorEnum>;
+  srcSetWebp?: InputMaybe<FieldSelectorEnum>;
+  sizes?: InputMaybe<FieldSelectorEnum>;
+  originalImg?: InputMaybe<FieldSelectorEnum>;
+  originalName?: InputMaybe<FieldSelectorEnum>;
+  presentationWidth?: InputMaybe<FieldSelectorEnum>;
+  presentationHeight?: InputMaybe<FieldSelectorEnum>;
+};
+
+export type ImageSharpOriginalFieldSelector = {
+  width?: InputMaybe<FieldSelectorEnum>;
+  height?: InputMaybe<FieldSelectorEnum>;
+  src?: InputMaybe<FieldSelectorEnum>;
+};
+
+export type ImageSharpResizeFieldSelector = {
+  src?: InputMaybe<FieldSelectorEnum>;
+  tracedSVG?: InputMaybe<FieldSelectorEnum>;
+  width?: InputMaybe<FieldSelectorEnum>;
+  height?: InputMaybe<FieldSelectorEnum>;
+  aspectRatio?: InputMaybe<FieldSelectorEnum>;
+  originalName?: InputMaybe<FieldSelectorEnum>;
+};
+
+export type NodeFieldSelector = {
+  id?: InputMaybe<FieldSelectorEnum>;
+  parent?: InputMaybe<NodeFieldSelector>;
+  children?: InputMaybe<NodeFieldSelector>;
+  internal?: InputMaybe<InternalFieldSelector>;
+};
+
+export type InternalFieldSelector = {
+  content?: InputMaybe<FieldSelectorEnum>;
+  contentDigest?: InputMaybe<FieldSelectorEnum>;
+  description?: InputMaybe<FieldSelectorEnum>;
+  fieldOwners?: InputMaybe<FieldSelectorEnum>;
+  ignoreType?: InputMaybe<FieldSelectorEnum>;
+  mediaType?: InputMaybe<FieldSelectorEnum>;
+  owner?: InputMaybe<FieldSelectorEnum>;
+  type?: InputMaybe<FieldSelectorEnum>;
+  contentFilePath?: InputMaybe<FieldSelectorEnum>;
+};
 
 export type MarkdownRemarkFieldSelector = {
   id?: InputMaybe<FieldSelectorEnum>;
@@ -922,6 +1411,8 @@ export type MarkdownRemarkFrontmatterFieldSelector = {
   title?: InputMaybe<FieldSelectorEnum>;
   slug?: InputMaybe<FieldSelectorEnum>;
   date?: InputMaybe<FieldSelectorEnum>;
+  first_image?: InputMaybe<FileFieldSelector>;
+  description?: InputMaybe<FieldSelectorEnum>;
 };
 
 export type MarkdownHeadingFieldSelector = {
@@ -934,25 +1425,6 @@ export type MarkdownWordCountFieldSelector = {
   paragraphs?: InputMaybe<FieldSelectorEnum>;
   sentences?: InputMaybe<FieldSelectorEnum>;
   words?: InputMaybe<FieldSelectorEnum>;
-};
-
-export type NodeFieldSelector = {
-  id?: InputMaybe<FieldSelectorEnum>;
-  parent?: InputMaybe<NodeFieldSelector>;
-  children?: InputMaybe<NodeFieldSelector>;
-  internal?: InputMaybe<InternalFieldSelector>;
-};
-
-export type InternalFieldSelector = {
-  content?: InputMaybe<FieldSelectorEnum>;
-  contentDigest?: InputMaybe<FieldSelectorEnum>;
-  description?: InputMaybe<FieldSelectorEnum>;
-  fieldOwners?: InputMaybe<FieldSelectorEnum>;
-  ignoreType?: InputMaybe<FieldSelectorEnum>;
-  mediaType?: InputMaybe<FieldSelectorEnum>;
-  owner?: InputMaybe<FieldSelectorEnum>;
-  type?: InputMaybe<FieldSelectorEnum>;
-  contentFilePath?: InputMaybe<FieldSelectorEnum>;
 };
 
 export type FileGroupConnection = {
@@ -996,49 +1468,6 @@ export type FileGroupConnectionGroupArgs = {
   field: FileFieldSelector;
 };
 
-export type FileFilterInput = {
-  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
-  absolutePath?: InputMaybe<StringQueryOperatorInput>;
-  relativePath?: InputMaybe<StringQueryOperatorInput>;
-  extension?: InputMaybe<StringQueryOperatorInput>;
-  size?: InputMaybe<IntQueryOperatorInput>;
-  prettySize?: InputMaybe<StringQueryOperatorInput>;
-  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
-  accessTime?: InputMaybe<DateQueryOperatorInput>;
-  changeTime?: InputMaybe<DateQueryOperatorInput>;
-  birthTime?: InputMaybe<DateQueryOperatorInput>;
-  root?: InputMaybe<StringQueryOperatorInput>;
-  dir?: InputMaybe<StringQueryOperatorInput>;
-  base?: InputMaybe<StringQueryOperatorInput>;
-  ext?: InputMaybe<StringQueryOperatorInput>;
-  name?: InputMaybe<StringQueryOperatorInput>;
-  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
-  dev?: InputMaybe<IntQueryOperatorInput>;
-  mode?: InputMaybe<IntQueryOperatorInput>;
-  nlink?: InputMaybe<IntQueryOperatorInput>;
-  uid?: InputMaybe<IntQueryOperatorInput>;
-  gid?: InputMaybe<IntQueryOperatorInput>;
-  rdev?: InputMaybe<IntQueryOperatorInput>;
-  ino?: InputMaybe<FloatQueryOperatorInput>;
-  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  atime?: InputMaybe<DateQueryOperatorInput>;
-  mtime?: InputMaybe<DateQueryOperatorInput>;
-  ctime?: InputMaybe<DateQueryOperatorInput>;
-  birthtime?: InputMaybe<DateQueryOperatorInput>;
-  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  blksize?: InputMaybe<IntQueryOperatorInput>;
-  blocks?: InputMaybe<IntQueryOperatorInput>;
-  publicURL?: InputMaybe<StringQueryOperatorInput>;
-  childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
-  childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
-  id?: InputMaybe<StringQueryOperatorInput>;
-  parent?: InputMaybe<NodeFilterInput>;
-  children?: InputMaybe<NodeFilterListInput>;
-  internal?: InputMaybe<InternalFilterInput>;
-};
-
 export type FileSortInput = {
   sourceInstanceName?: InputMaybe<SortOrderEnum>;
   absolutePath?: InputMaybe<SortOrderEnum>;
@@ -1074,6 +1503,8 @@ export type FileSortInput = {
   blksize?: InputMaybe<SortOrderEnum>;
   blocks?: InputMaybe<SortOrderEnum>;
   publicURL?: InputMaybe<SortOrderEnum>;
+  childrenImageSharp?: InputMaybe<ImageSharpSortInput>;
+  childImageSharp?: InputMaybe<ImageSharpSortInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkSortInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkSortInput>;
   id?: InputMaybe<SortOrderEnum>;
@@ -1085,6 +1516,80 @@ export type FileSortInput = {
 export type SortOrderEnum =
   | 'ASC'
   | 'DESC';
+
+export type ImageSharpSortInput = {
+  fixed?: InputMaybe<ImageSharpFixedSortInput>;
+  fluid?: InputMaybe<ImageSharpFluidSortInput>;
+  gatsbyImageData?: InputMaybe<SortOrderEnum>;
+  original?: InputMaybe<ImageSharpOriginalSortInput>;
+  resize?: InputMaybe<ImageSharpResizeSortInput>;
+  id?: InputMaybe<SortOrderEnum>;
+  parent?: InputMaybe<NodeSortInput>;
+  children?: InputMaybe<NodeSortInput>;
+  internal?: InputMaybe<InternalSortInput>;
+};
+
+export type ImageSharpFixedSortInput = {
+  base64?: InputMaybe<SortOrderEnum>;
+  tracedSVG?: InputMaybe<SortOrderEnum>;
+  aspectRatio?: InputMaybe<SortOrderEnum>;
+  width?: InputMaybe<SortOrderEnum>;
+  height?: InputMaybe<SortOrderEnum>;
+  src?: InputMaybe<SortOrderEnum>;
+  srcSet?: InputMaybe<SortOrderEnum>;
+  srcWebp?: InputMaybe<SortOrderEnum>;
+  srcSetWebp?: InputMaybe<SortOrderEnum>;
+  originalName?: InputMaybe<SortOrderEnum>;
+};
+
+export type ImageSharpFluidSortInput = {
+  base64?: InputMaybe<SortOrderEnum>;
+  tracedSVG?: InputMaybe<SortOrderEnum>;
+  aspectRatio?: InputMaybe<SortOrderEnum>;
+  src?: InputMaybe<SortOrderEnum>;
+  srcSet?: InputMaybe<SortOrderEnum>;
+  srcWebp?: InputMaybe<SortOrderEnum>;
+  srcSetWebp?: InputMaybe<SortOrderEnum>;
+  sizes?: InputMaybe<SortOrderEnum>;
+  originalImg?: InputMaybe<SortOrderEnum>;
+  originalName?: InputMaybe<SortOrderEnum>;
+  presentationWidth?: InputMaybe<SortOrderEnum>;
+  presentationHeight?: InputMaybe<SortOrderEnum>;
+};
+
+export type ImageSharpOriginalSortInput = {
+  width?: InputMaybe<SortOrderEnum>;
+  height?: InputMaybe<SortOrderEnum>;
+  src?: InputMaybe<SortOrderEnum>;
+};
+
+export type ImageSharpResizeSortInput = {
+  src?: InputMaybe<SortOrderEnum>;
+  tracedSVG?: InputMaybe<SortOrderEnum>;
+  width?: InputMaybe<SortOrderEnum>;
+  height?: InputMaybe<SortOrderEnum>;
+  aspectRatio?: InputMaybe<SortOrderEnum>;
+  originalName?: InputMaybe<SortOrderEnum>;
+};
+
+export type NodeSortInput = {
+  id?: InputMaybe<SortOrderEnum>;
+  parent?: InputMaybe<NodeSortInput>;
+  children?: InputMaybe<NodeSortInput>;
+  internal?: InputMaybe<InternalSortInput>;
+};
+
+export type InternalSortInput = {
+  content?: InputMaybe<SortOrderEnum>;
+  contentDigest?: InputMaybe<SortOrderEnum>;
+  description?: InputMaybe<SortOrderEnum>;
+  fieldOwners?: InputMaybe<SortOrderEnum>;
+  ignoreType?: InputMaybe<SortOrderEnum>;
+  mediaType?: InputMaybe<SortOrderEnum>;
+  owner?: InputMaybe<SortOrderEnum>;
+  type?: InputMaybe<SortOrderEnum>;
+  contentFilePath?: InputMaybe<SortOrderEnum>;
+};
 
 export type MarkdownRemarkSortInput = {
   id?: InputMaybe<SortOrderEnum>;
@@ -1108,6 +1613,8 @@ export type MarkdownRemarkFrontmatterSortInput = {
   title?: InputMaybe<SortOrderEnum>;
   slug?: InputMaybe<SortOrderEnum>;
   date?: InputMaybe<SortOrderEnum>;
+  first_image?: InputMaybe<FileSortInput>;
+  description?: InputMaybe<SortOrderEnum>;
 };
 
 export type MarkdownHeadingSortInput = {
@@ -1120,25 +1627,6 @@ export type MarkdownWordCountSortInput = {
   paragraphs?: InputMaybe<SortOrderEnum>;
   sentences?: InputMaybe<SortOrderEnum>;
   words?: InputMaybe<SortOrderEnum>;
-};
-
-export type NodeSortInput = {
-  id?: InputMaybe<SortOrderEnum>;
-  parent?: InputMaybe<NodeSortInput>;
-  children?: InputMaybe<NodeSortInput>;
-  internal?: InputMaybe<InternalSortInput>;
-};
-
-export type InternalSortInput = {
-  content?: InputMaybe<SortOrderEnum>;
-  contentDigest?: InputMaybe<SortOrderEnum>;
-  description?: InputMaybe<SortOrderEnum>;
-  fieldOwners?: InputMaybe<SortOrderEnum>;
-  ignoreType?: InputMaybe<SortOrderEnum>;
-  mediaType?: InputMaybe<SortOrderEnum>;
-  owner?: InputMaybe<SortOrderEnum>;
-  type?: InputMaybe<SortOrderEnum>;
-  contentFilePath?: InputMaybe<SortOrderEnum>;
 };
 
 export type DirectoryConnection = {
@@ -2005,6 +2493,92 @@ export type SiteBuildMetadataSortInput = {
   internal?: InputMaybe<InternalSortInput>;
 };
 
+export type ImageSharpConnection = {
+  totalCount: Scalars['Int'];
+  edges: Array<ImageSharpEdge>;
+  nodes: Array<ImageSharp>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
+  group: Array<ImageSharpGroupConnection>;
+};
+
+
+export type ImageSharpConnectionDistinctArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpConnectionMaxArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpConnectionMinArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpConnectionSumArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpConnectionGroupArgs = {
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+  field: ImageSharpFieldSelector;
+};
+
+export type ImageSharpEdge = {
+  next?: Maybe<ImageSharp>;
+  node: ImageSharp;
+  previous?: Maybe<ImageSharp>;
+};
+
+export type ImageSharpGroupConnection = {
+  totalCount: Scalars['Int'];
+  edges: Array<ImageSharpEdge>;
+  nodes: Array<ImageSharp>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
+  group: Array<ImageSharpGroupConnection>;
+  field: Scalars['String'];
+  fieldValue?: Maybe<Scalars['String']>;
+};
+
+
+export type ImageSharpGroupConnectionDistinctArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpGroupConnectionMaxArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpGroupConnectionMinArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpGroupConnectionSumArgs = {
+  field: ImageSharpFieldSelector;
+};
+
+
+export type ImageSharpGroupConnectionGroupArgs = {
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+  field: ImageSharpFieldSelector;
+};
+
 export type MarkdownRemarkConnection = {
   totalCount: Scalars['Int'];
   edges: Array<MarkdownRemarkEdge>;
@@ -2106,7 +2680,7 @@ export type ArticleTemplateQuery = { markdownRemark?: { html?: string | null, fr
 export type AllnewspostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null } | null } }> } };
+export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
 

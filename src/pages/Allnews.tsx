@@ -1,5 +1,6 @@
-import React from "react";
+import *as React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage,getImage,IGatsbyImageData } from 'gatsby-plugin-image';
 import type { AllnewspostQuery } from "../../types/graphql-types";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
@@ -17,11 +18,11 @@ import {
   allnews_h2,
   allnews_para,
   allnews_boxx,
+  allnews_img,
   flex,
   arrow,
 } from "../components/Allnews.module.scss";
 import type { HeadProps } from "gatsby";
-import other from "../images/other.webp";
 
 export default function Allnews() {
   const data = useStaticQuery<AllnewspostQuery>(graphql`
@@ -33,6 +34,12 @@ export default function Allnews() {
               title
               slug
               date(formatString: "YYYY/MM/DD", locale: "ja-JP")
+              description
+              first_image{
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
             }
           }
         }
@@ -59,12 +66,19 @@ export default function Allnews() {
               const title = node.frontmatter.title;
               const slug = node.frontmatter.slug;
               const date = node.frontmatter.date;
+              const img = getImage(node.frontmatter.first_image.childImageSharp.gatsbyImageData);
+              const desc = node.frontmatter.description;
+
               return (
                 <li key={slug} className={allnews_list}>
                   <Link to={slug} className={allnews_link}>
                     <div>
-                      <img src={other} alt={title} />
-                      <aside className={allnews_aside}>aaaaaa</aside>
+                      <GatsbyImage
+                      image={img as IGatsbyImageData}
+                      alt="Post Image"
+                      className={allnews_img} 
+                      />
+                      <aside className={allnews_aside}>{desc}</aside>
                       <p className={allnews_para}>{date}</p>
                     </div>
                     <div className={flex}>
