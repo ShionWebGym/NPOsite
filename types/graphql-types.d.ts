@@ -2103,6 +2103,11 @@ export type ArticleTemplateQueryVariables = Exact<{
 
 export type ArticleTemplateQuery = { markdownRemark?: { html?: string | null, frontmatter?: { title?: string | null, date?: any | null } | null } | null };
 
+export type AllnewspostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null } | null } }> } };
+
 export type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
