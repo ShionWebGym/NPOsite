@@ -7,7 +7,8 @@ import {
   card,
   cardharf,
   doclist,
-  cardtag,
+  cardtag_uketukechu,
+  cardtag_uketukesyuryo,
   cardtime,
   cardharf2,
   cardcontent,
@@ -25,17 +26,17 @@ const Cardlist = () => {
         <div className={cardcontainer}>
 
           {/* 最新のセミナー情報カード↓↓↓ */}
-          <Link to="/" className={card}>
+          <Link to="/post0" className={card}>
             <div className={cardharf} id={cardImage1}>
-              <p className={cardtime}>2021年9月3日</p>
-              <p className={cardtag}>受付終了</p>
+              <p className={cardtime}>2023年4月23日</p>
+              <p className={cardtag_uketukechu}>受付中</p>
             </div>
             <div className={cardharf2}>
+              <h3>開催場所</h3>
+              <p className={cardcontent}>台湾某所（20人限定）</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
-                                          {/* ↑↑↑内容を書く */}
-              <h3>費用</h3>
-              <p className={cardcontent}>286,000円（26名様限定）</p>
                                           {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
@@ -50,17 +51,17 @@ const Cardlist = () => {
           {/* 最新のセミナー情報カード↑↑↑ */}
 
           {/* 二番目に新しいセミナー情報カード↓↓↓ */}
-          <Link to="/" className={card}>
+          <Link to="/post0" className={card}>
             <div className={cardharf} id={cardImage2}>
               <p className={cardtime}>2021年9月3日</p>
-              <p className={cardtag}>受付終了</p>
+              <p className={cardtag_uketukechu}>受付中</p>
             </div>
             <div className={cardharf2}>
+              <h3>開催場所</h3>
+              <p className={cardcontent}>アメリカ某所</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
-                                          {/* ↑↑↑内容を書く */}
-              <h3>費用</h3>
-              <p className={cardcontent}>286,000円（26名様限定）</p>
                                          {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
@@ -75,17 +76,17 @@ const Cardlist = () => {
           {/* 二番目に新しいセミナー情報カード↑↑↑ */}
 
           {/* 三番目に新しいセミナー情報カード↓↓↓ */}
-          <Link to="/" className={card}>
+          <Link to="/post0" className={card}>
             <div className={cardharf} id={cardImage3}>
               <p className={cardtime}>2021年9月3日</p>
-              <p className={cardtag}>受付終了</p>
+              <p className={cardtag_uketukesyuryo}>受付終了</p>
             </div>
             <div className={cardharf2}>
+              <h3>開催場所</h3>
+              <p className={cardcontent}>東京都内某所</p>
+                                          {/* ↑↑↑内容を書く */}
               <h3>内容</h3>
               <p className={cardcontent}>皮膚皮弁系、再建手術、頭部（開頭術）の外科</p>
-                                          {/* ↑↑↑内容を書く */}
-              <h3>費用</h3>
-              <p className={cardcontent}>286,000円（26名様限定）</p>
                                          {/* ↑↑↑費用を書く */}
               <h3>講師</h3>
               <ul className={doclist}>
@@ -100,7 +101,7 @@ const Cardlist = () => {
           {/* 三番目に新しいセミナー情報カード↑↑↑ */}
 
         </div>
-        {/* <Link to="/DoneSeminer" className={aftercard}>終了したセミナーはこちら</Link> */}
+        <Link to="/Contact" className={aftercard}>お申込みはこちら</Link>
       </div>
     </>
   );

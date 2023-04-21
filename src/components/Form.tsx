@@ -110,7 +110,12 @@ const Form = () => {
         </label>
         <fieldset>
           <legend>Name</legend>
-          <input type="text" name="name" className={formInput} onChange={handleChange} required />
+          <input 
+          type="text" 
+          name="name" 
+          className={formInput} 
+          placeholder="山田　太郎"
+          onChange={handleChange} required />
         </fieldset>
       </p>
       <p className={formP}>
@@ -120,7 +125,12 @@ const Form = () => {
         </label>
         <fieldset>
           <legend>Kana</legend>
-          <input type="text" name="kana" className={formInput} onChange={handleChange} />
+          <input 
+          type="text" 
+          name="kana" 
+          className={formInput} 
+          placeholder="ヤマダ　タロウ"
+          onChange={handleChange} />
         </fieldset>
       </p>
       <p className={formP}>
@@ -152,6 +162,7 @@ const Form = () => {
             <textarea
               name="message"
               onChange={handleChange}
+              placeholder="例）〇月△日、ハワイ、セミナー参加希望"
               cols={32}
               rows={10}
               className={formInput}

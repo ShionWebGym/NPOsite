@@ -55,7 +55,7 @@ export default function Allnews() {
         <div className={container}>
           <div className={allnews_head}>
             <h1 className={allnews_h1}>記事一覧</h1>
-            <p className={allnews_p}>お知らせやブログ記事一覧です。</p>
+            <p className={allnews_p}>お知らせやブログ記事、WVCセミナーについての一覧です。</p>
             <hr />
           </div>
         </div>

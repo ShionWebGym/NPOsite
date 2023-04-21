@@ -59,7 +59,7 @@ const Wvc = () => {
           <div className={semiMenuContainer_up}>
             <div className={semiMenu_semi}>
               <Link
-                to="/Future"
+                to="/Allnews"
                 className={semiMenu_Link}
               >
                 <div>
@@ -128,7 +128,7 @@ const Wvc = () => {
             </div> */}
             <div className={semiMenu_other}>
               <Link
-                to="http://samri.intellectual-japan.com/nintei.html"
+                to="/Nintei"
                 className={semiMenu_Link}
               >
                 <div>
