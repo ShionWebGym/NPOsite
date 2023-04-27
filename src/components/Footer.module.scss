@@ -18,7 +18,7 @@ small{
 .container h3{
     color: #fff;
     font-size: 0.8rem;
-    padding-top: 2rem;
+    padding-top: 40px;
 }
 .container{
     font-family: Noto Serif JP,sans-serif;
@@ -29,29 +29,57 @@ small{
 }
 .flogo{
     position: absolute;
-    top: 0;
-    left: 32rem;
+    top: 390px;
+    left: 16rem;
     right: 0;
     bottom: 0;
     display: block;
     margin: 2rem auto;
-    width: 6rem;
+    width: 124px;
 }
 .fcontact{
     font-size: 0.6rem;
     text-decoration: none;
     color: #fff;
 }
+.footer_link{
+    text-decoration: none;
+}
+.footer_list:hover{
+    color: #FFEF5C;
+}
+.footer_list{
+    list-style:none;
+    color: #fff;
+    padding: 4px 0 4px 0;
+    font-size: 16px;
+}
+ul{
+    margin: 40px 0 0;
+    display: inline-block;
+}
+.footer_list::before {
+  position: relative;
+  top: -2px;
+  left: -18px;
+ 
+  display: inline-block;
+ 
+  width: 3px;
+  height: 3px;
+ 
+  content: '';
+ 
+  border-radius: 100%;
+  background: #fff;
+}
 @media (max-width:1199px){
     footer{
-        height: 50vh;
-    }
-    .container{
-        padding-top:80px;
+        height: 80vh;
     }
     .flogo{
         width: 56px;
-        margin: 208px auto;
+        margin: 96px auto;
     }
     .container{
         width: 80%;

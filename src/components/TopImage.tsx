@@ -1,29 +1,47 @@
 import React from "react";
-import topinu from "../images/inu.webp";
+import topinu from "../images/topinu2.webp";
 import "./total.module.scss";
-import { topimage, topdog } from "./TopImage.module.scss";
-import {motion} from "framer-motion";
+import { topimage, topdog, top_text_box } from "./TopImage.module.scss";
+import { motion } from "framer-motion";
 
 const TopImage = () => {
   return (
     <div className={topimage}>
-      <motion.h1
-      initial={{opacity:0,y:-100}}
-      animate={{opacity:1,y:0}}
-      transition={{duration:1.5}}
-      >
-        動物たちの
-        <br />
-        未来を担う獣医師に。
-        <br />
-      </motion.h1>
-        <motion.img 
-            initial={{
-              opacity: 0,y:-100
-            }}
-            animate={{ opacity: 1,y:-20}}
-            transition={{duration:1.5}}
-        className={topdog} src={topinu} alt="トップイメージ" />
+      <div className={top_text_box}>
+        <motion.h1
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          人と伴侶動物をめぐる<br />数々の問題の解消
+          <br />
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          ・意識向上を図る指導と教育の広報
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          ・医療従事者の知識の向上を目指します。
+        </motion.h2>
+      </div>
+      <motion.img
+        initial={{
+          opacity: 0,
+          y: -100,
+        }}
+        animate={{ opacity: 1, y: -20 }}
+        transition={{ duration: 1 }}
+        className={topdog}
+        src={topinu}
+        alt="トップイメージ"
+      />
     </div>
   );
 };

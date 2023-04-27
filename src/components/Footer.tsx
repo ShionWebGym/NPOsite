@@ -9,6 +9,8 @@ import {
     flogo,
     copyright,
     fcontact,
+    footer_list,
+    footer_link,
 } from "./Footer.module.scss";
 
 const Footer = () => {
@@ -16,6 +18,17 @@ const Footer = () => {
     <footer>
       <div>
         <div className={container}>
+          <ul>
+            <Link to="/" className={footer_link}><li className={footer_list}>ホーム</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>ご挨拶</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>趣旨</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>定款</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>WVCセミナー</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>研究発表</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>ご支援とご協力のお願い</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>お問い合わせ</li></Link>
+            <Link to="/" className={footer_link}><li className={footer_list}>ボランティア</li></Link>
+          </ul>
           <h3>
             NPO（特定非営利活動）法人 小動物疾患研究所（理事長小宮山典寛）
           </h3>
