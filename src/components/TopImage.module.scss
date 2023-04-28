@@ -10,7 +10,7 @@
     margin: 0 auto;
     display: block;
     width: 100vw;
-    height: 102vh;
+    height: calc(100vh/0.98);
     object-fit:fill;
   }
   .top_text_box{
@@ -26,6 +26,7 @@
   }
   .top_text_box h2{
     font-size: 24px;
+    font-weight: 400;
     padding-top: 16px;
     padding-left: 40px;
     color: #242422;

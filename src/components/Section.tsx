@@ -1,20 +1,47 @@
 import React from "react";
 import { Link } from "gatsby";
-import "@fontsource/noto-sans-jp";
+import "@fontsource/noto-sans-jp/japanese.css"
 import "./total.module.scss";
-import { wrapper, h2, katudou, container } from "./Section.module.scss";
+import {
+  wrapper,
+  h2,
+  section_list,
+  section_list_item,
+  section_list_item_link,
+  container,
+} from "./Section.module.scss";
 
 const Section = () => {
   return (
     <div className={container}>
       <div className={wrapper}>
-        <h2 className={h2}>
-          人と動物が平和に共存・共生できる
-          <br />
-          豊かな地域社会の形成を目指します。
-        </h2>
+        <h2 className={h2}>活動内容について知る</h2>
+        <ul className={section_list}>
+          <li className={section_list_item}>
+            <Link to="/Wvc" className={section_list_item_link}>
+              セミナー参加者の募集
+            </Link>
+          </li>
+          <li className={section_list_item}>
+            <Link to="/Support" className={section_list_item_link}>
+              寄附金の募集
+            </Link>
+          </li>
+          <li className={section_list_item}>
+            <Link to="/Volunteer" className={section_list_item_link}>
+              ボランティアの募集
+            </Link>
+          </li>
+          <li className={section_list_item}>
+            <Link to="/Support" className={section_list_item_link}>
+              賛助会員の募集
+            </Link>
+          </li>
+        </ul>
       </div>
-      <Link to="/Wvc" className={katudou}>活動内容について知る</Link>
+      {/* <Link to="/Wvc" className={katudou}>
+        活動内容について知る
+      </Link> */}
     </div>
   );
 };

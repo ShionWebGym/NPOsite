@@ -1,5 +1,5 @@
 import React from "react";
-import topinu from "../images/topinu2.webp";
+import topinu from "../images/topimg.webp";
 import "./total.module.scss";
 import { topimage, topdog, top_text_box } from "./TopImage.module.scss";
 import { motion } from "framer-motion";
