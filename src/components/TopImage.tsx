@@ -3,6 +3,7 @@ import topinu from "../images/topinu2.webp";
 import "./total.module.scss";
 import { topimage, topdog, top_text_box } from "./TopImage.module.scss";
 import { motion } from "framer-motion";
+import "@fontsource/noto-sans-jp/japanese.css"
 
 const TopImage = () => {
   return (
