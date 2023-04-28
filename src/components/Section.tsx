@@ -15,8 +15,9 @@ const Section = () => {
   return (
     <div className={container}>
       <div className={wrapper}>
-        <h2 className={h2}>活動内容について知る</h2>
+        <h2 className={h2}>活動内容について</h2>
         <ul className={section_list}>
+        <p>小動物疾患研究所では伴侶動物と人間の様々な問題を解消するべく、以下の活動について募集をしております。</p>
           <li className={section_list_item}>
             <Link to="/Wvc" className={section_list_item_link}>
               セミナー参加者の募集

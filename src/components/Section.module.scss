@@ -85,7 +85,16 @@
     .section_list{
         display: block;
         margin-bottom: 160px;
+        margin-top: 0;
     }
+    .section_list p{
+        font-size: 16px;
+        text-align: left;
+        padding: 0 40px;
+        font-family: "Noto serif JP",sans-serif;
+        letter-spacing: 1.2px;
+        line-height: 32px;
+    } 
     .section_list_item{
         margin: 32px auto;
     }
