@@ -101,7 +101,7 @@ const Cardlist = () => {
           {/* 三番目に新しいセミナー情報カード↑↑↑ */}
 
         </div>
-        <Link to="/Contact" className={aftercard}>お申込みはこちら</Link>
+        <Link to="https://forms.gle/rMesaQ4hTZJYF8gT6" className={aftercard}>お申込みはこちら</Link>
       </div>
     </>
   );

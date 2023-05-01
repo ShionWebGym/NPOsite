@@ -75,7 +75,7 @@ const Wvc = () => {
             </div>
             <div className={semiMenu_form}>
               <Link
-                to="/Contact"
+                to="https://forms.gle/rMesaQ4hTZJYF8gT6"
                 className={semiMenu_Link}
               >
                 <div>
@@ -84,7 +84,7 @@ const Wvc = () => {
                   <p>Application form</p>
                 </div>
                 <div className={flex}>
-                  <h2>お申込み</h2>
+                  <h2>お申込みフォーム</h2>
                   <div className={arrow}></div>
                 </div>
               </Link>
@@ -110,22 +110,6 @@ const Wvc = () => {
                 </div>
               </Link>
             </div>
-            {/* <div className={semiMenu_donesemi}>
-              <Link
-                to="/DoneSeminer"
-                className={semiMenu_Link}
-              >
-                <div>
-                  <img src={donesemi} alt="終了したセミナー" />
-                  <aside>セミナー受講特典やその他お得情報</aside>
-                  <p>Finished seminar</p>
-                </div>
-                <div className={flex}>
-                  <h2>終了したセミナー</h2>
-                  <div className={arrow}></div>
-                </div>
-              </Link>
-            </div> */}
             <div className={semiMenu_other}>
               <Link
                 to="/Nintei"
