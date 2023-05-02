@@ -70,6 +70,7 @@ const Form = () => {
             value="入会について"
             onChange={handleChange}
             className={checkbox}
+            required
           />
         </label>
         <label className={formCheck}>
@@ -80,6 +81,7 @@ const Form = () => {
             value="WVCセミナーについて"
             onChange={handleChange}
             className={checkbox}
+            required
           />
         </label>
         <label className={formCheck}>
@@ -90,6 +92,7 @@ const Form = () => {
             value="ボランティアについて"
             onChange={handleChange}
             className={checkbox}
+            required
           />
         </label>
         <label className={formCheck}>
@@ -100,6 +103,7 @@ const Form = () => {
             value="その他"
             onChange={handleChange}
             className={checkbox}
+            required
           />
         </label>
       </div>

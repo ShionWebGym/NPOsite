@@ -66,7 +66,7 @@
     font-family: Noto Sans JP, sans-serif;
 }
 .allnews_list:hover{
-    background-color: #fff;
+    background-color: #FFFFED;
     opacity: 0.5;
     transition: 0.2s;
 }
@@ -90,6 +90,7 @@ img{
     height: 160px;
     object-fit: cover;
     box-sizing:border-box;
+    background-color: #fff;
     // border-radius: 20px 20px 0 0;
 }
 .arrow{
@@ -130,6 +131,9 @@ img{
 }
 .flex{
     display: flex;
+}
+.background{
+    background-color: #FFFFED;
 }
 @media (max-width:1199px){
     .container{

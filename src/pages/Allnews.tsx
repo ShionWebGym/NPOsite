@@ -21,6 +21,7 @@ import {
   allnews_img,
   flex,
   arrow,
+  background,
 } from "../components/Allnews.module.scss";
 import type { HeadProps } from "gatsby";
 
@@ -50,7 +51,7 @@ export default function Allnews() {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <>
+    <div className={background}>
       <Layout>
         <div className={container}>
           <div className={allnews_head}>
@@ -95,7 +96,7 @@ export default function Allnews() {
           トップへ戻る
         </Link>
       </Layout>
-    </>
+    </div>
   );
 }
 

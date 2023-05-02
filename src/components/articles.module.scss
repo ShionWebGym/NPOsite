@@ -7,10 +7,28 @@
 
 .article_container h1{
     margin-top: 80px;
+    margin-bottom: 24px;
 }
 .article_container h2{
     margin-top: 40px;
     margin-bottom: 24px;
+}
+.article_container h3{
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.article_container ul{
+    padding-top: 0;
+    padding-bottom: 24px;
+}
+.article_container li{
+    list-style-type:inherit;
+}
+.article_container p{
+    margin: 24px 0;
+}
+.article_container ol{
+    font-size: 12px;
 }
 .article_title{
     font-size: 24px;
