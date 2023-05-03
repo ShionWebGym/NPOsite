@@ -5,6 +5,7 @@ date: 2020-12-30T12:00:00
 first_image: './images/inu.webp'
 description: "猫のニョウカン結石について"
 isStudy: true
+author: "小宮山典寛"
 ---
 
 ![猫の画像](./images/inu.webp)

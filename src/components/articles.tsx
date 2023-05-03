@@ -11,6 +11,9 @@ import {
   article_date,
   article_body,
   backtotop,
+  backtostudy,
+  article_author,
+  flex,
 } from "./articles.module.scss";
 import {Link} from "gatsby";
 import Scroll from "../components/Scroll";
@@ -29,17 +32,23 @@ const Page: FC<PageProps> = ({ data }) => (
           {data.markdownRemark?.frontmatter?.title ?? "(無題)"}
         </h1>
         {data.markdownRemark?.frontmatter?.date && (
-          <p className={article_date}>
+          <aside className={article_date}>
             {data.markdownRemark.frontmatter.date} 投稿
-          </p>
+          </aside>
         )}
+          <aside className={article_author}>
+            文責：{data.markdownRemark?.frontmatter?.author?? "(無題)"}
+          </aside>
         <hr />
         <div
           className={article_body}
           dangerouslySetInnerHTML={{ __html: data.markdownRemark?.html ?? "" }}
         />
       </section>
-      <Link to="/Allnews" className={backtotop}>記事一覧へ戻る</Link>
+      <div className={flex}>
+        <Link to="/Allnews" className={backtotop}>お知らせ一覧へ</Link>
+        <Link to="/Allstudy" className={backtostudy}>論文一覧へ</Link>
+      </div>
       <Scroll showBelow={1000} />
     </Layout>
   </>
@@ -53,6 +62,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY/MM/DD", locale: "ja-JP")
+        author
       }
     }
   }

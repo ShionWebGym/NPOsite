@@ -35,6 +35,7 @@ const Study = () => {
           frontmatter {
             title
             slug
+            date(formatString: "YYYY/MM/DD", locale: "ja-JP")
           }
         }
       }
@@ -175,6 +176,7 @@ const Study = () => {
                 {posts.slice(0,7).map(({ node }: {node: any}) =>{
                   const title = node.frontmatter.title;
                   const slug = node.frontmatter.slug;
+                  // const date = node.frontmatter.date;
                   return(
                     <li key={slug}>
                      <Link to={slug} className={studyLink}>

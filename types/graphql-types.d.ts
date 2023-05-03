@@ -684,6 +684,7 @@ export type MarkdownRemarkFrontmatter = {
   first_image?: Maybe<File>;
   description?: Maybe<Scalars['String']>;
   isStudy?: Maybe<Scalars['Boolean']>;
+  author?: Maybe<Scalars['String']>;
 };
 
 
@@ -1142,6 +1143,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   first_image?: InputMaybe<FileFilterInput>;
   description?: InputMaybe<StringQueryOperatorInput>;
   isStudy?: InputMaybe<BooleanQueryOperatorInput>;
+  author?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type FileFilterInput = {
@@ -1416,6 +1418,7 @@ export type MarkdownRemarkFrontmatterFieldSelector = {
   first_image?: InputMaybe<FileFieldSelector>;
   description?: InputMaybe<FieldSelectorEnum>;
   isStudy?: InputMaybe<FieldSelectorEnum>;
+  author?: InputMaybe<FieldSelectorEnum>;
 };
 
 export type MarkdownHeadingFieldSelector = {
@@ -1619,6 +1622,7 @@ export type MarkdownRemarkFrontmatterSortInput = {
   first_image?: InputMaybe<FileSortInput>;
   description?: InputMaybe<SortOrderEnum>;
   isStudy?: InputMaybe<SortOrderEnum>;
+  author?: InputMaybe<SortOrderEnum>;
 };
 
 export type MarkdownHeadingSortInput = {
@@ -2679,22 +2683,22 @@ export type ArticleTemplateQueryVariables = Exact<{
 }>;
 
 
-export type ArticleTemplateQuery = { markdownRemark?: { html?: string | null, frontmatter?: { title?: string | null, date?: any | null } | null } | null };
+export type ArticleTemplateQuery = { markdownRemark?: { html?: string | null, frontmatter?: { title?: string | null, date?: any | null, author?: string | null } | null } | null };
 
 export type AllnewspostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, author?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type AllstudypostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AllstudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+export type AllstudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, author?: string | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type StudypostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type StudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null } | null } }> } };
+export type StudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null } | null } }> } };
 
 export type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
 

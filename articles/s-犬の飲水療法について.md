@@ -1,10 +1,11 @@
 ---
-title: "犬の飲水療法について"
-slug: /studypost0
-date: 2023-05-02T17:00:00
+title: "犬の最適な飲水とは？"
+slug: /s-犬の飲水療法について
+date: 2015-07-01T12:00:00
 first_image: './images/water1.webp'
 description: "動物の医療現場では水はあまり話題にはならず、"
 isStudy: true
+author: "小宮山典寛"
 ---
 
 ![イメージ](./images/water1.webp)

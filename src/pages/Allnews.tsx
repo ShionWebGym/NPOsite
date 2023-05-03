@@ -37,7 +37,7 @@ export default function Allnews() {
             title
             slug
             date(formatString: "YYYY/MM/DD", locale: "ja-JP")
-            description
+            author
             first_image{
               childImageSharp {
                 gatsbyImageData
@@ -70,7 +70,7 @@ export default function Allnews() {
               const slug = node.frontmatter.slug;
               const date = node.frontmatter.date;
               const img = getImage(node.frontmatter.first_image.childImageSharp.gatsbyImageData);
-              const desc = node.frontmatter.description;
+              const author = node.frontmatter.author;
 
               return (
                 <li key={slug} className={allnews_list}>
@@ -82,7 +82,7 @@ export default function Allnews() {
                       className={allnews_img} 
                       />
                       <aside className={allnews_aside}>{date}</aside>
-                      <p className={allnews_para}>{desc}</p>
+                      <p className={allnews_para}>筆者：{author}</p>
                     </div>
                     <div className={flex}>
                       <h1 className={allnews_h2}>{title}</h1>
