@@ -1,7 +1,7 @@
 import *as React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage,getImage,IGatsbyImageData } from 'gatsby-plugin-image';
-import type { AllnewspostQuery } from "../../types/graphql-types";
+import type { AllstudypostQuery } from "../../types/graphql-types";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Layout from "../components/Layout";
@@ -25,12 +25,12 @@ import {
 } from "../components/Allnews.module.scss";
 import type { HeadProps } from "gatsby";
 
-export default function Allnews() {
-  const data = useStaticQuery<AllnewspostQuery>(graphql`
-  query Allnewspost{
+export default function Allstudy() {
+  const data = useStaticQuery<AllstudypostQuery>(graphql`
+  query Allstudypost{
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
-      filter: {frontmatter: {isStudy:{ne:true}}}){
+      filter: {frontmatter: {isStudy:{ne:false}}}){
       edges {
         node {
           frontmatter {
@@ -57,8 +57,8 @@ export default function Allnews() {
       <Layout>
         <div className={container}>
           <div className={allnews_head}>
-            <h1 className={allnews_h1}>記事一覧</h1>
-            <p className={allnews_p}>WVCセミナーのお知らせ等についての記事一覧です。</p>
+            <h1 className={allnews_h1}>研究論文一覧</h1>
+            <p className={allnews_p}>研究発表についての論文一覧です。</p>
             <hr />
           </div>
         </div>
@@ -94,8 +94,8 @@ export default function Allnews() {
             })}
           </ul>
         </div>
-        <Link to="/" className={morebtn}>
-          トップへ戻る
+        <Link to="/Study" className={morebtn}>
+          研究発表へ戻る
         </Link>
       </Layout>
     </div>
@@ -105,10 +105,10 @@ export default function Allnews() {
 export function Head(props: HeadProps) {
   return (
     <>
-      <title>記事一覧</title>
+      <title>論文一覧</title>
       <meta
         name="description"
-        content="配信されたお知らせなどの記事一覧ページです。"
+        content="研究発表論文の一覧ページです。"
       />
     </>
   );

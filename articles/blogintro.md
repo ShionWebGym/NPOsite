@@ -4,6 +4,7 @@ slug: /post0
 date: 2023-04-18T17:00:00
 first_image: './images/shinsyakaijin_woman2.png'
 description: "blog post"
+isStudy: false
 ---
 
 ![イメージ](./images/shinsyakaijin_woman2.png)

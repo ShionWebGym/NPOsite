@@ -2,7 +2,8 @@ import Layout from "../components/Layout";
 import "@fontsource/noto-serif-jp";
 import "@fontsource/noto-sans-jp";
 import Scroll from "../components/Scroll";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery  } from "gatsby";
+import type { StudypostQuery } from '../../types/graphql-types';
 import {
   Gcontainer,
   pagehead,
@@ -24,6 +25,25 @@ import jinzou from "../images/jinzou.webp";
 import type { HeadProps } from "gatsby"
 
 const Study = () => {
+  const data = useStaticQuery<StudypostQuery>(graphql`
+  query Studypost{
+    allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {isStudy:{ne:false}}}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
+          }
+        }
+      }
+    }
+  }
+  `);
+
+  const posts = data.allMarkdownRemark.edges;
+
   return (
     <>
       <Layout>
@@ -150,46 +170,22 @@ const Study = () => {
             </p>
           </section>
           <nav className={studyNav}>
-            <h2>記事一覧</h2>
+            <h2>論文ピックアップ</h2>
             <ul className={studyList}>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                Coming soon...
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className={studyLink}>
-                  Coming soon...
-                </Link>
-              </li>
+                {posts.slice(0,7).map(({ node }: {node: any}) =>{
+                  const title = node.frontmatter.title;
+                  const slug = node.frontmatter.slug;
+                  return(
+                    <li key={slug}>
+                     <Link to={slug} className={studyLink}>
+                      {title}
+                     </Link>
+                    </li>
+                  );
+                })}
             </ul>
-            <Link to="/Allnews" className={studyLinkButton}>
-              すべての記事
+            <Link to="/Allstudy" className={studyLinkButton}>
+              すべての論文
             </Link>
           </nav>
         </div>

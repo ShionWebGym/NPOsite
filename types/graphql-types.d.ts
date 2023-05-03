@@ -249,6 +249,8 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
+  port?: Maybe<Scalars['Int']>;
+  host?: Maybe<Scalars['String']>;
   graphqlTypegen?: Maybe<SiteGraphqlTypegen>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
@@ -683,6 +685,7 @@ export type MarkdownRemarkFrontmatter = {
   date?: Maybe<Scalars['Date']>;
   first_image?: Maybe<File>;
   description?: Maybe<Scalars['String']>;
+  isStudy?: Maybe<Scalars['Boolean']>;
 };
 
 
@@ -819,6 +822,8 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFilterInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
@@ -1140,6 +1145,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   date?: InputMaybe<DateQueryOperatorInput>;
   first_image?: InputMaybe<FileFilterInput>;
   description?: InputMaybe<StringQueryOperatorInput>;
+  isStudy?: InputMaybe<BooleanQueryOperatorInput>;
 };
 
 export type FileFilterInput = {
@@ -1413,6 +1419,7 @@ export type MarkdownRemarkFrontmatterFieldSelector = {
   date?: InputMaybe<FieldSelectorEnum>;
   first_image?: InputMaybe<FileFieldSelector>;
   description?: InputMaybe<FieldSelectorEnum>;
+  isStudy?: InputMaybe<FieldSelectorEnum>;
 };
 
 export type MarkdownHeadingFieldSelector = {
@@ -1615,6 +1622,7 @@ export type MarkdownRemarkFrontmatterSortInput = {
   date?: InputMaybe<SortOrderEnum>;
   first_image?: InputMaybe<FileSortInput>;
   description?: InputMaybe<SortOrderEnum>;
+  isStudy?: InputMaybe<SortOrderEnum>;
 };
 
 export type MarkdownHeadingSortInput = {
@@ -1889,6 +1897,8 @@ export type SiteEdge = {
 export type SiteFieldSelector = {
   buildTime?: InputMaybe<FieldSelectorEnum>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFieldSelector>;
+  port?: InputMaybe<FieldSelectorEnum>;
+  host?: InputMaybe<FieldSelectorEnum>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFieldSelector>;
   polyfill?: InputMaybe<FieldSelectorEnum>;
   pathPrefix?: InputMaybe<FieldSelectorEnum>;
@@ -1956,6 +1966,8 @@ export type SiteGroupConnectionGroupArgs = {
 export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenFilterInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
@@ -1970,6 +1982,8 @@ export type SiteFilterInput = {
 export type SiteSortInput = {
   buildTime?: InputMaybe<SortOrderEnum>;
   siteMetadata?: InputMaybe<SiteSiteMetadataSortInput>;
+  port?: InputMaybe<SortOrderEnum>;
+  host?: InputMaybe<SortOrderEnum>;
   graphqlTypegen?: InputMaybe<SiteGraphqlTypegenSortInput>;
   polyfill?: InputMaybe<SortOrderEnum>;
   pathPrefix?: InputMaybe<SortOrderEnum>;
@@ -2681,6 +2695,16 @@ export type AllnewspostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type AllnewspostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+
+export type AllstudypostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type AllstudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, description?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+
+export type StudypostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type StudypostQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null } | null } }> } };
 
 export type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
 

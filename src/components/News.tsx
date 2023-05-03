@@ -15,7 +15,9 @@ import {
 const News = () => {
   const data = useStaticQuery<NewspostQuery>(graphql`
   query Newspost{
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {isStudy:{ne:true}}}) {
       edges {
         node {
           frontmatter {

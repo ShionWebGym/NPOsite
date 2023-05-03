@@ -4,6 +4,7 @@ slug: /studypost0
 date: 2023-05-02T17:00:00
 first_image: './images/water1.webp'
 description: "動物の医療現場では水はあまり話題にはならず、論議もされていません。"
+isStudy: true
 ---
 
 ![イメージ](./images/water1.webp)
