@@ -81,8 +81,8 @@ export default function Allstudy() {
                       alt="Post Image"
                       className={allnews_img} 
                       />
-                      <aside className={allnews_aside}>{desc}</aside>
-                      <p className={allnews_para}>{date}</p>
+                      <aside className={allnews_aside}>{date}</aside>
+                      <p className={allnews_para}>{desc}</p>
                     </div>
                     <div className={flex}>
                       <h1 className={allnews_h2}>{title}</h1>

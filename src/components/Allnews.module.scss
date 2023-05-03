@@ -32,6 +32,7 @@
 .allnews_h2{
     font-size: 24px;
     color: #040404;
+    padding-left: 40px;
 }
 .allnews_p{
     font-size: 24px;
@@ -39,7 +40,7 @@
 .allnews_para{
     color: #040404;
     font-size: 12px;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 .allnews_aside{
     padding: 12px;
@@ -96,7 +97,7 @@ img{
 .arrow{
     position: relative;
     display: inline-block;
-    padding: 0 0 0 24px;
+    // padding: 0 0 0 24px;
     color: #000;
     vertical-align: middle;
     text-decoration: none;
@@ -111,17 +112,18 @@ img{
     margin: auto;
     content: "";
     vertical-align: middle;
-    margin-left: 12px;
+    // margin-left: 12px;
 }
 .arrow::before{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #d9d9d9;
+    margin: 6px 0;
 }
 .arrow::after{
-    left: 10px;
+    left: 5px;
     width: 10px;
     height: 10px;
     border-top: 2px solid #040404;
@@ -131,6 +133,9 @@ img{
 }
 .flex{
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-top: 8px;
 }
 .background{
     background-color: #FFFFED;
