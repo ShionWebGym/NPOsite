@@ -1,7 +1,7 @@
 import React from "react";
 import topinu from "../images/topimg.webp";
 import "./total.module.scss";
-import { topimage, topdog, top_text_box } from "./TopImage.module.scss";
+import { topimage, topdog, top_text_box,background } from "./TopImage.module.scss";
 import { motion } from "framer-motion";
 import "@fontsource/noto-sans-jp/japanese.css"
 
@@ -32,7 +32,7 @@ const TopImage = () => {
           ・医療従事者の知識の向上を目指します。
         </motion.h2>
       </div>
-      <motion.img
+      {/* <motion.img
         initial={{
           opacity: 0,
           y: -100,
@@ -42,7 +42,17 @@ const TopImage = () => {
         className={topdog}
         src={topinu}
         alt="トップイメージ"
-      />
+      /> */}
+      <motion.div className={background}
+              initial={{
+                opacity: 0,
+                y: -100,
+              }}
+              animate={{ opacity: 1, y: -20 }}
+              transition={{ duration: 1 }}
+              >
+
+      </motion.div>
     </div>
   );
 };
