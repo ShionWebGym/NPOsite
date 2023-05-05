@@ -166,7 +166,7 @@ const Form = () => {
             <textarea
               name="message"
               onChange={handleChange}
-              placeholder="例）〇月△日、ハワイ、セミナー参加希望"
+              placeholder="例）次回セミナーの予定が知りたいです。"
               cols={32}
               rows={10}
               className={formInput}
