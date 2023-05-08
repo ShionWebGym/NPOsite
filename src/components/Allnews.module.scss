@@ -83,6 +83,11 @@
     margin: 0;
     justify-content: space-between;
 }
+.allnews_boxx::after{
+    content:"";
+    display: block;
+    width:30%;
+  }
 img{
     display: block;
 }
@@ -177,6 +182,11 @@ hr{
     .allnews_box{
         margin: auto;
     }
+    .allnews_boxx::after{
+        content:"";
+        display: block;
+        width:50%;
+      }
     .arrow::after{
         left: 6px;
     }
@@ -184,4 +194,4 @@ hr{
         width: 24px;
         height: 24px;
     }
-}
+};
