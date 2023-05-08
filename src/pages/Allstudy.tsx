@@ -78,7 +78,7 @@ export default function Allstudy() {
                   <Link to={slug} className={allnews_link}>
                     <div>
                       <GatsbyImage
-                      image={img as IGatsbyImageData}
+                      image={img as IGatsbyImageData} 
                       alt="Post Image"
                       className={allnews_img} 
                       />
