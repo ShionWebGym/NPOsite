@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ data }) => (
           </aside>
         )}
           <aside className={article_author}>
-            文責：{data.markdownRemark?.frontmatter?.author?? "(無題)"}
+            筆者：{data.markdownRemark?.frontmatter?.author?? "(無題)"}
           </aside>
         <hr />
         <div

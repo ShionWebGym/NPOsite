@@ -25,7 +25,7 @@ const Section = () => {
           </li>
           <li className={section_list_item}>
             <Link to="/Allstudy" className={section_list_item_link}>
-              伴侶動物の研究
+              伴侶動物の研究発表
             </Link>
           </li>
           <li className={section_list_item}>
