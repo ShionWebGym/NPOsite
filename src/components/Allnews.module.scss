@@ -62,7 +62,7 @@
     margin: 0px auto 80px;
 }
 .allnews_list{
-    transition: 0.1s;
+    transition: 0.2s;
     width: 300px;
     font-family: Noto Sans JP, sans-serif;
     margin:0  0 80px;
@@ -71,7 +71,7 @@
 .allnews_list:hover{
     background-color: #FFFFED;
     opacity: 0.5;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .allnews_link{
     text-decoration: none;
@@ -99,12 +99,15 @@ hr{
     width: 300px;
     height: 160px;
     object-fit: cover;
-    box-sizing:border-box;
+    box-sizing: border-box;
     background-color: #fff;
-    transition: 0.2s;
+    transition: 0.3s;
     // border-radius: 20px 20px 0 0;
 }
-.allnews_img:hover{
+.allnews_img img{
+    transition: 0.3s;
+}
+.allnews_img img:hover{
     transform: scale(1.1);
     transition: 0.3s all;
 }
