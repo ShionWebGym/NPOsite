@@ -66,6 +66,7 @@
     width: 300px;
     font-family: Noto Sans JP, sans-serif;
     margin:0  0 80px;
+    overflow: hidden;
 }
 .allnews_list:hover{
     background-color: #FFFFED;
@@ -100,7 +101,12 @@ hr{
     object-fit: cover;
     box-sizing:border-box;
     background-color: #fff;
+    transition: 0.2s;
     // border-radius: 20px 20px 0 0;
+}
+.allnews_img:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
 }
 .arrow{
     position: relative;

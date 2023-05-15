@@ -27,6 +27,7 @@
 .cardcontainer{
     width: 100%;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -128,6 +129,9 @@
     background-color: #FFF;
     color: #94233E;
     border: 2px solid #94233E;
+}
+.ins{
+    display: inherit;
 }
 @media (max-width:1199px) {
     .container h2{

@@ -2673,6 +2673,11 @@ export type MarkdownRemarkGroupConnectionGroupArgs = {
   field: MarkdownRemarkFieldSelector;
 };
 
+export type SeminerpickQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type SeminerpickQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, author?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+
 export type NewspostQueryVariables = Exact<{ [key: string]: never; }>;
 
 

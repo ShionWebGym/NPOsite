@@ -68,7 +68,7 @@ const Wvc = () => {
                   <p>What's New about seminar</p>
                 </div>
                 <div className={flex}>
-                  <h2>セミナーの最新情報</h2>
+                  <h2>WVCセミナー情報</h2>
                   <div className={arrow}></div>
                 </div>
               </Link>

@@ -10,7 +10,7 @@ const TopImage = () => {
     <div className={topimage}>
       <div className={top_text_box}>
         <motion.h1
-          initial={{ opacity: 0, y: -150 }}
+          initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 3 }}
         >
