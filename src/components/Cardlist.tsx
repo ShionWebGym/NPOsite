@@ -15,35 +15,36 @@ import {
   cardharf2,
   cardcontent,
   aftercard,
-  cardImage1,
-  cardImage2,
-  cardImage3,
   ins,
 } from "../components/Cardlist.module.scss";
 
 const Cardlist = () => {
   const data = useStaticQuery<SeminerpickQuery>(graphql`
-    query Seminerpick{
+    query Seminerpick {
       allMarkdownRemark(
-        sort: { frontmatter: {date: DESC} }
-        filter: {frontmatter: {isStudy:{ne:true}}}){
-          edges{
-            node {
-              frontmatter {
-                title
-                slug
-                date(formatString: "YYYY/MM/DD", locale: "ja-JP")
-                author
-                first_image{
-                  childImageSharp {
-                    gatsbyImageData
-                  }
+        sort: { frontmatter: { date: DESC } }
+        filter: { frontmatter: { isSeminer: { ne: false } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
+              date(formatString: "YYYY/MM/DD", locale: "ja-JP")
+              author
+              place
+              doctor
+              first_image {
+                childImageSharp {
+                  gatsbyImageData
                 }
               }
+              isAccepting
             }
           }
         }
       }
+    }
   `);
 
   const posts = data.allMarkdownRemark.edges;
@@ -51,7 +52,7 @@ const Cardlist = () => {
   return (
     <>
       <div className={container}>
-        <h2>これから開催予定のセミナー</h2>
+        <h2>セミナーの最新情報</h2>
         <ul className={cardcontainer}>
           {posts.slice(0, 5).map(({ node }: { node: any }) => {
             const title = node.frontmatter.title;
@@ -60,34 +61,33 @@ const Cardlist = () => {
             const img = getImage(
               node.frontmatter.first_image.childImageSharp.gatsbyImageData
             );
+            const place = node.frontmatter.place;
+            const doctor = node.frontmatter.doctor;
+            const isAccepting = node.frontmatter.isAccepting;
+            const statusLabel = isAccepting ? "受付中" : "開催終了";
+            const statusClassName = isAccepting ? cardtag_uketukechu : cardtag_uketukesyuryo;
             return (
               <li key={slug} className={ins}>
                 <Link to={slug} className={card}>
                   <div className={cardharf}>
-                  <GatsbyImage
+                    <GatsbyImage
                       image={img as IGatsbyImageData}
                       alt="Post Image"
-                      className={cardharf} 
-                      />
+                      className={cardharf}
+                    />
                     <p className={cardtime}>{date}</p>
-                    <p className={cardtag_uketukechu}>受付中</p>
+                    <p className={statusClassName}>{statusLabel}</p>
                   </div>
                   <div className={cardharf2}>
                     <h3>開催場所</h3>
-                    <p className={cardcontent}>台湾某所（20人限定）</p>
-                    {/* ↑↑↑内容を書く */}
+                    <p className={cardcontent}>{place}</p>
                     <h3>内容</h3>
-                    <p className={cardcontent}>
-                      {title}
-                    </p>
-                    {/* ↑↑↑費用を書く */}
+                    <p className={cardcontent}>{title}</p>
                     <h3>講師</h3>
                     <ul className={doclist}>
-                      <li>Dr.William Culp, VMD, DACVS</li>
-                      <li>Dr. Jim Perry, DVM. phD ,ACVIM ,ACVS</li>
-                      <li>Dr. Ameet Singh . BSc, DVM, DVSc, ACVS</li>
-                      <li>久保田朋子先生（通訳）</li>
-                      {/* ↑↑↑講師を書く（講師の数に応じてliを増やしたり減らす） */}
+                      {doctor && doctor.map((doctor: string) => (
+                        <li key={doctor}>{doctor}</li>
+                      ))}
                     </ul>
                   </div>
                 </Link>

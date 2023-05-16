@@ -5,6 +5,7 @@ date: 2015-07-01T12:00:00
 first_image: './images/猫の飲水.webp'
 description: "私たち人間も含め動物は水がなければ生きていけません。"
 isStudy: true
+isSeminer: false
 author: "小宮山典寛"
 ---
 

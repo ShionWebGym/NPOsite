@@ -684,7 +684,11 @@ export type MarkdownRemarkFrontmatter = {
   first_image?: Maybe<File>;
   description?: Maybe<Scalars['String']>;
   isStudy?: Maybe<Scalars['Boolean']>;
+  isSeminer?: Maybe<Scalars['Boolean']>;
   author?: Maybe<Scalars['String']>;
+  isAccepting?: Maybe<Scalars['Boolean']>;
+  place?: Maybe<Scalars['String']>;
+  doctor?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 
@@ -1143,7 +1147,11 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   first_image?: InputMaybe<FileFilterInput>;
   description?: InputMaybe<StringQueryOperatorInput>;
   isStudy?: InputMaybe<BooleanQueryOperatorInput>;
+  isSeminer?: InputMaybe<BooleanQueryOperatorInput>;
   author?: InputMaybe<StringQueryOperatorInput>;
+  isAccepting?: InputMaybe<BooleanQueryOperatorInput>;
+  place?: InputMaybe<StringQueryOperatorInput>;
+  doctor?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type FileFilterInput = {
@@ -1418,7 +1426,11 @@ export type MarkdownRemarkFrontmatterFieldSelector = {
   first_image?: InputMaybe<FileFieldSelector>;
   description?: InputMaybe<FieldSelectorEnum>;
   isStudy?: InputMaybe<FieldSelectorEnum>;
+  isSeminer?: InputMaybe<FieldSelectorEnum>;
   author?: InputMaybe<FieldSelectorEnum>;
+  isAccepting?: InputMaybe<FieldSelectorEnum>;
+  place?: InputMaybe<FieldSelectorEnum>;
+  doctor?: InputMaybe<FieldSelectorEnum>;
 };
 
 export type MarkdownHeadingFieldSelector = {
@@ -1622,7 +1634,11 @@ export type MarkdownRemarkFrontmatterSortInput = {
   first_image?: InputMaybe<FileSortInput>;
   description?: InputMaybe<SortOrderEnum>;
   isStudy?: InputMaybe<SortOrderEnum>;
+  isSeminer?: InputMaybe<SortOrderEnum>;
   author?: InputMaybe<SortOrderEnum>;
+  isAccepting?: InputMaybe<SortOrderEnum>;
+  place?: InputMaybe<SortOrderEnum>;
+  doctor?: InputMaybe<SortOrderEnum>;
 };
 
 export type MarkdownHeadingSortInput = {
@@ -2676,7 +2692,7 @@ export type MarkdownRemarkGroupConnectionGroupArgs = {
 export type SeminerpickQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type SeminerpickQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, author?: string | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
+export type SeminerpickQuery = { allMarkdownRemark: { edges: Array<{ node: { frontmatter?: { title?: string | null, slug?: string | null, date?: any | null, author?: string | null, place?: string | null, doctor?: Array<string | null> | null, isAccepting?: boolean | null, first_image?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type NewspostQueryVariables = Exact<{ [key: string]: never; }>;
 
