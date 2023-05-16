@@ -142,8 +142,9 @@
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
-        display: block;
         padding: 0px 16px 0px 16px;
+        margin: 0;
+        justify-content:inherit;
     }
     .card{
         margin: 32px 8px 32px 8px;

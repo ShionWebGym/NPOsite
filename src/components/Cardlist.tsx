@@ -64,7 +64,7 @@ const Cardlist = () => {
             const place = node.frontmatter.place;
             const doctor = node.frontmatter.doctor;
             const isAccepting = node.frontmatter.isAccepting;
-            const statusLabel = isAccepting ? "受付中" : "開催終了";
+            const statusLabel = isAccepting ? "受付中" : "終了";
             const statusClassName = isAccepting ? cardtag_uketukechu : cardtag_uketukesyuryo;
             return (
               <li key={slug} className={ins}>
@@ -75,13 +75,13 @@ const Cardlist = () => {
                       alt="Post Image"
                       className={cardharf}
                     />
-                    <p className={cardtime}>{date}</p>
+                    <p className={cardtime}>{date}～</p>
                     <p className={statusClassName}>{statusLabel}</p>
                   </div>
                   <div className={cardharf2}>
                     <h3>開催場所</h3>
                     <p className={cardcontent}>{place}</p>
-                    <h3>内容</h3>
+                    <h3>概要</h3>
                     <p className={cardcontent}>{title}</p>
                     <h3>講師</h3>
                     <ul className={doclist}>
