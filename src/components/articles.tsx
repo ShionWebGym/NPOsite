@@ -33,7 +33,7 @@ const Page: FC<PageProps> = ({ data }) => (
         </h1>
         {data.markdownRemark?.frontmatter?.date && (
           <aside className={article_date}>
-            {data.markdownRemark.frontmatter.date} 投稿
+            {data.markdownRemark.frontmatter.date}
           </aside>
         )}
           <aside className={article_author}>
