@@ -46,9 +46,9 @@ const TopImage = () => {
       <motion.div className={background}
               initial={{
                 opacity: 0,
-                y: -100,
+                y: 0,
               }}
-              animate={{ opacity: 1, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               >
 

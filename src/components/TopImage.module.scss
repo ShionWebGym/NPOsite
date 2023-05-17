@@ -13,9 +13,9 @@
     font-family: Noto sans JP,sans-serif;
     z-index: 10;
     position: absolute;
-    top: 173px;
-    height: 320px;
-    margin: 8rem;
+    top: 14rem;
+    left: 7rem;
+    height: fit-content;
     width: fit-content;
   }
   .top_text_box h2{
@@ -29,7 +29,7 @@
     width: fit-content;
   }
   .topimage{
-    padding-top: 19.5vh;
+    padding-top: 17.4vh;
   }
   .topdog{
     padding-top: 208px;
@@ -42,7 +42,7 @@
   .background{
     background-image: url(../images/topinu2.webp);
     width: 100%;
-    height: 86vh;
+    height: 88vh;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
