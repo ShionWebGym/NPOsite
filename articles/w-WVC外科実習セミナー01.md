@@ -1,5 +1,5 @@
 ---
-title: "WVC外科実習セミナー"
+title: "第1回 WVC外科実習セミナー"
 slug: /w-WVC外科実習セミナー01
 date: 2018-06-21T12:00:00
 first_image: './images/w-WVC外科実習セミナー01/1.webp'

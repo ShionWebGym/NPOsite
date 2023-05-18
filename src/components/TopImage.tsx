@@ -1,7 +1,6 @@
 import React from "react";
-import topinu from "../images/topimg.webp";
 import "./total.module.scss";
-import { topimage, topdog, top_text_box,background } from "./TopImage.module.scss";
+import { topimage, top_text_box,background } from "./TopImage.module.scss";
 import { motion } from "framer-motion";
 import "@fontsource/noto-sans-jp/japanese.css"
 
