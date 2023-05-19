@@ -685,8 +685,8 @@ export type MarkdownRemarkFrontmatter = {
   description?: Maybe<Scalars['String']>;
   isStudy?: Maybe<Scalars['Boolean']>;
   isSeminer?: Maybe<Scalars['Boolean']>;
-  author?: Maybe<Scalars['String']>;
   isAccepting?: Maybe<Scalars['Boolean']>;
+  author?: Maybe<Scalars['String']>;
   place?: Maybe<Scalars['String']>;
   doctor?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
@@ -1148,8 +1148,8 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   description?: InputMaybe<StringQueryOperatorInput>;
   isStudy?: InputMaybe<BooleanQueryOperatorInput>;
   isSeminer?: InputMaybe<BooleanQueryOperatorInput>;
-  author?: InputMaybe<StringQueryOperatorInput>;
   isAccepting?: InputMaybe<BooleanQueryOperatorInput>;
+  author?: InputMaybe<StringQueryOperatorInput>;
   place?: InputMaybe<StringQueryOperatorInput>;
   doctor?: InputMaybe<StringQueryOperatorInput>;
 };
@@ -1427,8 +1427,8 @@ export type MarkdownRemarkFrontmatterFieldSelector = {
   description?: InputMaybe<FieldSelectorEnum>;
   isStudy?: InputMaybe<FieldSelectorEnum>;
   isSeminer?: InputMaybe<FieldSelectorEnum>;
-  author?: InputMaybe<FieldSelectorEnum>;
   isAccepting?: InputMaybe<FieldSelectorEnum>;
+  author?: InputMaybe<FieldSelectorEnum>;
   place?: InputMaybe<FieldSelectorEnum>;
   doctor?: InputMaybe<FieldSelectorEnum>;
 };
@@ -1635,8 +1635,8 @@ export type MarkdownRemarkFrontmatterSortInput = {
   description?: InputMaybe<SortOrderEnum>;
   isStudy?: InputMaybe<SortOrderEnum>;
   isSeminer?: InputMaybe<SortOrderEnum>;
-  author?: InputMaybe<SortOrderEnum>;
   isAccepting?: InputMaybe<SortOrderEnum>;
+  author?: InputMaybe<SortOrderEnum>;
   place?: InputMaybe<SortOrderEnum>;
   doctor?: InputMaybe<SortOrderEnum>;
 };

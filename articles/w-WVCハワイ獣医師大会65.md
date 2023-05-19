@@ -28,7 +28,7 @@ doctor: ["Dr. Brian Beale.","Dr.Don Hulse."]
 
 VOI社は日本語でのメールの注文が出来ます。担当はボーランくみさんです。お知らせいただければ、彼女のメールアドレスをお知らせします。
 
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaii56-4.webp)
+#### ![ハワイイメージ１](./images/w-WVCハワイ獣医師大会65/hawaii56-4.webp)
 
 ハワイ獣医師会年次大会のセミナーのご案内です。
 今年度のハワイ獣医師大会は、11月9日～11日に行われます。毎年恒例の、講師Dr. Brian BealeとDr.Don Hulseの整形外科セミナーで日本語の通訳付きは2日間行われます。2日目は、大会セミナーの初日と重なります。
@@ -45,7 +45,7 @@ VOI社は日本語でのメールの注文が出来ます。担当はボーラ�
 * トイ犬種と猫のTPLO（TPLO(脛骨高平部水平骨切り術)
 * グレードⅢとⅣの、膝蓋骨内側の脱臼の治療
 
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaii56-2.webp)
+#### ![ハワイイメージ２](./images/w-WVCハワイ獣医師大会65/hawaii56-2.webp)
 
 ハワイ獣医師会の年次大会にて毎年行われており定評の「 Dr. Brian Bealeの整形外科セミナー」はDr.Brian BealeとDr.Don Hulseの師弟コンビによる恒例のセミナーです。今回は講義と骨のモデルを使用した実習となります。
 
@@ -71,24 +71,24 @@ VOI社は日本語でのメールの注文が出来ます。担当はボーラ�
 * クリスティ－ナ・ナオミ・アララ先生（所沢アニマルメディカルセンター）
 
 # プログラム
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram1.webp)
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram2.webp)
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram3.webp)
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram4.webp)
+#### ![今回セミナープログラム１](./images/w-WVCハワイ獣医師大会65/hawaiprogram1.webp)
+#### ![今回セミナープログラム２](./images/w-WVCハワイ獣医師大会65/hawaiprogram2.webp)
+#### ![今回セミナープログラム３](./images/w-WVCハワイ獣医師大会65/hawaiprogram3.webp)
+#### ![今回セミナープログラム４](./images/w-WVCハワイ獣医師大会65/hawaiprogram4.webp)
 
 # <div style="text-align:center;">講師紹介</div>
 
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/dr_brianbeale.webp)
+#### ![Dr.Brianイメージ](./images/w-WVCハワイ獣医師大会65/dr_brianbeale.webp)
 **Dr. Brian Beale.**<br/>
 1985年にフロリダ大学にてD.V.Mを取得。その後、フレンドシップホスピタルにてインターン、 フロリダ大学にて外科のレジデンス、そして1991年に外科専門医療を摂取し、フロリダ大学獣医学部の助教授となり、1992年にGulf coast veterinary specialistsに所属し、現在はテキサスA&M大学獣医学部の非常勤助教授でもあります。彼は毎日曜日の夜の午後8時の番組のKTRH（AM740）にて、「あなたのペットの健康」でホストとして活躍もしています。また彼は世界の国際的な獣医学会議での招待講演者です。
 
 
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/dr_donhulse.webp)
+#### ![Dr.Donイメージ](./images/w-WVCハワイ獣医師大会65/dr_donhulse.webp)
 **Dr.Don Hulse.**<br/>
 1970年にテキサスA & M大学にてD.V.Mを取得。その後、1973年カンザス州立大学にて外科のレジデンス、1977年に米国獣医外科専門医(ACVS)を取得し、その後ル イジアナ州立大学、オクラホマ州立大学にて外科専門医として1984年まで勤務し、その後はテキサスA＆M大学の整形外科の教授を務めていました。彼は獣 医界の整形外科をリードする先駆者であり、世界の国際的な獣医学会議での招待講演者です。ここ10年以上はオースティンエリアにて手術を行っており、AUSTIN VETERINARY EMERGENCY & SPECIALTYのパートナーに所属しています。
 
 # 旅行のツアープラン
-#### ![イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram5.webp)
+#### ![旅行のツアープラン参考イメージ](./images/w-WVCハワイ獣医師大会65/hawaiprogram5.webp)
 【JL】日本航空　　【機】機内食(軽食を含む)<br/>
 【時間帯の目安】　早朝（06:00～07:30）<br/>
 
