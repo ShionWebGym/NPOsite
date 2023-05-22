@@ -9,7 +9,7 @@ isSeminer: true
 isAccepting: false
 author: "小宮山典寛" 
 place: "ラスベガス,オクエンドセンター"
-doctor: ["上田悠先生","Dr.Kenichiro Yagi","中村篤史先生","川瀬広大先生"] 
+doctor: ["Dr. Brian Beale","Dr Caleb Hudson","是枝哲彰先生","アララ クリスティーナ 直美 先生"] 
 ---
 # WVC（西部獣医会議）<br/>継続教育、オクエンドセンターでの実習ラボ
 

@@ -9,7 +9,7 @@ isSeminer: true
 isAccepting: false
 author: "小宮山典寛"
 place: "ハワイ,ホノルル"
-doctor: ["Dr. Brian Beale.","Dr.Don Hulse."] 
+doctor: ["青木美恵先生.","茨木一成先生","直井昌之先生","クリスティ－ナ・ナオミ・アララ先生"] 
 ---
 
 # ハワイ獣医師会年次大会<br/>「Dr. Brian Bealeのセミナー」へのお誘い

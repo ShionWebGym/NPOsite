@@ -9,7 +9,7 @@ isSeminer: true
 isAccepting: false
 author: "小宮山典寛" 
 place: "ラスベガス,オクエンドセンター"
-doctor: ["上田悠先生","Dr.Kenichiro Yagi","中村篤史先生","川瀬広大先生"] 
+doctor: ["Dr.William Culp","Dr. Jim Perry","Dr. Ameet Singh","久保田朋子先生"] 
 ---
 # WVC（西部獣医会議）<br/>継続教育、オクエンドセンターでの実習ラボ
 
