@@ -22,7 +22,7 @@ doctor: ["上田悠先生","Dr.Kenichiro Yagi","中村篤史先生","川瀬広�
 日 程 ：2019年12月9日（月）～12月11日（水）　3日間<br/>
 内 容 ：Dr. Brian Bealeの日本人向け整形外科のすべて、全3回シリーズの２回目、<br/>
 Advances（アドバーンス）コース、最大28名様限定<br/>
-セミナー費用：278,000円―申込金はWVCの規定にありませんー
+セミナー費用：278,000円―申込金はWVCの規定にありません
 
 <div style="padding-bottom:8px;">主催：Western Veterinary Conference (WVC)<br/></div>
 <div style="padding-bottom:8px;">企画&運営：特定非営利活動法人　小動物疾患研究所<br/></div>
