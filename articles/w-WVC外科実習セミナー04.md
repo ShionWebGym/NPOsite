@@ -64,9 +64,6 @@ doctor: ["Dr.William Culp","Dr. Jim Perry","Dr. Ameet Singh","久保田朋子先
 
 # プログラム
 *泌尿器系、消化器系－Urinary, Gastrointestinal－<br/>*
-※当初発表のプログラム内容に変更がありました。こちらのプログラムは変更後の内容となっております。
-
-![イメージ](./images/w-WVC外科実習セミナー04/201910yotei1.webp)
 
 <hr/>
 
