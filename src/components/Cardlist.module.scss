@@ -25,13 +25,13 @@
     font-weight: bold;
 }
 .cardcontainer{
-    width: 62vw;
+    width: 60vw;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     padding: 0px 16px 0px 16px;
-    margin: 0px 36% 0px;
+    margin: 0px 38% 0px;
     justify-content:left;
 }
 .card{
@@ -121,7 +121,7 @@
     font-size: 0.8rem;
     padding: 8px 32px;
     font-family: Noto Sans JP,sans-serif;
-    margin: 24px auto;
+    margin: 32px auto;
     transition: 0.2s;
     display: block;
     width: fit-content;
